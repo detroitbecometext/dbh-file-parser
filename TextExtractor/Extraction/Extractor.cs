@@ -20,17 +20,6 @@ namespace TextExtractor.Extraction
 
         public async Task RunAsync()
         {
-            // Mapping of languages to the key - value localization strings
-            ConcurrentDictionary<string, ConcurrentDictionary<string, string>> values = new ConcurrentDictionary<string, ConcurrentDictionary<string, string>>();
-
-            // Languages will always appear in this order
-            foreach (var lang in Configuration.Languages)
-            {
-                values.TryAdd(lang, new ConcurrentDictionary<string, string>());
-            }
-
-            ConcurrentDictionary<string, ProgressReport> progress = new ConcurrentDictionary<string, ProgressReport>();
-
             Configuration config;
             using (var stream = File.OpenRead("config.json"))
             {
@@ -38,6 +27,22 @@ namespace TextExtractor.Extraction
                 {
                     PropertyNameCaseInsensitive = true
                 });
+            }
+
+            // Mapping of languages to the key - value localization strings
+            // We could use a ConcurrentDictionary here too, but since we want the keys to stay ordered, we'll use a lock instead
+            Dictionary<string, Dictionary<string, string>> values = new Dictionary<string, Dictionary<string, string>>();
+
+            var localizationKeys = new Dictionary<string, string>();
+            foreach (var key in config.Files.SelectMany(f => f.Sections).SelectMany(s => s.Keys))
+            {
+                localizationKeys[key] = string.Empty;
+            }
+
+            // Languages will always appear in this order
+            foreach (var lang in Configuration.Languages)
+            {
+                values.Add(lang, new Dictionary<string, string>(localizationKeys));
             }
 
             // Update the extraction process every 200ms
@@ -52,6 +57,7 @@ namespace TextExtractor.Extraction
 
             // Run extraction for every file
             var tasks = new List<Task>();
+            object lockObject = new object();
             foreach(var fileConfig in config.Files)
             {
                 progress.TryAdd(fileConfig.Name, new ProgressReport()
@@ -62,27 +68,34 @@ namespace TextExtractor.Extraction
                     SectionCount = fileConfig.Sections.Count
                 });
 
-                var extractor = new FileExtractor();
+                var extractor = new FileExtractor(fileConfig, values, lockObject);
                 extractor.ProgressChanged += UpdateProgress;
-                tasks.Add(extractor.ExtractAsync(fileConfig, values));
+                tasks.Add(extractor.ExtractAsync());
             }
             await Task.WhenAll(tasks);
 
             // Stop updating the progress
+            PrintProgress();
             cancellationTokenSource.Cancel();
 
             // Write the values
             Console.WriteLine("Writing export files...");
+            tasks.Clear();
             foreach (var language in values)
             {
-                string filePath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "Output", $"{language.Key.ToLower()}.json");
-                string fileContent = JsonSerializer.Serialize(language.Value, new JsonSerializerOptions()
+                tasks.Add(Task.Run(async () =>
                 {
-                    Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.All),
-                    WriteIndented = true
-                });
-                await File.WriteAllTextAsync(filePath, fileContent);
+                    string filePath = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "Output", $"{language.Key.ToLower()}.json");
+                    string fileContent = JsonSerializer.Serialize(language.Value, new JsonSerializerOptions()
+                    {
+                        Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.All),
+                        WriteIndented = true
+                    });
+                    await File.WriteAllTextAsync(filePath, fileContent);
+                }));
+                
             }
+            await Task.WhenAll(tasks);
         }
 
         private void UpdateProgress(object sender, ProgressReport e)
@@ -96,15 +109,17 @@ namespace TextExtractor.Extraction
 
             foreach (var progressReport in progress)
             {
-                // Clear line
-                Console.SetCursorPosition(0, top);
-                Console.Write(new string(' ', Console.BufferWidth - Console.CursorLeft));
-
-                // Print progress
-                Console.SetCursorPosition(0, top);
+                ClearLine(top);
                 Console.WriteLine(progressReport.Value.ToString());
                 top++;
             }
+        }
+
+        private void ClearLine(int line)
+        {
+            Console.SetCursorPosition(0, line);
+            Console.Write(new string(' ', Console.BufferWidth - Console.CursorLeft));
+            Console.SetCursorPosition(0, line);
         }
     }
 }

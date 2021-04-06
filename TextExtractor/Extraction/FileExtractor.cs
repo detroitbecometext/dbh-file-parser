@@ -11,6 +11,17 @@ namespace TextExtractor.Extraction
 {
     public class FileExtractor
     {
+        private readonly FileConfig fileConfig;
+        private readonly Dictionary<string, Dictionary<string, string>> values;
+        private readonly object lockObject;
+
+        public FileExtractor(FileConfig fileConfig, Dictionary<string, Dictionary<string, string>> values, object lockObject)
+        {
+            this.fileConfig = fileConfig;
+            this.values = values;
+            this.lockObject = lockObject;
+        }
+
         private void OnProgressChanged(ProgressReport e)
         {
             EventHandler<ProgressReport> handler = ProgressChanged;
@@ -19,7 +30,7 @@ namespace TextExtractor.Extraction
 
         public event EventHandler<ProgressReport> ProgressChanged;
 
-        public async Task ExtractAsync(FileConfig fileConfig, ConcurrentDictionary<string, ConcurrentDictionary<string, string>> values)
+        public async Task ExtractAsync()
         {
             int maxBuffer = fileConfig.Sections.Select(s => s.Length).Max();
 
@@ -66,7 +77,11 @@ namespace TextExtractor.Extraction
 
                             byte[] nextKeyBytes = Encoding.UTF8.GetBytes(section.Keys[nextIndex]);
                             (string value, int nextKeyOffset) = FindValue(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes, getUntilEndOfBuffer);
-                            values[language][section.Keys[i]] = value;
+                            
+                            lock (lockObject)
+                            {
+                                values[language][section.Keys[i]] = value;
+                            }
 
                             currentKeyOffset = nextKeyOffset;
                             currentKeyBytes = nextKeyBytes;
@@ -148,17 +163,20 @@ namespace TextExtractor.Extraction
             {
                 result = result[new Index(startIndex + 3)..];
             }
-            int endIndex = result.IndexOf("\u0001");
+            else
+            {
+                // Some strings also start with "\0" instead of "{S}"
+                startIndex = result.IndexOf((char)0);
+                if (startIndex != -1)
+                {
+                    result = result[new Index(startIndex + 1)..];
+                }
+            }
+
+            int endIndex = result.IndexOf("\\u0001");
             if (endIndex != -1)
             {
                 result = result[..new Index(endIndex)];
-            }
-
-            // Some strings also start with "\0" instead of "{S}"
-            startIndex = result.IndexOf((char)0);
-            if (startIndex != -1)
-            {
-                result = result[new Index(startIndex + 1)..];
             }
 
             // Remove QD formatting tags
