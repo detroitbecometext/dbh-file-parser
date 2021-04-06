@@ -6,6 +6,7 @@
                 {
                     "startOffset": 88358948,
                     "endOffset": 91147612,
+                    "hasKeyListing": false,
                     "keys": [
                         "GUI_MAGAZINE_CENTURY_NORTHPOLE_TITLE",
                         "GUI_MAGAZINE_CENTURY_NORTHPOLE_SUBTITLE",
@@ -261,666 +262,9 @@
                     ]
                 },
                 {
-                    "startOffset": 84334636,
-                    "endOffset": 85141037,
-                    "keys": [
-                        "GUI_ACTION_USE",
-                        "GUI_ACTION_TAKE",
-                        "GUI_ACTION_PUTBACK",
-                        "GUI_ACTION_INTIMIDATE",
-                        "GUI_ACTION_PROTECTEMMA",
-                        "GUI_ACTION_GRABGUN",
-                        "GUI_ACTION_SHOT",
-                        "GUI_ACTION_AIM",
-                        "GUI_ACTION_OBSERVE",
-                        "GUI_ACTION_CANCEL",
-                        "GUI_ACTION_EXAMINE",
-                        "GUI_ACTION_TURNON",
-                        "GUI_ACTION_TURNOFF",
-                        "GUI_ACTION_EXIT",
-                        "GUI_ACTION_DRAWGUN",
-                        "GUI_ACTION_USEGUN",
-                        "GUI_ACTION_PUSHANDROID",
-                        "GUI_ACTION_RECONSTRUCT",
-                        "GUI_ACTION_GOOUT",
-                        "GUI_ACTION_WATCHTV",
-                        "GUI_ACTION_WATCH",
-                        "GUI_ACTION_SITDOWN",
-                        "GUI_ACTION_STANDUP",
-                        "GUI_ACTION_OPEN",
-                        "GUI_ACTION_THROW",
-                        "GUI_ACTION_GIVE",
-                        "GUI_ACTION_TALK",
-                        "GUI_ACTION_KNEELDOWN",
-                        "GUI_ACTION_ANALYZE",
-                        "GUI_ACTION_CLEARTABLE",
-                        "GUI_ACTION_EMPTY",
-                        "GUI_ACTION_MOVE",
-                        "GUI_ACTION_CLEAN",
-                        "GUI_ACTION_HANGOUT",
-                        "GUI_ACTION_TIDY",
-                        "GUI_ACTION_TURN",
-                        "GUI_ACTION_NEXT",
-                        "GUI_ACTION_PREVIOUS",
-                        "GUI_ACTION_BROWSE",
-                        "GUI_ACTION_SIGN",
-                        "GUI_ACTION_BENDDOWN",
-                        "GUI_ACTION_LIFT",
-                        "GUI_ACTION_UNFOLD",
-                        "GUI_ACTION_SERVE",
-                        "GUI_ACTION_PLAY",
-                        "GUI_ACTION_PAINT",
-                        "GUI_ACTION_IDENTIFY",
-                        "GUI_ACTION_SCAN",
-                        "GUI_ACTION_GETIN",
-                        "GUI_ACTION_CLIMB",
-                        "GUI_ACTION_GETOUT",
-                        "GUI_ACTION_HANG",
-                        "GUI_ACTION_PUSHAWAY",
-                        "GUI_ACTION_FLEE",
-                        "GUI_ACTION_RUB",
-                        "GUI_ACTION_BLOW",
-                        "GUI_ACTION_PUTDOWN",
-                        "GUI_ACTION_WASH",
-                        "GUI_ACTION_ENTER",
-                        "GUI_ACTION_LEAVE",
-                        "GUI_ACTION_LOOKAT",
-                        "GUI_ACTION_PICKUP",
-                        "GUI_ACTION_READ",
-                        "GUI_ACTION_KNOCK",
-                        "GUI_ACTION_ATTACK",
-                        "GUI_ACTION_TMP_DOLL",
-                        "GUI_ACTION_TMP_CHOCO",
-                        "GUI_ACTION_TMP_PLIERS",
-                        "GUI_ACTION_TMP_SCOTCH",
-                        "GUI_ACTION_TMP_CANS",
-                        "GUI_ACTION_TMP_CAMERA",
-                        "GUI_ACTION_TMP_CROWBAR",
-                        "GUI_ACTION_TMP_BLANKET",
-                        "GUI_ACTION_RING",
-                        "GUI_ACTION_BREAK",
-                        "GUI_ACTION_SOBERHIM",
-                        "GUI_ACTION_FONDLE",
-                        "GUI_ACTION_TMP_PLANKS",
-                        "GUI_ACTION_TMP_NEWSPAPER",
-                        "GUI_ACTION_TMP_MATCHES",
-                        "GUI_ACTION_PRECONSTRUCT",
-                        "GUI_ACTION_JUMP",
-                        "GUI_ACTION_CALL",
-                        "GUI_ACTION_AWAKE",
-                        "GUI_ACTION_HUG",
-                        "GUI_ACTION_STOP",
-                        "GUI_ACTION_TACKLE",
-                        "GUI_ACTION_01K_PICKUP",
-                        "GUI_ACTION_01K_DROP",
-                        "GUI_ACTION_01K_WASH",
-                        "GUI_ACTION_01K_BINTRASH",
-                        "GUI_ACTION_01K_TOSTREET",
-                        "GUI_ACTION_01K_TOHOUSE",
-                        "GUI_ACTION_01K_TOGARDEN",
-                        "GUI_ACTION_01K_TOTODD",
-                        "GUI_ACTION_01K_TOALICE",
-                        "GUI_ACTION_01K_TAKEBIN",
-                        "GUI_ACTION_01K_OPENFRIDGE",
-                        "GUI_ACTION_01K_TAKEBEER",
-                        "GUI_ACTION_01K_PUTBEER",
-                        "GUI_ACTION_01K_TIDYKNIFE",
-                        "GUI_ACTION_01K_LOOKDISHWASHER",
-                        "GUI_ACTION_01K_REORDERSHELF",
-                        "GUI_ACTION_01K_TALKTODD",
-                        "GUI_ACTION_01K_TALKALICE",
-                        "GUI_ACTION_01K_OPENWINDOW",
-                        "GUI_ACTION_01K_USEBAT",
-                        "GUI_ACTION_01K_TAKEBASKET",
-                        "GUI_ACTION_01K_FILLMACHINE",
-                        "GUI_ACTION_01K_TAKEDETERGENT",
-                        "GUI_ACTION_01K_MAKEBED",
-                        "GUI_ACTION_01K_CLEANMESS",
-                        "GUI_ACTION_01K_PUTGUITAR",
-                        "GUI_ACTION_01K_TIDYMEDICINE",
-                        "GUI_ACTION_01K_LOOKBOOK",
-                        "GUI_ACTION_01K_LOOKSIGNBOOK",
-                        "GUI_ACTION_01K_OPENCHEST",
-                        "GUI_ACTION_01K_COLLECTCLOTHES",
-                        "GUI_ACTION_01K_TOCORRIDOR",
-                        "GUI_ACTION_01K_REORDERPRODUCTS",
-                        "GUI_ACTION_01K_MOPFLOOR",
-                        "GUI_ACTION_01K_WATCHTV",
-                        "GUI_ACTION_02K_TAKEPLATES",
-                        "GUI_ACTION_02K_SERVEDINER",
-                        "GUI_ACTION_02K_ENTER",
-                        "GUI_ACTION_02K_KNOCK",
-                        "GUI_ACTION_02K_PUSHCHESTDRAWER",
-                        "GUI_ACTION_02K_TAKEGUN",
-                        "GUI_ACTION_02K_TAKEBAT",
-                        "GUI_ACTION_02K_TAKEKNIFE",
-                        "GUI_ACTION_02K_OPENDRAWER",
-                        "GUI_ACTION_02K_REMOVEKNIFE",
-                        "GUI_ACTION_02K_TAKEMAG",
-                        "GUI_ACTION_01K_TAKETRASHBAGS",
-                        "GUI_ACTION_08K_WINDOW",
-                        "GUI_ACTION_08K_RINGBELL",
-                        "GUI_ACTION_08K_TALKLUTHER",
-                        "GUI_ACTION_08K_TAKEALICE",
-                        "GUI_ACTION_08K_TALKALICE",
-                        "GUI_ACTION_08K_SCANALICE",
-                        "GUI_ACTION_08K_TALKROSE",
-                        "GUI_ACTION_08K_RELEASEALICE",
-                        "GUI_ACTION_08K_UNDRESSALICE",
-                        "GUI_ACTION_08K_TAKEPILL",
-                        "GUI_ACTION_08K_TAKEWATER",
-                        "GUI_ACTION_08K_CLOSECURTAINS",
-                        "GUI_ACTION_08K_SITDOWN",
-                        "GUI_ACTION_08K_STANDUP",
-                        "GUI_ACTION_08K_TOUCHHAND",
-                        "GUI_ACTION_08K_LOOKRA9",
-                        "GUI_ACTION_08K_LOOKTABLET",
-                        "GUI_ACTION_08K_TOSTOREROOM",
-                        "GUI_ACTION_08K_TOGARDEN",
-                        "GUI_ACTION_08K_LOOKCLOCK",
-                        "GUI_ACTION_08K_TVON",
-                        "GUI_ACTION_08K_TVOFF",
-                        "GUI_ACTION_08K_LOOKPHOTO",
-                        "GUI_ACTION_08K_LOOKOUTFITS",
-                        "GUI_ACTION_08K_INSPECTFURNITURE",
-                        "GUI_ACTION_08K_CLOSEFURNITURE",
-                        "GUI_ACTION_08K_TIDYOUTFITS",
-                        "GUI_ACTION_08K_OPENDOOR",
-                        "GUI_ACTION_08K_TAKECUP",
-                        "GUI_ACTION_08K_TAKECUP2",
-                        "GUI_ACTION_08K_TOCORRIDOR",
-                        "GUI_ACTION_08K_TOGUESTROOM",
-                        "GUI_ACTION_10C_LEAVECAR",
-                        "GUI_ACTION_10C_TALKPERKINS",
-                        "GUI_ACTION_10C_LOOKFURNITURE",
-                        "GUI_ACTION_10C_LOOKCUP",
-                        "GUI_ACTION_10C_LOOKSHOVEL",
-                        "GUI_ACTION_10C_LOOKTAGS",
-                        "GUI_ACTION_10C_LOOKBLOOD",
-                        "GUI_ACTION_10C_ANALYZEBLOOD",
-                        "GUI_ACTION_10C_TOOUTSIDE",
-                        "GUI_ACTION_10C_LOOKBED",
-                        "GUI_ACTION_10C_LOOKPLATE",
-                        "GUI_ACTION_10C_LOOKPILLS",
-                        "GUI_ACTION_10C_EXAMINEPLANKS",
-                        "GUI_ACTION_10C_RECONSTRUCT",
-                        "GUI_ACTION_10C_EXAMINEPOTS",
-                        "GUI_ACTION_10C_EXAMINETABLE",
-                        "GUI_ACTION_10C_MOVETABLE",
-                        "GUI_ACTION_10C_PUSHCLOSET",
-                        "GUI_ACTION_10C_ACTIVATEPANEL",
-                        "GUI_ACTION_HIDE",
-                        "GUI_ACTION_VOID",
-                        "GUI_ACTION_GETUP",
-                        "GUI_ACTION_BACK",
-                        "GUI_ACTION_01K_SAVE",
-                        "GUI_ACTION_SAVE",
-                        "GUI_ACTION_03K_WAKEUP",
-                        "GUI_ACTION_03K_SEARCH",
-                        "GUI_ACTION_03K_REMOVE",
-                        "GUI_ACTION_03K_CLIMB",
-                        "GUI_ACTION_03K_KISS",
-                        "GUI_ACTION_03K_HANG",
-                        "GUI_ACTION_03K_STEAL",
-                        "GUI_ACTION_03K_HOLDUP",
-                        "GUI_ACTION_03K_GETDRESSED",
-                        "GUI_ACTION_03K_MAKEBED",
-                        "GUI_ACTION_03K_STAYAWAKE",
-                        "GUI_ACTION_03K_FIXLEAK",
-                        "GUI_ACTION_CLOSE",
-                        "GUI_ACTION_BLOCK",
-                        "GUI_ACTION_GRAB",
-                        "GUI_ACTION_PULL",
-                        "GUI_ACTION_STRUGGLE",
-                        "GUI_ACTION_LEAN",
-                        "GUI_ACTION_PUSH",
-                        "GUI_ACTION_SEARCHCONTACT",
-                        "GUI_ACTION_SEARCH",
-                        "GUI_ACTION_02K_RESTRAIN",
-                        "GUI_ACTION_02K_PUSH",
-                        "GUI_ACTION_02K_CHOKE",
-                        "GUI_ACTION_02K_SLAM",
-                        "GUI_ACTION_02K_INTERPOSE",
-                        "GUI_ACTION_08M_ACTNATURAL",
-                        "GUI_ACTION_08M_HIDE",
-                        "GUI_ACTION_08M_RUNAWAY",
-                        "GUI_ACTION_08M_HACK",
-                        "GUI_ACTION_08M_DESTROY",
-                        "GUI_ACTION_08M_TURNOFF",
-                        "GUI_ACTION_08M_TAG",
-                        "GUI_ACTION_08M_MARKUSMESSAGE",
-                        "GUI_ACTION_08M_PUSHCAR",
-                        "GUI_ACTION_08M_FLIPCAR",
-                        "GUI_ACTION_08M_DRONEREC",
-                        "GUI_ACTION_PANEL",
-                        "GUI_ACTION_HACK",
-                        "GUI_ACTION_SIMULATE",
-                        "GUI_ACTION_09K_ACCELERATE",
-                        "GUI_ACTION_09K_HIDE",
-                        "GUI_ACTION_09K_HIDELUTHER",
-                        "GUI_ACTION_09K_PLUNGE",
-                        "GUI_ACTION_09K_SURRENDER",
-                        "GUI_ACTION_09K_PROTECTALICE",
-                        "GUI_ACTION_09K_MOTOR",
-                        "GUI_ACTION_09K_LUTHER",
-                        "GUI_ACTION_09K_FOODCASE",
-                        "GUI_ACTION_09K_PADDLE",
-                        "GUI_ACTION_11M_STARTATK",
-                        "GUI_ACTION_HITHERE",
-                        "GUI_ACTION_CONVERT",
-                        "GUI_ACTION_INTERPOSE",
-                        "GUI_ACTION_TRANSFER",
-                        "GUI_ACTION_SHOOT",
-                        "GUI_ACTION_UP",
-                        "GUI_ACTION_CRAWL",
-                        "GUI_ACTION_SLEEP",
-                        "GUI_ACTION_PICKUPFLAG",
-                        "GUI_ACTION_08K_PRECONSTRUCT",
-                        "GUI_ACTION_08K_EXECUTE",
-                        "GUI_ACTION_02K_PULL",
-                        "GUI_ACTION_04C_START",
-                        "GUI_ACTION_08M_FLAG",
-                        "GUI_ACTION_08M_PYRE",
-                        "GUI_ACTION_MUTE",
-                        "GUI_ACTION_UNMUTE",
-                        "GUI_ACTION_08M_SMOKE",
-                        "GUI_ACTION_08M_GETOUT",
-                        "GUI_ACTION_08M_LOOK",
-                        "GUI_ACTION_05C_CHASERUPERT",
-                        "GUI_ACTION_05C_SAVEHANK",
-                        "GUI_ACTION_08M_CLIMB",
-                        "GUI_ACTION_03K_MOTEL",
-                        "GUI_ACTION_03K_SQUAT",
-                        "GUI_ACTION_03K_WASTELAND",
-                        "GUI_ACTION_03K_SUPERMARKET",
-                        "GUI_ACTION_03K_LAVOMATIC",
-                        "GUI_ACTION_03K_COFFEESHOP",
-                        "GUI_ACTION_03K_PHARMACY",
-                        "GUI_ACTION_03K_PMSTATION",
-                        "GUI_ACTION_03K_BUSSTOP",
-                        "GUI_ACTION_03K_GUN",
-                        "GUI_ACTION_03K_DIVERSION",
-                        "GUI_ACTION_03K_EXIT",
-                        "GUI_ACTION_08M_TEAROFF",
-                        "GUI_ACTION_REACH",
-                        "GUI_ACTION_UNLOCK",
-                        "GUI_ACTION_08M_NETWORK",
-                        "GUI_ACTION_LISTEN",
-                        "GUI_ACTION_BENCH",
-                        "GUI_ACTION_SCREEN",
-                        "GUI_ACTION_BUSSTOP",
-                        "GUI_ACTION_BURN",
-                        "GUI_ACTION_STATUE",
-                        "GUI_ACTION_WINDOW",
-                        "GUI_ACTION_FLOORLAMP",
-                        "GUI_ACTION_CAR",
-                        "GUI_ACTION_STEAL",
-                        "GUI_ACTION_FORCE",
-                        "GUI_ACTION_FILL",
-                        "GUI_ACTION_COMFORT",
-                        "GUI_ACTION_HOLD",
-                        "GUI_ACTION_RELEASE",
-                        "GUI_ACTION_CUT",
-                        "GUI_ACTION_REMOVE",
-                        "GUI_ACTION_LOOK",
-                        "GUI_ACTION_KISS",
-                        "GUI_ACTION_SLEEPHERE",
-                        "GUI_ACTION_PUT",
-                        "GUI_ACTION_DROP",
-                        "GUI_ACTION_SETUPBED",
-                        "GUI_ACTION_WAKEUP",
-                        "GUI_ACTION_KNEEL",
-                        "GUI_ACTION_HELP",
-                        "GUI_ACTION_BLACKOUT",
-                        "GUI_ACTION_GETDOWN",
-                        "GUI_ACTION_GOTHROUGH",
-                        "GUI_ACTION_SHAKE",
-                        "GUI_ACTION_KILLGUARD",
-                        "GUI_ACTION_RUNAWAY",
-                        "GUI_ACTION_GRABANDHIDE",
-                        "GUI_ACTION_PULLOUT",
-                        "GUI_ACTION_KIOSK",
-                        "GUI_ACTION_CORNELIUSFLASH",
-                        "GUI_ACTION_BIGSCREENSPEECH",
-                        "GUI_ACTION_JERICHOFLASH",
-                        "GUI_ACTION_RUPERTBOOK",
-                        "GUI_ACTION_STATUETTE",
-                        "GUI_ACTION_CHECK",
-                        "GUI_ACTION_MAKE",
-                        "GUI_ACTION_CARRY",
-                        "GUI_ACTION_SLIDE",
-                        "GUI_ACTION_INSERTCOMPONENT",
-                        "GUI_ACTION_TAKECOMPONENT",
-                        "GUI_ACTION_KEY",
-                        "GUI_ACTION_ANDROIDSTATION",
-                        "GUI_ACTION_COLLECT",
-                        "GUI_ACTION_08M_SIMULATE",
-                        "GUI_ACTION_03K_ALICEHEAT",
-                        "GUI_ACTION_03K_FAHRENHEIT",
-                        "GUI_ACTION_03K_CELSIUS",
-                        "GUI_ACTION_03K_HEATUNIT",
-                        "GUI_ACTION_ABANDONMISSION",
-                        "GUI_ACTION_SCANMEMORY",
-                        "GUI_ACTION_CONNECT",
-                        "GUI_ACTION_COPY",
-                        "GUI_ACTION_TAKECOMPONENT4717",
-                        "GUI_ACTION_TAKECOMPONENT9164",
-                        "GUI_ACTION_TAKECOMPONENT3983",
-                        "GUI_ACTION_TAKECOMPONENT6755",
-                        "GUI_ACTION_TOUCH",
-                        "GUI_ACTION_CROSS",
-                        "GUI_ACTION_02K_HIDE",
-                        "GUI_ACTION_02K_MOVE",
-                        "GUI_ACTION_PLACE",
-                        "GUI_ACTION_03C_LEAVE",
-                        "GUI_ACTION_ACCESS",
-                        "GUI_ACTION_COFFEE",
-                        "GUI_ACTION_PET",
-                        "GUI_ACTION_TAKEGUN",
-                        "GUI_ACTION_LOOKOUTSIDE",
-                        "GUI_ACTION_GIVECHOCO",
-                        "GUI_ACTION_LUTHER",
-                        "GUI_ACTION_ALICE",
-                        "GUI_ACTION_RADIO",
-                        "GUI_ACTION_GUN",
-                        "GUI_ACTION_PROTECTLUTHER",
-                        "GUI_ACTION_NEGOCIATE",
-                        "GUI_ACTION_RUN",
-                        "GUI_ACTION_KNOCKOUT",
-                        "GUI_ACTION_GIVEPAPERS",
-                        "GUI_ACTION_ROSE",
-                        "GUI_ACTION_JERRY",
-                        "GUI_ACTION_TOILETS",
-                        "GUI_ACTION_ROW",
-                        "GUI_ACTION_WALKTOEDGE",
-                        "GUI_ACTION_REVIVE",
-                        "GUI_ACTION_UNDRESS",
-                        "GUI_ACTION_DESACTIVATE",
-                        "GUI_ACTION_PAY",
-                        "GUI_ACTION_STARTFIRE",
-                        "GUI_ACTION_PIN",
-                        "GUI_ACTION_01M_PAINTSTATUE",
-                        "GUI_ACTION_01M_PAINTPAINT",
-                        "GUI_ACTION_01M_PAINTDESK",
-                        "GUI_ACTION_STARTENGINE",
-                        "GUI_ACTION_SHIELD",
-                        "GUI_ACTION_03K_OTHERWAY",
-                        "GUI_ACTION_VALIDATEPATH",
-                        "GUI_ACTION_TESTSUCCESS",
-                        "GUI_ACTION_TESTFAIL",
-                        "GUI_ACTION_LOOKAROUND",
-                        "GUI_ACTION_TRY",
-                        "GUI_ACTION_01M_KEATS",
-                        "GUI_ACTION_01M_SHAKESPEARE",
-                        "GUI_ACTION_01M_PLATO",
-                        "GUI_ACTION_SPIN",
-                        "GUI_ACTION_03M_CLIMBFAIL",
-                        "GUI_ACTION_TRYCLIMBING",
-                        "GUI_ACTION_INVESTIGATE",
-                        "GUI_ACTION_EXAMINE02",
-                        "GUI_ACTION_REMOVECOAT",
-                        "GUI_ACTION_01M_STOPPLAYING",
-                        "GUI_ACTION_02M_PUSHLEO",
-                        "GUI_ACTION_VENTILATE",
-                        "GUI_ACTION_OBSERVE02",
-                        "GUI_ACTION_03C_LEAVEROOM",
-                        "GUI_ACTION_GRABPAPER",
-                        "GUI_ACTION_GETINBED",
-                        "GUI_ACTION_WALKAWAY",
-                        "GUI_ACTION_DIAGNOSIS",
-                        "GUI_ACTION_FINDSOMETHINGELSE",
-                        "GUI_ACTION_FACESCAN",
-                        "GUI_ACTION_BBLOODSCAN",
-                        "GUI_ACTION_SAMPLE",
-                        "GUI_ACTION_02M_OBEYCARL",
-                        "GUI_ACTION_01M_WAITFORBUS",
-                        "GUI_ACTION_TUCKIN",
-                        "GUI_ACTION_KILL",
-                        "GUI_ACTION_TAKEHEART",
-                        "GUI_ACTION_TAKELOG",
-                        "GUI_ACTION_TAKETRAY",
-                        "GUI_ACTION_SPARE",
-                        "GUI_ACTION_KICK",
-                        "GUI_ACTION_KNOCKOVER",
-                        "GUI_ACTION_KEEP",
-                        "GUI_ACTION_LEVERAGESELF",
-                        "GUI_ACTION_TAKECARCASS",
-                        "GUI_ACTION_STORAGE",
-                        "GUI_ACTION_CAGE",
-                        "GUI_ACTION_DETACH",
-                        "GUI_ACTION_TOCORRIDOR",
-                        "GUI_ACTION_STAYHIDDEN",
-                        "GUI_ACTION_SHOTGUN",
-                        "GUI_ACTION_KEEPWATCHING",
-                        "GUI_ACTION_FRONTDOOR",
-                        "GUI_ACTION_BACKDOOR",
-                        "GUI_ACTION_LOOKINSIDE",
-                        "GUI_ACTION_OPENCELL",
-                        "GUI_ACTION_GETCLOSER",
-                        "GUI_ACTION_APPROACH",
-                        "GUI_ACTION_TOBACKYARD",
-                        "GUI_ACTION_TOBEDROOM",
-                        "GUI_ACTION_TOSTORAGE",
-                        "GUI_ACTION_TOBIGROOM",
-                        "GUI_ACTION_TOBATHROOM",
-                        "GUI_ACTION_TOWORKSHOP",
-                        "GUI_ACTION_CHARGE",
-                        "GUI_ACTION_REACTIVATE",
-                        "GUI_ACTION_INSERT",
-                        "GUI_ACTION_PLUG",
-                        "GUI_ACTION_REBOOT",
-                        "GUI_ACTION_RIPOFF",
-                        "GUI_ACTION_POUR",
-                        "GUI_ACTION_LOCK",
-                        "GUI_ACTION_LIEWITHALICE",
-                        "GUI_ACTION_LEAVEHERSPACE",
-                        "GUI_ACTION_SETUP",
-                        "GUI_ACTION_PROBE",
-                        "GUI_ACTION_PULLOUT2",
-                        "GUI_ACTION_CHECKLASTPOSITION",
-                        "GUI_ACTION_CHECKDIODE",
-                        "GUI_ACTION_STEPOUT",
-                        "GUI_ACTION_GETHIMUP",
-                        "GUI_ACTION_COLOR01",
-                        "GUI_ACTION_COLOR02",
-                        "GUI_ACTION_COLOR03",
-                        "GUI_ACTION_SWITCHON",
-                        "GUI_ACTION_INSERTKEY",
-                        "GUI_ACTION_HIDEEVIDENCE",
-                        "GUI_ACTION_HIDEANDROIDS",
-                        "GUI_ACTION_OPENNOW",
-                        "GUI_ACTION_GOBACKINSIDE",
-                        "GUI_ACTION_COMPUTE",
-                        "GUI_ACTION_TEAR",
-                        "GUI_ACTION_RECONNECT",
-                        "GUI_ACTION_YELLOWCABLE",
-                        "GUI_ACTION_BLUECABLE",
-                        "GUI_ACTION_CLUE",
-                        "GUI_ACTION_ARREST",
-                        "GUI_ACTION_REASSURE",
-                        "GUI_ACTION_SILENCE",
-                        "GUI_ACTION_SHIELDALICE",
-                        "GUI_ACTION_NEXTMAGAZINE",
-                        "GUI_ACTION_READARTICLE",
-                        "GUI_ACTION_PREVIOUSMAGAZINE",
-                        "GUI_ACTION_PEEP",
-                        "GUI_ACTION_DRINK",
-                        "GUI_ACTION_MONEY",
-                        "GUI_ACTION_BIRD",
-                        "GUI_ACTION_DRAW",
-                        "GUI_ACTION_GREENCABLE",
-                        "GUI_ACTION_ACTIVATE",
-                        "GUI_ACTION_WATER",
-                        "GUI_ACTION_NAPKIN",
-                        "GUI_ACTION_2208",
-                        "GUI_ACTION_1022",
-                        "GUI_ACTION_1503",
-                        "GUI_ACTION_1101",
-                        "GUI_ACTION_GARDEN",
-                        "GUI_ACTION_9402",
-                        "GUI_ACTION_5857",
-                        "GUI_ACTION_2477",
-                        "GUI_ACTION_6755",
-                        "GUI_ACTION_GRABSTICK",
-                        "GUI_ACTION_PUTOUTFIRE",
-                        "GUI_ACTION_SHAREMEMORY",
-                        "GUI_ACTION_RETRIEVE",
-                        "GUI_ACTION_07M_TOOFFICES",
-                        "GUI_ACTION_07M_TAKESUCKERS",
-                        "GUI_ACTION_07M_SHOOTGRAPPLE",
-                        "GUI_ACTION_07M_LASERSAW",
-                        "GUI_ACTION_07M_TAKELASERSAW",
-                        "GUI_ACTION_TOMAINACCESS",
-                        "GUI_ACTION_07M_AMBUSH",
-                        "GUI_ACTION_07M_REMOVESKIN",
-                        "GUI_ACTION_07M_STARTSPEECH",
-                        "GUI_ACTION_STEPBACK",
-                        "GUI_ACTION_9164",
-                        "GUI_ACTION_1156",
-                        "GUI_ACTION_4717",
-                        "GUI_ACTION_3251",
-                        "GUI_ACTION_8005",
-                        "GUI_ACTION_9405",
-                        "GUI_ACTION_3368",
-                        "GUI_ACTION_1078",
-                        "GUI_ACTION_3983",
-                        "GUI_ACTION_4409",
-                        "GUI_ACTION_8067",
-                        "GUI_ACTION_RUSH",
-                        "GUI_ACTION_1604",
-                        "GUI_ACTION_1009",
-                        "GUI_ACTION_2104",
-                        "GUI_ACTION_1106",
-                        "GUI_ACTION_07M_ORDER",
-                        "GUI_ACTION_SWEEP",
-                        "GUI_ACTION_HELPALICE",
-                        "GUI_ACTION_STAND",
-                        "GUI_ACTION_SIT",
-                        "GUI_ACTION_GIVECOOKIE",
-                        "GUI_RIP_HEAD_OFF",
-                        "GUI_ACTION_LEAVEROOM",
-                        "GUI_ACTION_OVERLOAD",
-                        "GUI_ACTION_READCOVER",
-                        "GUI_ACTION_09C_CHECKCCTV",
-                        "GUI_ACTION_INTERROGATE",
-                        "GUI_ACTION_CHECKGUN",
-                        "GUI_ACTION_TOUCHARM",
-                        "GUI_ACTION_JOINALICE",
-                        "GUI_ACTION_THREATEN",
-                        "GUI_ACTION_TRYAGAIN",
-                        "GUI_ACTION_PAGENEXT",
-                        "GUI_ACTION_PAGEPREVIOUS",
-                        "GUI_ACTION_PUSHBUTTON",
-                        "GUI_ACTION_TAKEFLASHLIGHT",
-                        "GUI_ACTION_LIGHT",
-                        "GUI_ACTION_ENTERBARRICADE",
-                        "GUI_ACTION_DISARM",
-                        "GUI_ACTION_SAMPLE_VOICE",
-                        "GUI_ACTION_METALBAR",
-                        "GUI_ACTION_MAGAZINECOVER",
-                        "GUI_ACTION_MAGAZINEPAGE01",
-                        "GUI_ACTION_MAGAZINEPAGE02",
-                        "GUI_ACTION_CHANGESIDE",
-                        "GUI_ACTION_MOVELEFT",
-                        "GUI_ACTION_REACHGRENADE",
-                        "GUI_ACTION_ARM",
-                        "GUI_ACTION_PLANT",
-                        "GUI_ACTION_DIVE",
-                        "GUI_ACTION_REVENGE",
-                        "GUI_ACTION_CLUE_FIRST",
-                        "GUI_ACTION_02A_LOOKFORALICE",
-                        "GUI_ACTION_02A_SAVEYOURSELF",
-                        "GUI_ACTION_HUMAN",
-                        "GUI_ACTION_04K_RALPHWATCH",
-                        "GUI_ACTION_01C_PLAYVIDEO",
-                        "GUI_ACTION_05K_RUSH",
-                        "GUI_ACTION_GETDOWN2",
-                        "GUI_ACTION_07M_CUT",
-                        "GUI_ACTION_09K_CALL",
-                        "GUI_ACTION_08M_BREAK",
-                        "GUI_ACTION_01M_PLAYPIANO",
-                        "GUI_ACTION_01M_PLAYCHESS",
-                        "GUI_ACTION_07K_LIFTALICE",
-                        "GUI_ACTION_03K_DROP",
-                        "GUI_ACTION_03C_RESEARCH_LT_ANDERSON",
-                        "GUI_ACTION_MOVEBIN",
-                        "GUI_ACTION_06M_LIFT",
-                        "GUI_ACTION_06M_PIN",
-                        "GUI_ACTION_CALLLIFT",
-                        "GUI_ACTION_07M_DROP",
-                        "GUI_ACTION_CALL2",
-                        "GUI_ACTION_SETUPGUN",
-                        "GUI_ACTION_11M_REACH",
-                        "GUI_ACTION_01M_WHEELCHAIR",
-                        "GUI_ACTION_07M_TOBATHROOM",
-                        "GUI_ACTION_08M_BUILDPYRE",
-                        "GUI_ACTION_09K_ROW",
-                        "GUI_ACTION_LAUNCH",
-                        "GUI_ACTION_06C_TURNON",
-                        "GUI_ACTION_04K_UNLOCK",
-                        "GUI_ACTION_01K_REPORTTODD",
-                        "GUI_ACTION_08K_ALICE_WAIT",
-                        "GUI_ACTION_08K_ALICE_GETALICEOUT",
-                        "GUI_ACTION_MASH",
-                        "GUI_ACTION_08K_HIDE",
-                        "GUI_ACTION_09K_REMOVE",
-                        "GUI_ACTION_09K_EXAMINE",
-                        "GUI_ACTION_01M_LEAVE",
-                        "GUI_ACTION_08M_REMOVESHOES",
-                        "GUI_ACTION_ENTERBOAT",
-                        "GUI_ACTION_PUSHBOAT",
-                        "GUI_ACTION_03A_PLAY",
-                        "GUI_ACTION_03K_PULL",
-                        "GUI_ACTION_07M_PUSH",
-                        "GUI_ACTION_EXITGUI",
-                        "GUI_ACTION_BROWSE_FILE",
-                        "GUI_ACTION_05M_GETDOWN",
-                        "GUI_ACTION_CUTHAIR",
-                        "GUI_ACTION_07M_TAKE",
-                        "GUI_ACTION_13C_EXECUTE",
-                        "GUI_ACTION_EXITCAR",
-                        "GUI_ACTION_REMOVE2",
-                        "GUI_ACTION_TAKE2",
-                        "GUI_ACTION_KNOCKHARD",
-                        "GUI_ACTION_PLACE2",
-                        "GUI_ACTION_PICKUPFROMABOX",
-                        "GUI_ACTION_GRABLADDER",
-                        "GUI_ACTION_05C_REMOVE",
-                        "GUI_ACTION_08M_BREAKPADLOCK",
-                        "GUI_ACTION_03K_DROPCLOTH",
-                        "GUI_ACTION_04K_STOPBATH",
-                        "GUI_ACTION_03K_TURNOFF",
-                        "GUI_ACTION_05M_REMOVE",
-                        "GUI_ACTION_12C_TAKE",
-                        "GUI_ACTION_02C_OPEN",
-                        "GUI_ACTION_03M_GETUP",
-                        "GUI_ACTION_02K_UNLOCK",
-                        "GUI_ACTION_07K_RIPOFF",
-                        "GUI_ACTION_12C_PUTBACK",
-                        "GUI_ACTION_09K_PICKUP",
-                        "GUI_ACTION_10M_PUSH",
-                        "GUI_ACTION_03K_UNLOCK",
-                        "GUI_ACTION_06M_UNLOCK",
-                        "GUI_ACTION_08C_GETOUT",
-                        "GUI_ACTION_03K_GRAB",
-                        "GUI_ACTION_06C_UNLOCK",
-                        "GUI_ACTION_11M_PUSH",
-                        "GUI_ACTION_03C_CONNECT",
-                        "GUI_ACTION_01K_TAKE",
-                        "GUI_ACTION_04K_RIPOFF",
-                        "GUI_ACTION_07M_GIVE",
-                        "GUI_ACTION_05M_GETUP",
-                        "GUI_ACTION_NEXTCHANNEL",
-                        "GUI_ACTION_05K_ENTER",
-                        "GUI_ACTION_TURNLIGHTON",
-                        "GUI_ACTION_03M_GETOUT",
-                        "GUI_ACTION_01C_LEAVE",
-                        "GUI_ACTION_06M_EXIT"
-                    ]
-                },
-                {
                     "startOffset": 86063146,
                     "endOffset": 88357387,
+                    "hasKeyListing": false,
                     "keys": [
                         "GUI_MENU_NEWGAME",
                         "GUI_MENU_CONTINUE",
@@ -1596,6 +940,7 @@
                 {
                     "startOffset": 2038198523,
                     "endOffset": 2038210174,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0916K_BORDERDESK_CUSTOMSCONTROL_PC_X09KCUSTOMSOFFICER_PAPERSPLEASE",
                         "X0916K_BORDERDESK_CUSTOMSCONTROL_VO_X09KSOLDIERBORDER03_PAPERSPLEASE"
@@ -1609,6 +954,7 @@
                 {
                     "startOffset": 299717076,
                     "endOffset": 299739146,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_CONNOR_ANDROIDE_PC_X02CCONNOR_FOUND",
                         "X0201C_CONNOR_ANDROIDE_PC_X02CANDROID_FOUND",
@@ -1619,6 +965,7 @@
                 {
                     "startOffset": 319871246,
                     "endOffset": 319890007,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_CONNOR_EXIT_PC_X02CCONNOR_WAYOUT",
                         "X0201C_CONNOR_EXIT_PC_X02CHANK_WAYOUT"
@@ -1627,6 +974,7 @@
                 {
                     "startOffset": 341868812,
                     "endOffset": 341886618,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_CONNOR_BLOOD_PC_X02CCONNOR_ANALYSE",
                         "X0201C_CONNOR_BLOOD_PC_X02CHANK_ANALYSE"
@@ -1635,6 +983,7 @@
                 {
                     "startOffset": 362617098,
                     "endOffset": 362626421,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_CONNOR_WOUND_FA_X02CCONNOR_CONNOR",
                         "X0201C_CONNOR_WOUND_FA_X02CHANK_HANK"
@@ -1643,6 +992,7 @@
                 {
                     "startOffset": 362631868,
                     "endOffset": 362830487,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_RECON_MAIN_PC_X02CCONNOR_02BAT",
                         "X0201C_RECON_MAIN_PC_X02CHANK_02BAT",
@@ -1693,6 +1043,7 @@
                 {
                     "startOffset": 632944893,
                     "endOffset": 632955226,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_CONNOR_CHAIR_PC_X02CHANK_CARRY01",
                         "X0201C_CONNOR_CHAIR_FA_X02CCONNOR_CARRY02"
@@ -1701,6 +1052,7 @@
                 {
                     "startOffset": 643086167,
                     "endOffset": 643165719,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_PBY_LINES_FA_X02CBARGUY01_RAIN",
                         "X0201C_PBY_LINES_FA_X02CBARGUY02_WORSE",
@@ -1724,6 +1076,7 @@
                 {
                     "startOffset": 654770861,
                     "endOffset": 654832364,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_INSIDE_BODY_FA_X02CCHAD_CARLOSCHAD01",
                         "X0201C_INSIDE_BODY_FA_X02CCHAD_CARLOSCHAD02",
@@ -1736,6 +1089,7 @@
                 {
                     "startOffset": 654833817,
                     "endOffset": 654838694,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_HANK_BODY_FA_X02CHANK_EXAMINE"
                     ]
@@ -1743,6 +1097,7 @@
                 {
                     "startOffset": 654840170,
                     "endOffset": 654856650,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_HANK_WRITING_FA_X02CHANK_EXAMINE01",
                         "X0201C_HANK_WRITING_FA_X02CHARVEY_EXAMINE02",
@@ -1752,6 +1107,7 @@
                 {
                     "startOffset": 654858604,
                     "endOffset": 654874958,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0201C_HANK_COKE_FA_X02CHANK_EXAMINE01",
                         "X0201C_HANK_COKE_FA_X02CHARVEY_EXAMINE02",
@@ -1761,6 +1117,7 @@
                 {
                     "startOffset": 1192444057,
                     "endOffset": 1192448042,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_CNRBAD_FAILCHASE_VO_X02ASWAT09_DIE"
                     ]
@@ -1768,6 +1125,7 @@
                 {
                     "startOffset": 1195735948,
                     "endOffset": 1195777916,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_SAVE_ANDROIDS1_FA_X02AANDM03_EXECUTIONAND",
                         "X0205A_SAVE_ANDROIDS1_FA_X02AMARKUS_SUCCESSM",
@@ -1782,6 +1140,7 @@
                 {
                     "startOffset": 1214136788,
                     "endOffset": 1214154349,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_SAVE_ANDROIDS2_FA_X02AANDW03_SURRENDER",
                         "X0205A_SAVE_ANDROIDS2_FA_X02AANDW03_MARKUS",
@@ -1792,6 +1151,7 @@
                 {
                     "startOffset": 1214155328,
                     "endOffset": 1214177180,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0913K_ESCAPE_BARBEDWIRE_VO_X09KSWATM09_STOP",
                         "X0913K_ESCAPE_BARBEDWIRE_FA_X09KALICE_MUM",
@@ -1803,6 +1163,7 @@
                 {
                     "startOffset": 1214178612,
                     "endOffset": 1214222652,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0502C_PBY_LINES_FA_X05CCIVILIANMAN01_THANKS",
                         "X0502C_PBY_LINES_VO_X05CWITNESSM01_01REACTM02",
@@ -1821,6 +1182,7 @@
                 {
                     "startOffset": 1214225284,
                     "endOffset": 1214260684,
+                    "hasKeyListing": true,
                     "keys": [
                         "X1102M_PBY_REVOLUTION_VO_X11MANDROID01_REVOLUTION01",
                         "X1102M_PBY_REVOLUTION_VO_X11MANDROID02_REVOLUTION02",
@@ -1835,6 +1197,7 @@
                 {
                     "startOffset": 1219076780,
                     "endOffset": 1219105912,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_MARKUS_JOSH_PC_X02AMARKUS_FEAR",
                         "X0205A_MARKUS_JOSH_PC_X02AJOSH_FEAR",
@@ -1851,6 +1214,7 @@
                 {
                     "startOffset": 1227873376,
                     "endOffset": 1227996120,
+                    "hasKeyListing": true,
                     "keys": [
                         "X5072X_MILITARY_FIGHT_VO_MANAWI_CONTACT01",
                         "X5072X_MILITARY_FIGHT_VO_MANAWI_ORDERFIRE01",
@@ -1886,6 +1250,7 @@
                 {
                     "startOffset": 1228424932,
                     "endOffset": 1228509853,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0204A_EXIT_PLAYDEAD_FA_X02AKARA_DONTMOVE",
                         "X0204A_EXIT_PLAYDEAD_FA_X02AANDM04_DONTKILL",
@@ -1908,6 +1273,7 @@
                 {
                     "startOffset": 1228515048,
                     "endOffset": 1228650220,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_PBY_ASSAULT_VO_X02AAND01_PANIC01",
                         "X0205A_PBY_ASSAULT_VO_X02AAND02_PANIC02",
@@ -1949,6 +1315,7 @@
                 {
                     "startOffset": 1242915176,
                     "endOffset": 1242927705,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_CONNOR_EXECUTION_PC_X02ASIMON_CONNORDEADM",
                         "X0205A_CONNOR_EXECUTION_PC_X02AJOSH_CONNORDEADM",
@@ -1958,6 +1325,7 @@
                 {
                     "startOffset": 1242929620,
                     "endOffset": 1242927703,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0913K_ESCAPE_TOOLONG_PC_X09KALICE_FAIL",
                         "X0913K_ESCAPE_TOOLONG_PC_X09KKARA_FAIL",
@@ -1968,6 +1336,7 @@
                 {
                     "startOffset": 1252889044,
                     "endOffset": 1252906649,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0914K_SAVINGAND_GAMEOVER01_VO_X09KSWATM17_DONTMOVE",
                         "X0914K_SAVINGAND_GAMEOVER01_VO_X09KSWATM18_HIDDEN",
@@ -1978,6 +1347,7 @@
                 {
                     "startOffset": 1256411388,
                     "endOffset": 1256420762,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_CONNOR_NOTFLEEING_FA_X02ACONNOR_GAMEOVER02",
                         "X0205A_CONNOR_NOTFLEEING_VO_X02ASWAT01_GAMEOVERRUN"
@@ -1986,6 +1356,7 @@
                 {
                     "startOffset": 1264335100,
                     "endOffset": 1264342923,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_CONNOR_JOSH_PC_X02ACONNOR_ALLOVER",
                         "X0205A_CONNOR_JOSH_PC_X02AJOSH_ALLOVER"
@@ -1994,6 +1365,7 @@
                 {
                     "startOffset": 1277300880,
                     "endOffset": 1277305340,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0205A_MARKUS_NOTFLEEING_VO_X02ASWAT01_GAMEOVER"
                     ]
@@ -2001,6 +1373,7 @@
                 {
                     "startOffset": 1277307132,
                     "endOffset": 1277319531,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0204A_EXIT_INTRO_FA_X02AKARA_WAYOUT",
                         "X0204A_EXIT_INTRO_VO_X02ASWAT06_STOP"
@@ -2009,6 +1382,7 @@
                 {
                     "startOffset": 1285673320,
                     "endOffset": 1285690316,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0802M_DEMONSTR_COMEBACK_VO_X08MMARLA_INSTRUCTIONS",
                         "X0802M_DEMONSTR_COMEBACK_VO_X08MMARLA_TIME",
@@ -2018,12 +1392,2634 @@
                 {
                     "startOffset": 1304853056,
                     "endOffset": 1304884973,
+                    "hasKeyListing": true,
                     "keys": [
                         "X0914K_SNOWSTREET_COPS_FA_X09KANDM17_DONTHURT",
                         "X0914K_SNOWSTREET_COPS_VO_X09KSWATM11_SHUTUP01",
                         "X0914K_SNOWSTREET_COPS_VO_X09KSWATM12_MORE01",
                         "X0914K_SNOWSTREET_COPS_VO_X09KSWATM11_SHUTUP02",
                         "X0914K_SNOWSTREET_COPS_VO_X09KSWATM12_MORE02"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d04",
+            "sections": [
+                {
+                    "startOffset": 1073387880,
+                    "endOffset": 1073403677,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0603C_VOICE_EDENCLUB_VO_MANORA_BOX1",
+                        "X0603C_VOICE_EDENCLUB_VO_MANORA_BOX2",
+                        "X0603C_VOICE_EDENCLUB_VO_WOMLKE_WELCOME"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d05",
+            "sections": [
+                {
+                    "startOffset": 906253624,
+                    "endOffset": 906334312,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY01_MLOOP01",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MWOMBODY01_WLOOP01",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY02_MLOOP02",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY03_MLOOP03",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY07_MLOOP04",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY08_MLOOP05",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY09_MLOOP06",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MMANBODY10_MLOOP07",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MWOMBODY02_WLOOP02",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MWOMBODY03_WLOOP03",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MSEXBOTM_SEXBOTM",
+                        "X0302M_LANDFILL_ANDCHITCHAT_FA_X03MSEXBOTW_SEXBOTW"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d06",
+            "sections": [
+                {
+                    "startOffset": 859924633,
+                    "endOffset": 859928796,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_DEADANDROID_FA_X02ASKIT01AND01_DEAD"
+                    ]
+                },
+                {
+                    "startOffset": 860786832,
+                    "endOffset": 860791612,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_BLUEBLOOD_FA_X02ASKIT02AND02_NEED"
+                    ]
+                },
+                {
+                    "startOffset": 863130284,
+                    "endOffset": 863169452,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKITMDEAD_RUMORS_FA_X02ASKIT10AND01_LINE01",
+                        "X0202A_SKITMDEAD_RUMORS_FA_X02ASKIT10AND02_LINE02",
+                        "X0202A_SKITMDEAD_RUMORS_FA_X02ASKIT10AND03_LINE03",
+                        "X0202A_SKITMDEAD_RUMORS_FA_X02ASKIT10AND04_LINE04",
+                        "X0202A_SKITMDEAD_RUMORS_FA_X02ASKIT10AND05_LINE05",
+                        "X0202A_SKITMDEAD_RUMORS_FA_X02ASKIT10AND01_LINE06"
+                    ]
+                },
+                {
+                    "startOffset": 864764156,
+                    "endOffset": 864776441,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKITMDEAD_SHOCKED01_FA_X02ASKIT11AND01_TALKAND01",
+                        "X0202A_SKITMDEAD_SHOCKED01_PC_X02ASKIT11AND02_TALK"
+                    ]
+                },
+                {
+                    "startOffset": 875729256,
+                    "endOffset": 875749126,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_REVOLUTION01_PC_X02ASKIT04AND02_TALK",
+                        "X0202A_SKIT_REVOLUTION01_FA_X02ASKIT04AND01_TALKAND5A",
+                        "X0202A_SKIT_REVOLUTION01_FA_X02ASKIT04AND01_TALKAND5B"
+                    ]
+                },
+                {
+                    "startOffset": 875749628,
+                    "endOffset": 875769272,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_REVOLUTION02_PC_X02ASKIT05AND01_TALK",
+                        "X0202A_SKIT_REVOLUTION02_PC_X02ASKIT05AND02_TALK"
+                    ]
+                },
+                {
+                    "startOffset": 879350120,
+                    "endOffset": 879371594,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_SHOCKED05_PC_X02ASKIT09AND02_TALK",
+                        "X0202A_SKIT_SHOCKED05_FA_X02ASKIT09AND01_TALKAND1A",
+                        "X0202A_SKIT_SHOCKED05_FA_X02ASKIT09AND01_TALKAND1B"
+                    ]
+                },
+                {
+                    "startOffset": 886837392,
+                    "endOffset": 886848475,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_SHOCKED01_PC_X02ASKIT03AND01_SHOCKED"
+                    ]
+                },
+                {
+                    "startOffset": 889975036,
+                    "endOffset": 889986120,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_SHOCKED02_PC_X02ASKIT06AND01_TALK",
+                        "X0202A_SKIT_SHOCKED02_PC_X02ASKIT06AND02_TALKAND2"
+                    ]
+                },
+                {
+                    "startOffset": 892694672,
+                    "endOffset": 892702218,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKIT_SHOCKED04_PC_X02ASKIT08AND01_TALK"
+                    ]
+                },
+                {
+                    "startOffset": 895037584,
+                    "endOffset": 895056684,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_TV_NEWS03_PC_X02ATVCARTLAND_NEWS"
+                    ]
+                },
+                {
+                    "startOffset": 895072508,
+                    "endOffset": 895117403,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_TV_NEWS01_PC_X02ATVBRINKLEY_NEWSATTACK",
+                        "X0202A_TV_NEWS01_PC_X02ATVBRINKLEY_NEWSNOATTACK"
+                    ]
+                },
+                {
+                    "startOffset": 895119504,
+                    "endOffset": 895138892,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_TV_NEWS02_PC_X02ATVCARTLAND_ALARMING"
+                    ]
+                },
+                {
+                    "startOffset": 895140524,
+                    "endOffset": 895185204,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_TV_WITNESS_PC_X02APBY01_ATTACK01",
+                        "X0202A_TV_WITNESS_PC_X02APBY02_ATTACK02",
+                        "X0202A_TV_WITNESS_PC_X02APBY03_ATTACK03",
+                        "X0202A_TV_WITNESS_PC_X02APBY03_NOATTACK03",
+                        "X0202A_TV_WITNESS_PC_X02APBY02_NOATTACK02",
+                        "X0202A_TV_WITNESS_PC_X02APBY01_NOATTACK01"
+                    ]
+                },
+                {
+                    "startOffset": 895187088,
+                    "endOffset": 895207660,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X2002A_NOCROSSROADS_TVSTART_PC_X20ABRINKLEY_GAMEOVER"
+                    ]
+                },
+                {
+                    "startOffset": 895209508,
+                    "endOffset": 896407321,
+                    "hasKeyListing": false,
+                    "keys": [
+                        "GUI_NEWS_C16_NOLK_HEADER",
+                        "GUI_NEWS_C16_NOLK_HEADLINE",
+                        "GUI_NEWS_C16_NOLK_TICKER",
+                        "GUI_NEWS_KNC_NOLK_HEADER",
+                        "GUI_NEWS_KNC_NOLK_HEADLINE",
+                        "GUI_NEWS_KNC_NOLK_TICKER",
+                        "GUI_NEWS_CTN_NOLK_HEADER",
+                        "GUI_NEWS_CTN_NOLK_HEADLINE",
+                        "GUI_NEWS_CTN_NOLK_HEADLINESUB",
+                        "GUI_NEWS_CTN_NOLK_TICKER",
+                        "GUI_NEWS_C16_ALICE_HEADLINE",
+                        "GUI_NEWS_C16_ALICE_TICKER",
+                        "GUI_NEWS_CTN_THEPAINTER_HEADLINE",
+                        "GUI_NEWS_CTN_THEPAINTER_TICKER",
+                        "GUI_NEWS_C16_FUGITIVES_ZOO_HEADLINE",
+                        "GUI_NEWS_C16_FUGITIVES_ZOO_TICKER",
+                        "GUI_NEWS_C16_FUGITIVES_TODDONTV_HEADLINE",
+                        "GUI_NEWS_C16_FUGITIVES_TODDONTV_TICKER",
+                        "GUI_NEWS_C16_POLICEWORKS_WEBBUPDATECARLOS_HEADLINE",
+                        "GUI_NEWS_CTN_POLICEWORKS_RUSSIANCONFLICT2_HEADLINE",
+                        "GUI_NEWS_CTN_POLICEWORKS_RUSSIANCONFLICT2_TICKER",
+                        "GUI_NEWS_KNC_POLICEWORKS_AIAUTHOR_HEADLINE",
+                        "GUI_NEWS_KNC_POLICEWORKS_AIAUTHOR_TICKER",
+                        "GUI_NEWS_C16_POLICEWORKS_WEBBUPDATECARLOS_TICKER",
+                        "GUI_NEWS_C16_ZLATKO_WEBBFUGITIVESUPDATE_HEADLINE1",
+                        "GUI_NEWS_C16_ZLATKO_WEBBFUGITIVESUPDATE_HEADLINE2",
+                        "GUI_NEWS_C16_ZLATKO_WEBBFUGITIVESUPDATE_HEADLINE3",
+                        "GUI_NEWS_C16_ZLATKO_WEBBFUGITIVESUPDATE_TICKER",
+                        "GUI_NEWS_CTN_RUSSIANROULETTE_BRINKLEYBIRTHRATES_HEADLINE",
+                        "GUI_NEWS_CTN_RUSSIANROULETTE_BRINKLEYBIRTHRATES_TICKER",
+                        "GUI_NEWS_KNC_RUSSIANROULETTE_MUSIC_HEADLINE",
+                        "GUI_NEWS_KNC_RUSSIANROULETTE_MUSIC_TICKER",
+                        "GUI_NEWS_CTN_RUSSIANROULETTE_RUSSIACONFLICT3_HEADLINE",
+                        "GUI_NEWS_CTN_RUSSIANROULETTE_RUSSIACONFLICT3_TICKER",
+                        "GUI_NEWS_C16_FUNFAIR_RADIOGAGA_HEADLINE",
+                        "GUI_NEWS_C16_FUNFAIR_RADIOGAGA_TICKER",
+                        "GUI_NEWS_CTN_FUNFAIR_RUSSIACONFLICTUPDATE_HEADLINE",
+                        "GUI_NEWS_CTN_FUNFAIR_RUSSIACONFLICTUPDATE_TICKER",
+                        "GUI_NEWS_C16_FUNFAIR_RADIOGAGA_HEADLINESUB",
+                        "GUI_NEWS_CTN_BIGSCREEN_MIGRANTS_HEADLINE",
+                        "GUI_NEWS_CTN_BIGSCREEN_MIGRANTS_TICKER",
+                        "GUI_NEWS_C16_BIGSCREEN_CYBERLIFESTOCK_HEADLINE",
+                        "GUI_NEWS_C16_BIGSCREEN_CYBERLIFESTOCK_TICKER",
+                        "GUI_NEWS_C16_BIGSCREEN_REACTIONS_HEADLINE",
+                        "GUI_NEWS_C16_BIGSCREEN_REACTIONS_TICKER",
+                        "GUI_NEWS_CTN_BIGSCREEN_REACTIONS_HEADLINE",
+                        "GUI_NEWS_CTN_BIGSCREEN_REACTIONS_TICKER",
+                        "GUI_NEWS_KNC_BIGSCREEN_REACTIONS_HEADLINE",
+                        "GUI_NEWS_KNC_BIGSCREEN_REACTIONS_TICKER",
+                        "GUI_NEWS_CTN_CAPITOLPARK_TVVIDEOINTRO_HEADLINE",
+                        "GUI_NEWS_CTN_CAPITOLPARK_TVVIDEOINTRO_TICKER",
+                        "GUI_NEWS_C16_CAPITOLPARK_TVVIDEOINTRO_HEADLINE",
+                        "GUI_NEWS_C16_CAPITOLPARK_TVVIDEOINTRO_TICKER",
+                        "GUI_NEWS_KNC_CAPITOLPARK_TVVIDEOINTRO_HEADLINE",
+                        "GUI_NEWS_KNC_CAPITOLPARK_TVVIDEOINTRO_TICKER",
+                        "GUI_NEWS_CTN_PLACETOHIDE_ROSETV_HEADLINE",
+                        "GUI_NEWS_CTN_PLACETOHIDE_ROSETV_TICKER",
+                        "GUI_NEWS_KNC_WEAREPEOPLE_SPACEMAN_HEADLINE",
+                        "GUI_NEWS_KNC_WEAREPEOPLE_SPACEMAN_TICKER",
+                        "GUI_NEWS_C16_WEAREPEOPLE_DESIGNERBABIES_HEADLINE",
+                        "GUI_NEWS_C16_WEAREPEOPLE_DESIGNERBABIES_TICKER",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_UPDATE_HEADLINE",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_UPDATE_TICKER",
+                        "GUI_NEWS_C16_WEAREPEOPLE_UPDATE_HEADLINE",
+                        "GUI_NEWS_C16_WEAREPEOPLE_UPDATE_TICKER",
+                        "GUI_NEWS_KNC_WEAREPEOPLE_UPDATE_HEADLINE",
+                        "GUI_NEWS_KNC_WEAREPEOPLE_UPDATE_TICKER",
+                        "GUI_NEWS_CTN_CROSSROADS_RUSSIANCONFLICT4_HEADLINE",
+                        "GUI_NEWS_CTN_CROSSROADS_RUSSIANCONFLICT4_TICKER",
+                        "GUI_NEWS_CTN_CROSSROADS_RADIOGAGA_HEADLINE",
+                        "GUI_NEWS_CTN_CROSSROADS_RADIOGAGA_TICKER",
+                        "GUI_NEWS_KNC_CROSSROADS_OMIKRON_HEADLINE",
+                        "GUI_NEWS_KNC_CROSSROADS_OMIKRON_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_INTROJOURNALIST_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_INTROJOURNALIST_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_GAMEOVERTV_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_GAMEOVERTV_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_CONNORSUCCESSTV_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_CONNORSUCCESSTV_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_CONNORFAILTV_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_CONNORFAILTV_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_INTROTV_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_INTROTV_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_CAMPPACIFIC_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_CAMPPACIFIC_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_PACIFISTINTRO_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_PACIFISTINTRO_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_ANTHEMINTRO_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_ANTHEMINTRO_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_ANTHEMPOSITIVE_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_ANTHEMPOSITIVE_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_NEGOTATIONINTRO_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_NEGOTATIONINTRO_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_DIRTYBOMBTV_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_DIRTYBOMBTV_TICKER",
+                        "GUI_NEWS_KNC_EPILOGUE_REDLIGHT_HEADLINE",
+                        "GUI_NEWS_KNC_EPILOGUE_REDLIGHT_TICKER",
+                        "GUI_NEWS_CTN_ALICE_UNEMPLOYEMENT_HEADLINE",
+                        "GUI_NEWS_CTN_ALICE_UNEMPLOYEMENT_TICKER",
+                        "GUI_NEWS_KNC_ALICE_WARREN_HEADLINE",
+                        "GUI_NEWS_KNC_ALICE_WARREN_TICKER",
+                        "GUI_NEWS_CTN_POLICEWORKS_ANDROIDFOUND_HEADLINE",
+                        "GUI_NEWS_CTN_POLICEWORKS_ANDROIDFOUND_TICKER",
+                        "GUI_NEWS_C16_POLICEWORKS_ANDROIDNOTFOUND_HEADLINE",
+                        "GUI_NEWS_C16_POLICEWORKS_ANDROIDNOTFOUND_TICKER",
+                        "GUI_NEWS_KNC_FUNFAIR_WEATHER_HEADLINE",
+                        "GUI_NEWS_KNC_FUNFAIR_WEATHER_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_MARCH_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_MARCH_HEADLINESUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_MARCH_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_SACRIFICE_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_SACRIFICE_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_SING_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_SING_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_SING_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_SING_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_GAMEOVER_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_GAMEOVER_TICKER",
+                        "GUI_NEWS_JOSS_MARKUSFINAL_GAMEOVER_HEADLINE",
+                        "GUI_NEWS_JOSS_MARKUSFINAL_GAMEOVER_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_GAMEOVER_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_GAMEOVER_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_BOMB_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_BOMB_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_BOMB_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_BOMB_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCESS_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCESS_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_CONNORSUCCESS_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_CONNORSUCCESS_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORFAIL_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORFAIL_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_CONNORFAIL_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_CONNORFAIL_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_PACIFIST_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_PACIFIST_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_PACIFIST_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_PACIFIST_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_KISS_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_KISS_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_KISS_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_KISS_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_KISS_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_KISS_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_SACRIFICE_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_SACRIFICE_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_SACRIFICE_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_SACRIFICE_TICKER",
+                        "GUI_NEWS_KNC_MARKUSFINAL_CONNORSUCCES_HEADLINE",
+                        "GUI_NEWS_KNC_MARKUSFINAL_CONNORSUCCES_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCES_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCES_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCES02_HEADLINE",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCES02_TICKER",
+                        "GUI_NEWS_C16_MARKUSFINAL_CONNORSUCCES_HEADLINE",
+                        "GUI_NEWS_C16_MARKUSFINAL_CONNORSUCCES_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_WARHORROR_TICKER",
+                        "GUI_NEWS_CTN_MARKUSFINAL_WARHORROR_HEADLINESUB",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_MARKUSDEAD_HEADLINE",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_MARKUSPACIFIST_HEADLINE",
+                        "GUI_NEWS_C16_WEAREPEOPLE_MARKUSPACIFIST_HEADLINE",
+                        "GUI_NEWS_KNC_WEAREPEOPLE_MARKUSPACIFIST_HEADLINE",
+                        "GUI_NEWS_KNC_CROSSROADS_ASSAULT_HEADLINE",
+                        "GUI_NEWS_KNC_CROSSROADS_ASSAULT_TICKER",
+                        "GUI_NEWS_CTN_ALICE_UNEMPLOYEMENT_HEADLINESUB",
+                        "GUI_NEWS_CTN_POLICEWORKS_RUSSIANCONFLICT2_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_RUSSIANROULETTE_BRINKLEYBIRTHRATES_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_RUSSIANROULETTE_RUSSIACONFLICT3_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_THEPAINTER_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_MARKUSDEAD_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_MARKUSPACIFIST_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_WEAREPEOPLE_UPDATE_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_BIGSCREEN_MIGRANTS_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_BIGSCREEN_REACTIONS_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_CAPITOLPARK_TVVIDEOINTRO_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_CROSSROADS_RADIOGAGA_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_CROSSROADS_RUSSIANCONFLICT4_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_FUNFAIR_RUSSIACONFLICTUPDATE_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_BOMB_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCES02_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORFAIL_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCES_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_CONNORSUCCESS_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_GAMEOVER_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_KISS_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_SACRIFICE_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_SING_HEADLINE_SUB",
+                        "GUI_NEWS_CTN_MARKUSFINAL_WARHORROR_HEADLINE",
+                        "GUI_NEWS_CTN_POLICEWORKS_ANDROIDFOUND_HEADLINE_SUB",
+                        "GUI_NEWS_KNC_WEAREPEOPLE_MARKUSPACIFIST_HEADLINENUMBER",
+                        "GUI_NEWS_CTN_GOBC_MARKUSDEAD_TICKER",
+                        "GUI_NEWS_CTN_GOBC_PRESIDENT_HEADLINE",
+                        "GUI_NEWS_CTN_GOBC_PRESIDENT_TICKER",
+                        "GUI_NEWS_KNC_GOBC_RECYCLE_TICKER",
+                        "GUI_NEWS_C16_GOBC_CRISIS_TICKER",
+                        "GUI_NEWS_C16_GOBC_CRISIS_HEADLINE",
+                        "GUI_NEWS_KNC_KAMSKI_CARTLAND_HEADLINE",
+                        "GUI_NEWS_KNC_KAMSKI_CARTLAND_TICKER",
+                        "GUI_NEWS_KNC_KAMSKI_KAMSKI1_HEADLINE",
+                        "GUI_NEWS_KNC_KAMSKI_KAMSKI1_TICKER",
+                        "GUI_NEWS_KNC_KAMSKI_KAMSKI2_TICKER",
+                        "GUI_NEWS_KNC_KAMSKI_HEADER",
+                        "GUI_NEWS_KNC_KAMSKI_KAMSKI1_SUBHEADER",
+                        "GUI_NEWS_KNC_KAMSKI_CARTLAND_SUBHEADER",
+                        "GUI_NEWS_KNC_KAMSKI_KAMSKI2_SUBHEADER"
+                    ]
+                },
+                {
+                    "startOffset": 896420740,
+                    "endOffset": 896529398,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X1001M_TV_NEWS_PC_X10MCARTLAND_VIOLENCE01",
+                        "X1001M_TV_NEWS_PC_X10MCARTLAND_VIOLENCE02",
+                        "X1001M_TV_NEWS_PC_X10MBRINKLEY_POLICEINTERVENTION",
+                        "X1001M_TV_NEWS_PC_X10MBRINKLEY_DESTROYMACHINES",
+                        "X1001M_TV_NEWS_PC_X10MCARTLAND_SPACEMAN",
+                        "X1001M_TV_NEWS_PC_X10MWEBB_STATECHAOS",
+                        "X1001M_TV_NEWS_PC_X10MWEBB_PITILESS",
+                        "X1001M_TV_NEWS_PC_X10MWEBB_NEWHORIZON"
+                    ]
+                },
+                {
+                    "startOffset": 896530576,
+                    "endOffset": 896562878,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_TV_NEWS_PC_X02ATVBRINKLEY_RUSSIANCONFLICT"
+                    ]
+                },
+                {
+                    "startOffset": 933116156,
+                    "endOffset": 933127505,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0202A_SKITCONNOR_RUMORS_PC_X02ASKIT13AND01_TALK01",
+                        "X0202A_SKITCONNOR_RUMORS_FA_X02ASKIT13AND02_TALK02"
+                    ]
+                },
+                {
+                    "startOffset": 1888420632,
+                    "endOffset": 1888454268,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0205A_PBY_LINES_VO_X02ASWAT02_COVERME",
+                        "X0205A_PBY_LINES_VO_X02AAND01_BLUEBLOOD",
+                        "X0205A_PBY_LINES_VO_X02ACOMPUTERAND01_HAPPENING01",
+                        "X0205A_PBY_LINES_VO_X02ACOMPUTERAND02_HAPPENING02",
+                        "X0205A_PBY_LINES_VO_X02ACROWDAND04_ENOUGH",
+                        "X0205A_PBY_LINES_VO_X02ACROWDAND05_VIOLENT",
+                        "X0205A_PBY_LINES_VO_X02ACROWDAND05_PACIFIST"
+                    ]
+                },
+                {
+                    "startOffset": 1930698896,
+                    "endOffset": 1930703475,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0501M_NPCMANBUMP_STATION_FA_X05MMANBUMP_SORRY"
+                    ]
+                },
+                {
+                    "startOffset": 1939359888,
+                    "endOffset": 1939365216,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0501M_NPCHOMELESS_STREETS_FA_X05MHOMELESSM_ASK"
+                    ]
+                },
+                {
+                    "startOffset": 1940467432,
+                    "endOffset": 1940653342,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X1001M_PBY_LINES_FA_X10MSPORTGUY_IDLOVE",
+                        "X1001M_PBY_LINES_FA_X10MSPORTGIRL_GETIT",
+                        "X1001M_PBY_LINES_FA_X10MSPORTGUY_EXPENSIVE",
+                        "X1001M_PBY_LINES_FA_X10MSPORTGIRL_MOTIVATE",
+                        "X1001M_PBY_LINES_FA_X10MSPORTGUY_COMEON",
+                        "X1001M_PBY_LINES_FA_X10MMAN02_01CHITCHAT01",
+                        "X1001M_PBY_LINES_FA_X10MMAN01_01CHITCHAT02",
+                        "X1001M_PBY_LINES_FA_X10MMAN03_02CHITCHAT01",
+                        "X1001M_PBY_LINES_FA_X10MMAN01_02CHITCHAT02",
+                        "X1001M_PBY_LINES_FA_X10MMAN03_02CHITCHAT03",
+                        "X1001M_PBY_LINES_FA_X10MMAN02_02CHITCHAT04",
+                        "X1001M_PBY_LINES_FA_X10MMAN02_03CHITCHAT01",
+                        "X1001M_PBY_LINES_FA_X10MMAN01_03CHITCHAT02",
+                        "X1001M_PBY_LINES_FA_X10MMAN03_03CHITCHAT03",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEMAN03_BABE01",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEWOM03_BABE02",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEMAN03_BABE03",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEMAN03_YOUPIG01",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEWOM03_YOUPIG02",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEMAN03_YOUPIG03",
+                        "X1001M_PBY_LINES_FA_X10MCOUPLEWOM03_YOUPIG04",
+                        "X1001M_PBY_LINES_FA_X10MSHOPPINGMAN01_BOYBAND",
+                        "X1001M_PBY_LINES_FA_X10MSHOPPINGWOM01_CREEPY",
+                        "X1001M_PBY_LINES_FA_X10MSHOPPINGMAN01_MYKIDS",
+                        "X1001M_PBY_LINES_FA_X10MDEVICEGIRL_MARKUS01",
+                        "X1001M_PBY_LINES_FA_X10MDEVICEGUY_MARKUS02",
+                        "X1001M_PBY_LINES_FA_X10MDEVICEGIRL_MARKUS03",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN01",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN02",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN03",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN04",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN05",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN06",
+                        "X1001M_PBY_LINES_FA_X10MPHONEGUY_COMPLAIN07",
+                        "X1001M_PBY_LINES_FA_X10MPHONEWOMAN_PARANO"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d07",
+            "sections": [
+                {
+                    "startOffset": 269775212,
+                    "endOffset": 269939056,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_HELLOC",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_INSIST",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_INSIST",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_REASON",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_REASON",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_THREATEN",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_THREATEN",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_UNDERSTANDING",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_UNDERSTANDING",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_WAIT",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_WAIT",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_FORCE",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_FORCE",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_DIPLOMACY",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_DIPLOMACY",
+                        "X0201C_BAR_INTRO_PC_X02CBARMAN_HELLOB",
+                        "X0201C_BAR_INTRO_PC_X02CBARMAN_DIPLOMACYV2",
+                        "X0201C_BAR_INTRO_FA_X02CHANK_FORCESEC",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_HELLOC01",
+                        "X0201C_BAR_INTRO_PC_X02CCONNOR_HELLOC02",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_HELLOH01",
+                        "X0201C_BAR_INTRO_PC_X02CHANK_HELLOH02"
+                    ]
+                },
+                {
+                    "startOffset": 269942176,
+                    "endOffset": 270033890,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_ANDROIDNAMEC",
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_BEHAVIORC",
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_EMOTIONALSHOCKC",
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_SITUATIONC",
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_DEACTIVATIONC",
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_FIRSTQUESTIONC",
+                        "X0101X_ALLEN_TOPO_PC_X01CONNOR_SECONDQUESTIONC",
+                        "X0101X_ALLEN_TOPO_PC_X01SWATCAPTAIN_NEGOCIATORV2",
+                        "X0101X_ALLEN_TOPO_PC_X01SWATCAPTAIN_SITUATIONV2",
+                        "X0101X_ALLEN_TOPO_PC_X01SWATCAPTAIN_FIRSTQUESTIONV2",
+                        "X0101X_ALLEN_TOPO_PC_X01SWATCAPTAIN_DEACTIVATIONV2",
+                        "X0101X_ALLEN_TOPO_PC_X01SWATCAPTAIN_SECONDQUESTIONV2",
+                        "X0101X_ALLEN_TOPO_PC_X01SWATCAPTAIN_UTURN"
+                    ]
+                },
+                {
+                    "startOffset": 280164604,
+                    "endOffset": 280175500,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_BAR_CUSTOMER5_PC_X02CCUSTOM05_REACTBAR",
+                        "X0201C_BAR_CUSTOMER5_PC_X02CCUSTOM05_REACTTABLE"
+                    ]
+                },
+                {
+                    "startOffset": 283555984,
+                    "endOffset": 283562346,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_BAR_CUSTOMER6_PC_X02CCUSTOM06_REACT"
+                    ]
+                },
+                {
+                    "startOffset": 287299728,
+                    "endOffset": 287303946,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_BAR_CUSTOMER1_PC_X02CCUSTOM01_REACT"
+                    ]
+                },
+                {
+                    "startOffset": 289051092,
+                    "endOffset": 289065666,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_BAR_BARMAN_PC_X02CBARMAN_BARREFILL02",
+                        "X0201C_BAR_BARMAN_PC_X02CBARMAN_GAMEOVER06",
+                        "X0201C_BAR_BARMAN_PC_X02CBARMAN_REACT",
+                        "X0201C_BAR_BARMAN_FA_X02CBARMAN_BARSERVE01B"
+                    ]
+                },
+                {
+                    "startOffset": 296402768,
+                    "endOffset": 296474380,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0501M_PBY_LINES_FA_X05MGIRL_GETRID",
+                        "X0501M_PBY_LINES_FA_X05MMOM_SWEETIE",
+                        "X0501M_PBY_LINES_FA_X05MGIRL_SOCOOL",
+                        "X0501M_PBY_LINES_FA_X05MMOM_IKNOW",
+                        "X0501M_PBY_LINES_PC_X05MBEGGAR_BUDDY",
+                        "X0501M_PBY_LINES_PC_X05MBEGGAR_THEHELL",
+                        "X0501M_PBY_LINES_FA_X05MFLORIST_FLOWERS",
+                        "X0501M_PBY_LINES_FA_X05MBUSMAN_CARL",
+                        "X0501M_PBY_LINES_FA_X05MBUSWOMAN_CARLDEAD01",
+                        "X0501M_PBY_LINES_FA_X05MBUSMAN_CARLDEAD02",
+                        "X0501M_PBY_LINES_FA_X05MBUSWOMAN_CARLALIVE01",
+                        "X0501M_PBY_LINES_FA_X05MBUSMAN_CARLALIVE02",
+                        "X0501M_PBY_LINES_FA_X05MBUSWOMAN_CONT01",
+                        "X0501M_PBY_LINES_FA_X05MBUSMAN_CONT02",
+                        "X0501M_PBY_LINES_FA_X05MBUSWOMAN_CONT03",
+                        "X0501M_PBY_LINES_FA_X05MMOM_SWEETIEV2",
+                        "X0501M_PBY_LINES_FA_X05MMOM_IKNOWV2"
+                    ]
+                },
+                {
+                    "startOffset": 1581951120,
+                    "endOffset": 1581955132,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_BAR_CUSTOMER3_PC_X02CCUSTOM03_REACT"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d10",
+            "sections": [
+                {
+                    "startOffset": 146530988,
+                    "endOffset": 146557538,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X1001M_STAGE02_REACTFRIENDLY_FA_X10MMAN01_MAN01",
+                        "X1001M_STAGE02_REACTFRIENDLY_FA_X10MMAN02_WOM02",
+                        "X1001M_STAGE02_REACTFRIENDLY_FA_X10MWOM02_MAN02",
+                        "X1001M_STAGE02_REACTFRIENDLY_FA_X10MMAN03_MAN03",
+                        "X1001M_STAGE02_REACTFRIENDLY_FA_X10MWOM02_MAN02V2",
+                        "X1001M_STAGE02_REACTFRIENDLY_FA_X10MWOM01_WOM01V2"
+                    ]
+                },
+                {
+                    "startOffset": 146559876,
+                    "endOffset": 146594392,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MMAN01_MAN01B",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MMAN02_MAN02",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MMAN03_MAN03",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MWOM01_MAN01V2",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MWOM03_MAN03V2",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MWOM01_MAN01",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MMAN02_WOM02",
+                        "X1001M_STAGE02_REACTNEUTRAL_FA_X10MMAN01_WOM01"
+                    ]
+                },
+                {
+                    "startOffset": 146598036,
+                    "endOffset": 146693806,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN04_MAN01",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN01_WOM01",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN05_WOM05",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN05_MAN05",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN09_MAN09",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN02_MAN02",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN03_MAN03",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN04_MAN04",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN06_MAN06",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MWOM07_MAN07",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN08_MAN08",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN10_MAN10",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN02_WOM02",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN03_WOM03",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MWOM04_WOM04",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MWOM06_WOM06",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN07_WOM07",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MMAN11_MAN11",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MWOM08_MAN08V2",
+                        "X1001M_STAGE02_REACTHOSTILE_FA_X10MWOM02_WOM02V2"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d11",
+            "sections": [
+                {
+                    "startOffset": 274957516,
+                    "endOffset": 275116094,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT07_WOUNDED01",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT10_WOUNDED01",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_EVACUATION",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01ANDROID_SHOUTS01",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01ANDROID_SHOUTS02",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01ANDROID_SHOUTS03",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01ANDROID_SHOUTS04",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01ANDROID_SHOUTS05",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01ANDROID_SHOUTS06",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT09_TALK01",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT10_TALK01",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT03_TALK02",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT04_TALK02",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT01_TALK03",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT09_TALK04",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT10_TALK04",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT06_TALK05",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT04_TOOCLOSE01",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT06_TOOCLOSE02",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT13_TOOCLOSE03",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT11_TOOCLOSE04",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT07_WOUNDED02",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT10_WOUNDED02",
+                        "X0101X_LIVINGROOM_GUNSHOTS_VO_X01SWAT10_WOUNDED01B",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_ORDERS06V2",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_ORDERS05V2",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_ORDERS04V2",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_ORDERS03V2",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_ORDERS02V2",
+                        "X0101X_LIVINGROOM_GUNSHOTS_FA_X01SWATCAPTAIN_ORDERS01V2"
+                    ]
+                },
+                {
+                    "startOffset": 285182636,
+                    "endOffset": 285205300,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_BEG_PC_X01ANDROID_BEG01",
+                        "X0101X_TERRACE_BEG_PC_X01HOSTAGE_BEG01",
+                        "X0101X_TERRACE_BEG_PC_X01ANDROID_BEG02",
+                        "X0101X_TERRACE_BEG_PC_X01HOSTAGE_BEG02",
+                        "X0101X_TERRACE_BEG_PC_X01ANDROID_BEG03",
+                        "X0101X_TERRACE_BEG_PC_X01HOSTAGE_BEG03"
+                    ]
+                },
+                {
+                    "startOffset": 623091536,
+                    "endOffset": 623158510,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_HEALCOP_PC_X01HURTCOP01_HURTCYC",
+                        "X0101X_TERRACE_HEALCOP_FA_X01HURTCOP01_EVACUATE01V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01CONNOR_EVACUATE02V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HURTCOP01_EVACUATE02V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01ANDROID_EVACUATE03V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HOSTAGE_EVACUATE03V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01ANDROID_NOTALIVEV2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HOSTAGE_NOTALIVEV2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01CONNOR_NOTALIVE01V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HURTCOP01_NOTALIVE01V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01ANDROID_OKV2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HOSTAGE_OKV2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01CONNOR_OK02V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HURTCOP01_OK02V2",
+                        "X0101X_TERRACE_HEALCOP_PC_X01ANDROID_EVACUATE03V2B",
+                        "X0101X_TERRACE_HEALCOP_PC_X01HOSTAGE_EVACUATE03V2B",
+                        "X0101X_TERRACE_HEALCOP_FA_X01HURTCOP01_HURTCYCV3"
+                    ]
+                },
+                {
+                    "startOffset": 627528256,
+                    "endOffset": 627552272,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_CONNORHALLARRIVAL_VO_X01SWAT01_ONSITE01",
+                        "X0101X_SWAT_CONNORHALLARRIVAL_VO_X01SWAT01_ONSITE02",
+                        "X0101X_SWAT_CONNORHALLARRIVAL_VO_X01RADIO_PROCEED",
+                        "X0101X_SWAT_CONNORHALLARRIVAL_VO_X01SWAT01_COPY",
+                        "X0101X_SWAT_CONNORHALLARRIVAL_VO_X01SWAT07_NONEED"
+                    ]
+                },
+                {
+                    "startOffset": 627554556,
+                    "endOffset": 627563166,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_INTRO_SWAT_VO_X01SWAT01_NEGOCIATOR",
+                        "X0101X_INTRO_SWAT_VO_X01SWAT01_NEGOCIATOR02"
+                    ]
+                },
+                {
+                    "startOffset": 629605144,
+                    "endOffset": 629639256,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_POSITION",
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_CHECK01",
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_CHECK02",
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_HELICO",
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_WOUNDED",
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_COPY",
+                        "X0101X_SWAT_TIMER_VO_X01SWAT01_READY"
+                    ]
+                },
+                {
+                    "startOffset": 633455816,
+                    "endOffset": 633493494,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT01_GENA01",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT01_GENA02",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT01_GENA03",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT01_GENA04",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT01_GENA05",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT01_GENA06",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT07_GENB01",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT07_GENB02",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT07_GENB03",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT07_GENB04",
+                        "X0101X_SWAT_COMMUNICATION_VO_X01SWAT07_GENB05"
+                    ]
+                },
+                {
+                    "startOffset": 633494188,
+                    "endOffset": 633516144,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_REPORT_VO_X01RADIO_UPDATE",
+                        "X0101X_SWAT_REPORT_VO_X01SWAT01_REP01",
+                        "X0101X_SWAT_REPORT_VO_X01SWAT01_REP02",
+                        "X0101X_SWAT_REPORT_VO_X01SWAT01_REP03",
+                        "X0101X_SWAT_REPORT_VO_X01SWAT01_REP04",
+                        "X0101X_SWAT_REPORT_VO_X01RADIO_COPY"
+                    ]
+                },
+                {
+                    "startOffset": 637278568,
+                    "endOffset": 637291614,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_CONNORARRIVES_VO_X01SWAT01_NEGOCIATOR01",
+                        "X0101X_SWAT_CONNORARRIVES_VO_X01SWAT01_SUSPECT",
+                        "X0101X_SWAT_CONNORARRIVES_VO_X01SWAT01_NEGOCIATOR02"
+                    ]
+                },
+                {
+                    "startOffset": 637298832,
+                    "endOffset": 637302670,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_SNIPESETUP_VO_X01SNIPER01_GO"
+                    ]
+                },
+                {
+                    "startOffset": 679946276,
+                    "endOffset": 680122044,
+                    "hasKeyListing": false,
+                    "keys": [
+                        "GUI_OBSERVATION_03C_PRISONNER",
+                        "GUI_OBSERVATION_03C_MEMORIAL",
+                        "GUI_OBSERVATION_01C_COPCLUE01_TITLE",
+                        "GUI_OBSERVATION_01C_COPCLUE01_ADDLINE01",
+                        "GUI_OBSERVATION_01C_COPCLUE01_ADDLINE02",
+                        "GUI_OBSERVATION_01C_COPCLUE02_ADDLINE02",
+                        "GUI_OBSERVATION_01C_COPCLUE02_SUBLINE02",
+                        "GUI_OBSERVATION_GEN_STATUS",
+                        "GUI_OBSERVATION_GEN_CAUSEDEATH",
+                        "GUI_OBSERVATION_GEN_DECEASED",
+                        "GUI_OBSERVATION_01C_FATHERCLUE01_TITLE",
+                        "GUI_OBSERVATION_01C_FATHERCLUE01_SUBLINE01",
+                        "GUI_OBSERVATION_01C_FATHERCLUE01_SUBLINE02",
+                        "GUI_OBSERVATION_01C_FATHERCLUE02_SUBLINE01",
+                        "GUI_OBSERVATION_01C_FATHERCLUE02_ADDLINE02",
+                        "GUI_OBSERVATION_01C_MOTHERCLUE01_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MOTHERCLUE01_ADDLINE02",
+                        "GUI_OBSERVATION_01C_MOTHERCLUE02_ADDLINE02",
+                        "GUI_OBSERVATION_01C_MOTHERCLUE02_SUBLINE02",
+                        "GUI_OBSERVATION_01C_GUNCASECLUE01_TITLE",
+                        "GUI_OBSERVATION_01C_GUNCASECLUE02_TITLE",
+                        "GUI_OBSERVATION_01C_GUNCASECLUE03_TITLE",
+                        "GUI_OBSERVATION_01C_GUNCASECLUE04_TITLE",
+                        "GUI_OBSERVATION_01C_MP_LETTER_TITLE",
+                        "GUI_OBSERVATION_01C_MP_LETTER_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_LETTER_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MP_FAMPIC_TITLE",
+                        "GUI_OBSERVATION_01C_MP_FAMPIC_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_ACQUA_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_AQUA_TITLE",
+                        "GUI_OBSERVATION_01C_MP_ACQUA_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_ACQUA_ADDLINE02",
+                        "GUI_OBSERVATION_01C_MP_ACQUA_ADDLINE03",
+                        "GUI_OBSERVATION_01C_MP_HEADSET_TITLE",
+                        "GUI_OBSERVATION_01C_MP_HEADSET_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_HEADSET_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_CASE_TITLE",
+                        "GUI_OBSERVATION_01C_MP_CASE_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_CASE_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MP_CASE_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_BATH_TITLE",
+                        "GUI_OBSERVATION_01C_MP_KITCHENTV_TITLE",
+                        "GUI_OBSERVATION_01C_MP_KITCHENTV_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_KITCHENTV_ADDLINE02",
+                        "GUI_OBSERVATION_01C_MP_MAGAZINE_TITLE",
+                        "GUI_OBSERVATION_01C_MP_MAGAZINE_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_MAGAZINE_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MP_PRESSCOOK_TITLE",
+                        "GUI_OBSERVATION_01C_MP_PRESSCOOK_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_PRESSCOOK_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MP_PRESSCOOK_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_SHOE_TITLE",
+                        "GUI_OBSERVATION_01C_MP_SHOE_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_SHOE_ADDLINE02",
+                        "GUI_OBSERVATION_01C_MP_BBLOOD_TITLE",
+                        "GUI_OBSERVATION_01C_MP_BBLOOD_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_BBLOOD_SUBLINE02",
+                        "GUI_OBSERVATION_GEN_MP_CORPSE_TITLE",
+                        "GUI_OBSERVATION_GEN_MP_CHARCIV_SUBLINE02",
+                        "GUI_OBSERVATION_GEN_MP_CHARCOP_SUBLINE02",
+                        "GUI_OBSERVATION_GEN_MP_CHARCM_SUBLINE01",
+                        "GUI_OBSERVATION_GEN_MP_CHARAF_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_TABLET_TITLE",
+                        "GUI_OBSERVATION_01C_MP_TABLET_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_TABLET_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_CURTAINS_TITLE",
+                        "GUI_OBSERVATION_01C_MP_CURTAINS_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_CURTAINS_SUBLINE02",
+                        "GUI_OBSERVATION_GEN_MP_WOUNDHUMAN_TITLE",
+                        "GUI_OBSERVATION_GEN_MP_WOUNDHUMAN_ADDLINE01",
+                        "GUI_OBSERVATION_GEN_MP_WOUNDHUMAN_ADDLINE02",
+                        "GUI_OBSERVATION_GEN_MP_CHARAFM_SUBLINE01",
+                        "GUI_OBSERVATION_01C_MP_MAGAZINE_ADDLINE01",
+                        "GUI_OBSERVATION_01C_MP_COP_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MP_MOTHER_SUBLINE02",
+                        "GUI_OBSERVATION_01C_MP_FATHER_SUBLINE02",
+                        "GUI_OBSERVATION_06M_MP_BLUEBLOOD01_TITLE",
+                        "GUI_OBSERVATION_06M_MP_BLUEBLOOD01_SUBLINE01",
+                        "GUI_OBSERVATION_06M_MP_BLUEBLOOD01_SUBLINE02",
+                        "GUI_OBSERVATION_06M_MP_BLUEBLOOD02_TITLE",
+                        "GUI_OBSERVATION_06M_MP_BLUEBLOOD02_SUBLINE01",
+                        "GUI_OBSERVATION_06M_MP_BLUEBLOOD02_SUBLINE02"
+                    ]
+                },
+                {
+                    "startOffset": 698484880,
+                    "endOffset": 698512640,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TV_NEWS_PC_X01TVSPEAKER_TVNEWSV2"
+                    ]
+                },
+                {
+                    "startOffset": 702982504,
+                    "endOffset": 703005948,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_INTRO_MUM_VO_X01SWAT11_MUM",
+                        "X0101X_INTRO_MUM_FA_X01MOTHER_ENCOUNTERS",
+                        "X0101X_INTRO_MUM_FA_X01MOTHER_LEAVE"
+                    ]
+                },
+                {
+                    "startOffset": 830092704,
+                    "endOffset": 830244401,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_INTRO_LIME_PC_X01KSELLER01_MODELS01",
+                        "X0101K_INTRO_LIME_PC_X01KCUSTOW01_MODELS01",
+                        "X0101K_INTRO_LIME_PC_X01KCUSTOM01_MODELS01",
+                        "X0101K_INTRO_LIME_PC_X01KSELLER02_MODELS02",
+                        "X0101K_INTRO_LIME_PC_X01KCUSTOW02_MODELS02",
+                        "X0101K_INTRO_LIME_PC_X01KCUSTOM02_MODELS02",
+                        "X0101K_INTRO_LIME_PC_X01KEXTDAD_MODELS03",
+                        "X0101K_INTRO_LIME_PC_X01KSELLER03_MODELS03",
+                        "X0101K_INTRO_LIME_FA_X01KKARA_MODELS04",
+                        "X0101K_INTRO_LIME_FA_X01KEXTDAD_TOFRONTDESKFA",
+                        "X0101K_INTRO_LIME_FA_X01KSELLER03_TOFRONTDESKFA",
+                        "X0101K_INTRO_LIME_FA_WOMGEN_COMEON",
+                        "X0101K_INTRO_LIME_FA_WOMGEN_COMEONV2"
+                    ]
+                },
+                {
+                    "startOffset": 906539152,
+                    "endOffset": 906546312,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_LIVINGROOM_TABLET_VO_WOMGEN_THANK"
+                    ]
+                },
+                {
+                    "startOffset": 909693184,
+                    "endOffset": 909829608,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_SNIPERS01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_LASTCHANCE01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_CONFIDENCE01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_BLUFF01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01ANDROID_BLUFFV2",
+                        "X0101X_TERRACE_PARTII_PC_X01HOSTAGE_BLUFFV2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_GIVEUPV2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_JUMP01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01ANDROID_CONDITIONSV2",
+                        "X0101X_TERRACE_PARTII_PC_X01HOSTAGE_CONDITIONSV2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_CONDITIONS01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_REFUSEV2",
+                        "X0101X_TERRACE_PARTII_PC_X01ANDROID_COMPROMISEV2",
+                        "X0101X_TERRACE_PARTII_PC_X01HOSTAGE_COMPROMISEV2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_COMPROMISE01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_DONTKILLAGAIN01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01CONNOR_PROMISE01V2",
+                        "X0101X_TERRACE_PARTII_PC_X01ANDROID_GOODENDINGV2",
+                        "X0101X_TERRACE_PARTII_PC_X01HOSTAGE_GOODENDINGV2",
+                        "X0101X_TERRACE_PARTII_PC_X01ANDROID_BADENDINGV2",
+                        "X0101X_TERRACE_PARTII_PC_X01HOSTAGE_BADENDINGV2"
+                    ]
+                },
+                {
+                    "startOffset": 909830612,
+                    "endOffset": 909854392,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_GUN_PC_X01ANDROID_GUNV2",
+                        "X0101X_TERRACE_GUN_PC_X01HOSTAGE_GUNV2",
+                        "X0101X_TERRACE_GUN_PC_X01CONNOR_GUN01V2",
+                        "X0101X_TERRACE_GUN_PC_X01CONNOR_CONVINCE01V2"
+                    ]
+                },
+                {
+                    "startOffset": 946846392,
+                    "endOffset": 947209474,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_EMMAANDYOU02",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_EMMAANDYOU02",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_EMMAANDYOU01",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_EMOTIONALSHOCK02",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_EMOTIONALSHOCK02",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_EMOTIONALSHOCK01",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_REASSUREV2A",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_RELEASE01",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_REASSUREV2B",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_REASSUREV2B",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_RELEASE02",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_RELEASE02",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_NAMEHOLO01",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_NAMEHOLO02",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_NAMEHOLO02",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_NAMEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_NAMEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_NAME01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_REASSURE01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_REASSUREV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_REASSUREV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_ANDROID01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_ANDROIDV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_ANDROIDV2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_HOSTAGEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_HOSTAGEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_HOSTAGE01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_GUNV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_GUNV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_GUN01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_TRUTH01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_TRUTH01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_TRUTH0101V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_LIE01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_LIE01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_LIE0101V2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_TRUTH0201V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_LIE02V2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_LIE02V2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_LIE0201V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_BUGV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_BUGV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_BUG01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_BLAMEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_BLAMEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_BLAME01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_FEELINGSV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_FEELINGSV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_FEELINGS01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_REALISTICV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_REALISTICV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_REALISTIC01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_HELICOV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_HELICOV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_HELICO01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_HELICOLEAVEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_HELICOLEAVEV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_HELICOLEAVE01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_SORRYV2",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_SORRYV2",
+                        "X0101X_TERRACE_PARTI_PC_X01CONNOR_SORRY01V2",
+                        "X0101X_TERRACE_PARTI_PC_X01ANDROID_EMMAANDYOU02A",
+                        "X0101X_TERRACE_PARTI_PC_X01HOSTAGE_EMMAANDYOU02A"
+                    ]
+                },
+                {
+                    "startOffset": 1134285160,
+                    "endOffset": 1134297812,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_ARRIVAL_PC_X01CONNOR_THREAT01",
+                        "X0101X_TERRACE_ARRIVAL_PC_X01ANDROID_THREATV2",
+                        "X0101X_TERRACE_ARRIVAL_PC_X01HOSTAGE_THREATV2"
+                    ]
+                },
+                {
+                    "startOffset": 1134301328,
+                    "endOffset": 1134306002,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_HELICOLEAVING_VO_X01HELISNIPER_OUT"
+                    ]
+                },
+                {
+                    "startOffset": 1197101308,
+                    "endOffset": 1197111414,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_TERRACE_WARNING3_PC_X01ANDROID_WARNING3V2",
+                        "X0101X_TERRACE_WARNING3_PC_X01HOSTAGE_WARNING3V2"
+                    ]
+                },
+                {
+                    "startOffset": 1238313320,
+                    "endOffset": 1238328028,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_CONNORONTERRASSE_VO_X01SWAT01_ARRIVAL01",
+                        "X0101X_SWAT_CONNORONTERRASSE_VO_X01SWAT01_ARRIVAL02",
+                        "X0101X_SWAT_CONNORONTERRASSE_VO_X01SWAT01_ARRIVAL03"
+                    ]
+                },
+                {
+                    "startOffset": 1261756560,
+                    "endOffset": 1261761230,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_SWAT_TIMEOUT_VO_X01SWAT01_COVER"
+                    ]
+                },
+                {
+                    "startOffset": 1261762704,
+                    "endOffset": 1261769170,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101X_LIVINGROOM_ENDTIMER_PC_X01SWATCAPTAIN_GOTALKV2"
+                    ]
+                },
+                {
+                    "startOffset": 1263507816,
+                    "endOffset": 1263621898,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_TV_NEWS_PC_X01MBRINKLEY_INTERNATIONALV2",
+                        "X0101M_TV_NEWS_PC_X01MBRINKLEY_INTERNATIONAL03",
+                        "X0101M_TV_NEWS_PC_X01MBRINKLEY_INTERNATIONALV3"
+                    ]
+                },
+                {
+                    "startOffset": 1263626816,
+                    "endOffset": 1263721752,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_TV_NEWS_PC_X01KBRINKLEY_UNEMPLOYMENT01",
+                        "X0101K_TV_NEWS_PC_X01KWEBB_SPORTS",
+                        "X0101K_TV_NEWS_PC_X01KCARTLAND_PRESIDENT",
+                        "X0101K_TV_NEWS_PC_X01KBRINKLEY_FLOOD",
+                        "X0101K_TV_NEWS_PC_X01KBRINKLEY_UNEMPLOYMENT02"
+                    ]
+                },
+                {
+                    "startOffset": 1648966208,
+                    "endOffset": 1649032070,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_END_HOMEWORKS_PC_X01KALICE_ATTACK",
+                        "X0101K_END_HOMEWORKS_PC_X01KINTDAD_ATTACK",
+                        "X0101K_END_HOMEWORKS_FA_X01KALICE_ALICE",
+                        "X0101K_END_HOMEWORKS_FA_X01KINTDAD_ATTACKS01",
+                        "X0101K_END_HOMEWORKS_FA_X01KINTDAD_ATTACKS02"
+                    ]
+                },
+                {
+                    "startOffset": 1682174312,
+                    "endOffset": 1682187958,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_TV_WARNING_FA_X01KINTDAD_CLEAROFF01",
+                        "X0101K_TV_WARNING_PC_X01KKARA_CLEAROFFLEFT",
+                        "X0101K_TV_WARNING_PC_X01KKARA_CLEAROFFRIGHT"
+                    ]
+                },
+                {
+                    "startOffset": 1692360956,
+                    "endOffset": 1692366794,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_BEER_GET_PC_X01KINTDAD_GIVE02",
+                        "X0101K_BEER_GET_FA_X01KKARA_GIVE01V2"
+                    ]
+                },
+                {
+                    "startOffset": 1696338064,
+                    "endOffset": 1696348856,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_HOUSE_DRUGCALL_PC_X01KINTDAD_PHONE01"
+                    ]
+                },
+                {
+                    "startOffset": 1708051116,
+                    "endOffset": 1708087500,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_HOUSE_ARRIVAL_FA_X01KEXTDAD_INTROOUTSIDE",
+                        "X0101K_HOUSE_ARRIVAL_PC_X01KKARA_INTROINSIDE",
+                        "X0101K_HOUSE_ARRIVAL_PC_X01KALICE_INTROINSIDE",
+                        "X0101K_HOUSE_ARRIVAL_PC_X01KINTDAD_INTROINSIDE",
+                        "X0101K_HOUSE_ARRIVAL_PC_X01KEXTDAD_INTROOUTSIDE02",
+                        "X0101K_HOUSE_ARRIVAL_PC_X01KKARA_KARAV2"
+                    ]
+                },
+                {
+                    "startOffset": 1714417916,
+                    "endOffset": 1714427064,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_BEER_ASK_PC_X01KINTDAD_CALL01",
+                        "X0101K_BEER_ASK_FA_X01KKARA_CALL02"
+                    ]
+                },
+                {
+                    "startOffset": 1727119612,
+                    "endOffset": 1727128412,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_ALICE_DOLLNAME_PC_X01KKARA_DOLLY",
+                        "X0101K_ALICE_DOLLNAME_PC_X01KALICE_DOLLY"
+                    ]
+                },
+                {
+                    "startOffset": 1733974268,
+                    "endOffset": 1733984444,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_FATHER_TASKS_FA_X01KINTDAD_FLOOR02",
+                        "X0101K_FATHER_TASKS_PC_X01KKARA_FLOOR01V2"
+                    ]
+                },
+                {
+                    "startOffset": 1738905852,
+                    "endOffset": 1738924276,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_NPCTODD_ADDICTED_PC_X01KINTDAD_FINDLIGHTER01",
+                        "X0101K_NPCTODD_ADDICTED_FA_X01KINTDAD_FINDLIGHTER02"
+                    ]
+                },
+                {
+                    "startOffset": 1761161576,
+                    "endOffset": 1761173430,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_NPCTODD_SMOKE_VO_X01KINTDAD_IDLE02",
+                        "X0101K_NPCTODD_SMOKE_VO_X01KINTDAD_IDLE03",
+                        "X0101K_NPCTODD_SMOKE_VO_X01KINTDAD_LIGHTUP01"
+                    ]
+                },
+                {
+                    "startOffset": 1772771688,
+                    "endOffset": 1772785178,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_TV_ENDTIMER_PC_X01KINTDAD_GO01",
+                        "X0101K_TV_ENDTIMER_PC_X01KKARA_GOLEFT",
+                        "X0101K_TV_ENDTIMER_PC_X01KKARA_GORIGHT"
+                    ]
+                },
+                {
+                    "startOffset": 1773715708,
+                    "endOffset": 1773724544,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_ALICE_ROOM_PC_X01KKARA_TIDY",
+                        "X0101K_ALICE_ROOM_PC_X01KALICE_TIDY"
+                    ]
+                },
+                {
+                    "startOffset": 1787074812,
+                    "endOffset": 1787089734,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_NPCTODD_VACUUM_PC_X01KINTDAD_STOP",
+                        "X0101K_NPCTODD_VACUUM_PC_X01KINTDAD_STOPLAZY"
+                    ]
+                },
+                {
+                    "startOffset": 1936945296,
+                    "endOffset": 1936950812,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_ALICE_SHELF_PC_X01KKARA_READ"
+                    ]
+                },
+                {
+                    "startOffset": 1940633744,
+                    "endOffset": 1940638548,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_ALICE_BOOK_PC_X01KKARA_TITLE"
+                    ]
+                },
+                {
+                    "startOffset": 1943825392,
+                    "endOffset": 1943895192,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_ALICE_TENT_FA_X01KKARA_MEET",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_RATIONAL",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_FRIENDLY",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_CAUTIOUS",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_NAME",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_MOTHER",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_TASTES",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_ALONE",
+                        "X0101K_ALICE_TENT_PC_X01KKARA_TIMID"
+                    ]
+                },
+                {
+                    "startOffset": 1970577876,
+                    "endOffset": 1970610714,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_GARDEN_ALICE_PC_X01KKARA_BASKETPLAY",
+                        "X0101K_GARDEN_ALICE_PC_X01KKARA_BASKETSCHOOL",
+                        "X0101K_GARDEN_ALICE_PC_X01KKARA_BASKETCOLD",
+                        "X0101K_GARDEN_ALICE_PC_X01KKARA_BASKETGARDEN"
+                    ]
+                },
+                {
+                    "startOffset": 1984788948,
+                    "endOffset": 1984808940,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_LAUNDRY_DETERGENT_PC_X01KKARA_DRUG",
+                        "X0101K_LAUNDRY_DETERGENT_PC_X01KINTDAD_DRUG",
+                        "X0101K_LAUNDRY_DETERGENT_FA_X01KKARA_KARA",
+                        "X0101K_LAUNDRY_DETERGENT_FA_X01KKARA_KARAVAR"
+                    ]
+                },
+                {
+                    "startOffset": 2020235516,
+                    "endOffset": 2020241834,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101K_NPCTODD_JUSTAMAN_PC_X01KKARA_TOILET",
+                        "X0101K_NPCTODD_JUSTAMAN_PC_X01KINTDAD_TOILET"
+                    ]
+                },
+                {
+                    "startOffset": 2122754300,
+                    "endOffset": 2122777546,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_BEDROOM_WAKEUP_PC_X01MCARL_HELLO",
+                        "X0101M_BEDROOM_WAKEUP_FA_X01MMARKUS_HELLOV4"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "BigFile_PC.d12",
+            "sections": [
+                {
+                    "startOffset": 40978796,
+                    "endOffset": 41073116,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMARKUS_ATTACK01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MLEADER_ATTACK01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MWDEMONSTR05_ATTACK01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMDEMONSTR06_ATTACK01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMARKUS_CYC01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MLEADER_CYC01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MWDEMONSTR05_CYC01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMDEMONSTR06_CYC01",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMARKUS_ATTACK02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MLEADER_ATTACK02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MWDEMONSTR05_ATTACK02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMDEMONSTR06_ATTACK02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMARKUS_CYC02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MLEADER_CYC02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MWDEMONSTR05_CYC02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMDEMONSTR06_CYC02",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMARKUS_ATTACK03",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MSAVIORCOP_ATTACK03",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MLEADER_ATTACK03",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MWDEMONSTR05_ATTACK03",
+                        "X0101M_PROTEST_ATTACKV2_PC_X01MMDEMONSTR06_ATTACK03",
+                        "X0101M_PROTEST_ATTACKV2_FA_X01MMARKUS_EXCUSEME"
+                    ]
+                },
+                {
+                    "startOffset": 41078504,
+                    "endOffset": 41282248,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_REACTIONL02",
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_BANL01",
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_BANL02",
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_WORKERL01",
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_WORKERL02",
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_WEWANTL01",
+                        "X0101M_PROTEST_CROWD_VO_X01MCROWDL_ANDROIDL01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_BAN01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_BAN01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_BAN01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_BAN01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_BAN02",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_BAN02",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_BAN02",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_BAN02",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_WORKER01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_WORKER01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_WORKER01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_WORKER01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_WORKER02",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_WORKER02",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_WORKER02",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_WORKER02",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_ANDROID01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_ANDROID01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_ANDROID01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_ANDROID01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_REACTION02",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_REACTION02",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_REACTION02",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_REACTION02",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN1_WEWANT01",
+                        "X0101M_PROTEST_CROWD_FA_MANGEN2_WEWANT01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN1_WEWANT01",
+                        "X0101M_PROTEST_CROWD_FA_WOMGEN2_WEWANT01"
+                    ]
+                },
+                {
+                    "startOffset": 61507728,
+                    "endOffset": 61534594,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_PROTEST_SLOGAN_PC_X01MLEADER_SLOGANS01"
+                    ]
+                },
+                {
+                    "startOffset": 61536724,
+                    "endOffset": 61567220,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_PROTEST_LISTENER01_FA_X01MMDEMONSTR02_IDLE01",
+                        "X0101M_PROTEST_LISTENER01_FA_X01MMDEMONSTR03_IDLE01",
+                        "X0101M_PROTEST_LISTENER01_FA_X01MMDEMONSTR04_IDLE01",
+                        "X0101M_PROTEST_LISTENER01_FA_X01MWDEMONSTR05_IDLE01"
+                    ]
+                },
+                {
+                    "startOffset": 61569492,
+                    "endOffset": 61599844,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_PROTEST_LISTENER02_FA_X01MMDEMONSTR06_IDLE01",
+                        "X0101M_PROTEST_LISTENER02_FA_X01MMDEMONSTR07_IDLE01",
+                        "X0101M_PROTEST_LISTENER02_FA_X01MMDEMONSTR09_IDLE01",
+                        "X0101M_PROTEST_LISTENER02_FA_X01MWDEMONSTR10_IDLE01"
+                    ]
+                },
+                {
+                    "startOffset": 139525536,
+                    "endOffset": 139582732,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGSELLER_SELLER01",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER01W_BUYERS01",
+                        "X0101M_HOTDOG_DIALS_PC_X01MHOTDOGSELLER_MARKUS1",
+                        "X0101M_HOTDOG_DIALS_PC_X01MHOTDOGSELLER_MARKUS2",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGSELLER_SELLER02",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGSELLER_SELLER03",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGSELLER_SELLER04",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER02M_BUYERS02",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER03_BUYERS03",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER04M_BUYERS04",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER05W_BUYERS05",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER06M_BUYERS06",
+                        "X0101M_HOTDOG_DIALS_FA_X01MHOTDOGBUYER07W_BUYERS07"
+                    ]
+                },
+                {
+                    "startOffset": 144180748,
+                    "endOffset": 144258796,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_GETREADY",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_GETREADY",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_START",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_START",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_CLOTHES",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_CLOTHES",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_BATHROOM",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_BATHROOM",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_FACTUAL",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_FACTUAL",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_REASSURING",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_REASSURING",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MMARKUS_CLOTHESCONT",
+                        "X0101M_BEDROOM_INJECTION_PC_X01MCARL_CLOTHESCONT"
+                    ]
+                },
+                {
+                    "startOffset": 278811312,
+                    "endOffset": 279059386,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_PAINT",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_PAINT",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_LIKE",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_LIKE",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_DISLIKE",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_DISLIKE",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_NOOPINION",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_NOOPINION",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_TRY",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_TRY",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_TRYAGAIN",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_TRYAGAIN",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_END",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_END",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MLEO_END",
+                        "X0101M_WORKSHOP_PAINT_FA_X01MMARKUS_TRYAGAINSEC01",
+                        "X0101M_WORKSHOP_PAINT_FA_X01MCARL_TRYAGAINSEC01",
+                        "X0101M_WORKSHOP_PAINT_FA_X01MMARKUS_TRYAGAINSEC02",
+                        "X0101M_WORKSHOP_PAINT_FA_X01MCARL_TRYAGAINSEC02",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_LIKEV2",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_PAINTV2",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_NOOPINIONV2",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_TRYV2",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MMARKUS_TRYAGAINV2",
+                        "X0101M_WORKSHOP_PAINT_PC_X01MCARL_TRYAGAINV2"
+                    ]
+                },
+                {
+                    "startOffset": 279060516,
+                    "endOffset": 279073206,
+                    "hasKeyListing": false,
+                    "keys": [
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_MARKUS",
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_ANDROIDS",
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_EMOTIONS",
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_CARL",
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_HUMANITY",
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_IDENTITY",
+                        "X0101M_WORKSHOP_CHOICE01_PC_CHOICETHEME_PRISONER"
+                    ]
+                },
+                {
+                    "startOffset": 279074852,
+                    "endOffset": 279092428,
+                    "hasKeyListing": false,
+                    "keys": [
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_ANGER",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_SADNESS",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_FUTURE",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_HOPE",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_FATE",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_PAIN",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_COMFORT",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_EMPATHY",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_DISPAIR",
+                        "X0101M_WORKSHOP_CHOICE02_PC_CHOICEEMOTION_DOUBTS"
+                    ]
+                },
+                {
+                    "startOffset": 285931988,
+                    "endOffset": 286025914,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_PREACHER_SLOGAN_PC_X01MPREACHER_SLOGANS01",
+                        "X0101M_PREACHER_SLOGAN_PC_X01MPREACHER_MARKUS",
+                        "X0101M_PREACHER_SLOGAN_PC_X01MPREACHER_SLOGANS03",
+                        "X0101M_PREACHER_SLOGAN_PC_X01MPREACHER_SLOGANS02"
+                    ]
+                },
+                {
+                    "startOffset": 322492668,
+                    "endOffset": 322505850,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_TVOFF_PC_X01MCARL_SWITCHOFF01",
+                        "X0101M_LIVING_TVOFF_PC_X01MCARL_SWITCHOFF02"
+                    ]
+                },
+                {
+                    "startOffset": 322507004,
+                    "endOffset": 322525142,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_PIANO_PC_X01MMARKUS_MOVED",
+                        "X0101M_LIVING_PIANO_PC_X01MCARL_MOVED"
+                    ]
+                },
+                {
+                    "startOffset": 322525868,
+                    "endOffset": 322554752,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_DIE_PC_X01MMARKUS_FREE01",
+                        "X0101M_LIVING_DIE_PC_X01MCARL_FREE01",
+                        "X0101M_LIVING_DIE_PC_X01MMARKUS_FREE02",
+                        "X0101M_LIVING_DIE_PC_X01MCARL_FREE02",
+                        "X0101M_LIVING_DIE_PC_X01MMARKUS_FREE03",
+                        "X0101M_LIVING_DIE_PC_X01MCARL_FREE03"
+                    ]
+                },
+                {
+                    "startOffset": 343506120,
+                    "endOffset": 343562314,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_HUNGRY_FA_X01MMARKUS_BREAKFAST",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_BREAKFAST",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_WAITING01",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_WAITING02",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_WAITING03",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_WAITING04",
+                        "X0101M_LIVING_HUNGRY_FA_X01MMARKUS_SORRY01",
+                        "X0101M_LIVING_HUNGRY_FA_X01MMARKUS_SORRY02",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_TOOLONG01",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_TOOLONG02",
+                        "X0101M_LIVING_HUNGRY_FA_X01MCARL_TOOLONG02DUPLICATED"
+                    ]
+                },
+                {
+                    "startOffset": 346831100,
+                    "endOffset": 346844288,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_VASARI_PURCHASE_PC_X01MVASARISELLER_BUY",
+                        "X0101M_VASARI_PURCHASE_FA_X01MMARKUS_BUYMARKUS"
+                    ]
+                },
+                {
+                    "startOffset": 351887612,
+                    "endOffset": 351899126,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0904M_CARLHOUSE_ALARM_VO_X09MHOUSEALARMVOICE_MOVIEKCH",
+                        "X0904M_CARLHOUSE_ALARM_VO_X09MHOUSEALARMVOICE_MOVIEKCHV2"
+                    ]
+                },
+                {
+                    "startOffset": 354371836,
+                    "endOffset": 354396620,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_BEDROOM_TODAY_FA_X01MMARKUS_PGM",
+                        "X0101M_BEDROOM_TODAY_FA_X01MCARL_PGM"
+                    ]
+                },
+                {
+                    "startOffset": 395264148,
+                    "endOffset": 395357286,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_READ",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_READ",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_KEATS01",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_KEATS01",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_THINK",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_THINK",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_SHAKESPEARE01",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_SHAKESPEARE01",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_PLATON01",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_PLATON01",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_KEATS02A",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_KEATS02A",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_SHAKESPEARE02",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_SHAKESPEARE02",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_PLATON02A",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_PLATON02A",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_KEATS02B",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_KEATS02B",
+                        "X0101M_LIVING_BOOK_PC_X01MMARKUS_PLATON02B",
+                        "X0101M_LIVING_BOOK_PC_X01MCARL_PLATON02B"
+                    ]
+                },
+                {
+                    "startOffset": 420614396,
+                    "endOffset": 420621824,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_TVON_FA_X01MCARL_THANKS",
+                        "X0101M_LIVING_TVON_FA_X01MCARL_THANKSV2"
+                    ]
+                },
+                {
+                    "startOffset": 420622588,
+                    "endOffset": 420634136,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_COFFEE_FA_X01MMARKUS_FINDSOMETHING",
+                        "X0101M_LIVING_COFFEE_PC_X01MCARL_FINDSOMETHING"
+                    ]
+                },
+                {
+                    "startOffset": 426291780,
+                    "endOffset": 426429364,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_PLAY",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_PLAY",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_LOSE",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_LOSE",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_LOSETRUTH",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_LOSETRUTH",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_LOSELIE",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_LOSELIE",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_DONTLOSE",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_DONTLOSE",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_WIN",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_WIN",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_SORRY",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_SORRY",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_JUSTIFY",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_JUSTIFY",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_DRAW01",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_DRAW01",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_DRAWLIE",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_DRAWLIE",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_DRAWTRUTH",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_DRAWTRUTH",
+                        "X0101M_LIVING_CHESS_PC_X01MMARKUS_DRAW02",
+                        "X0101M_LIVING_CHESS_PC_X01MCARL_DRAW02"
+                    ]
+                },
+                {
+                    "startOffset": 467150992,
+                    "endOffset": 467156386,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_WORKSHOP_COVER_FA_X01MCARL_REMOVE"
+                    ]
+                },
+                {
+                    "startOffset": 468596880,
+                    "endOffset": 468602826,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0101M_WORKSHOP_COVER02_FA_X01MCARL_REMOVE"
+                    ]
+                },
+                {
+                    "startOffset": 484969348,
+                    "endOffset": 485013672,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CANDROIDCOP_STOPCORDONCOP",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CHANK_HPATIENTORDIPLOMAT",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CHANK_HALWAYS",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CHANK_STOPCORDONHANK",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CCONNOR_CPATIENTORDIPLOMAT",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CCONNOR_CALWAYS",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CANDROIDCOP_GOODEVENING",
+                        "X0201C_CRIMESCENE_GUARD_FA_X02CANDROIDCOP_STOPCORDONCOPPASS"
+                    ]
+                },
+                {
+                    "startOffset": 485015804,
+                    "endOffset": 485040582,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_CRIMESCENE_CHAD_FA_X02CCHAD_INTROCHAD",
+                        "X0201C_CRIMESCENE_CHAD_FA_X02CHANK_INTROHANK"
+                    ]
+                },
+                {
+                    "startOffset": 488309204,
+                    "endOffset": 488332929,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_CRIMESCENE_TV_FA_X02CHANK_QUESTIONS",
+                        "X0201C_CRIMESCENE_TV_FA_X02CJOURNALIST_QUESTIONSJ",
+                        "X0201C_CRIMESCENE_TV_FA_X02CJOURNALIST_QUESTIONSJ02",
+                        "X0201C_CRIMESCENE_TV_FA_X02CJOURNALIST_QUESTIONSJ03"
+                    ]
+                },
+                {
+                    "startOffset": 488334212,
+                    "endOffset": 488379914,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_CRIMESCENE_CAR_PC_X02CCONNOR_START",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CHANK_START",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CCONNOR_DIPLOMATIC",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CHANK_DIPLOMATIC",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CCONNOR_FIRM",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CHANK_FIRM",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CCONNOR_PATIENT",
+                        "X0201C_CRIMESCENE_CAR_PC_X02CHANK_PATIENT",
+                        "X0201C_CRIMESCENE_CAR_PC_CHOICEGROUP1_DIPLOMATIC",
+                        "X0201C_CRIMESCENE_CAR_PC_CHOICEGROUP1_FIRM",
+                        "X0201C_CRIMESCENE_CAR_PC_CHOICEGROUP1_PATIENT"
+                    ]
+                },
+                {
+                    "startOffset": 539421140,
+                    "endOffset": 539452430,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_HANK_LEAVE_PC_X02CCONNOR_BYE01",
+                        "X0201C_HANK_LEAVE_PC_X02CHANK_BYE01",
+                        "X0201C_HANK_LEAVE_PC_X02CCONNOR_BYE02",
+                        "X0201C_HANK_LEAVE_PC_X02CHANK_BYE02"
+                    ]
+                },
+                {
+                    "startOffset": 563087612,
+                    "endOffset": 563099390,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_RECON_INTRO_PC_X02CCONNOR_READY",
+                        "X0201C_RECON_INTRO_PC_X02CHANK_READY"
+                    ]
+                },
+                {
+                    "startOffset": 572854524,
+                    "endOffset": 572872102,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_RECON_SUCCESS_PC_X02CCONNOR_HBBLOOD",
+                        "X0201C_RECON_SUCCESS_PC_X02CHANK_HBBLOOD"
+                    ]
+                },
+                {
+                    "startOffset": 612717444,
+                    "endOffset": 612761528,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_POLICEMEN_VOICES_FA_X02CHARVEY_SAMPLE01",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CCSIA_SAMPLE02",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CCSIB_CORONER01",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CHARVEY_CORONER02",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CHARVEY_BATHROOM01",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CCSIA_NIGHT02",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CCSIB_BATHROOM02",
+                        "X0201C_POLICEMEN_VOICES_FA_X02CHARVEY_NIGHT01"
+                    ]
+                },
+                {
+                    "startOffset": 921821436,
+                    "endOffset": 921831922,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_HANK_NEXT_FA_X02CHANK_WHATELSE01",
+                        "X0201C_HANK_NEXT_FA_X02CHARVEY_WHATELSE02"
+                    ]
+                },
+                {
+                    "startOffset": 922071292,
+                    "endOffset": 922081804,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201C_HANK_ENDOFTIMER_PC_X02CCONNOR_ENDING",
+                        "X0201C_HANK_ENDOFTIMER_PC_X02CHANK_ENDING"
+                    ]
+                },
+                {
+                    "startOffset": 927850748,
+                    "endOffset": 927859618,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_DINNER_MOVING_PC_X02KDAD_STOP01",
+                        "X0201K_DINNER_MOVING_PC_X02KKARA_STOP03"
+                    ]
+                },
+                {
+                    "startOffset": 927861096,
+                    "endOffset": 927871678,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_INTRO_DINNER_PC_X02KDAD_READY",
+                        "X0201K_INTRO_DINNER_PC_X02KKARA_READY",
+                        "X0201K_INTRO_DINNER_PC_X02KKARA_KARAV2"
+                    ]
+                },
+                {
+                    "startOffset": 950112400,
+                    "endOffset": 950120268,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_FATHER_COMING_FA_X02KDAD_GOTOSTAIRS"
+                    ]
+                },
+                {
+                    "startOffset": 950120700,
+                    "endOffset": 950128454,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_FATHER_TOOLATE_VO_X02KALICE_ALICE",
+                        "X0201K_FATHER_TOOLATE_FA_X02KDAD_TODD02"
+                    ]
+                },
+                {
+                    "startOffset": 954221336,
+                    "endOffset": 954257078,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_FATHER_ATTACK_FA_X02KALICE_BEATEN01",
+                        "X0201K_FATHER_ATTACK_VO_X02KDAD_BEAT06",
+                        "X0201K_FATHER_ATTACK_VO_X02KDAD_BEAT07",
+                        "X0201K_FATHER_ATTACK_VO_X02KDAD_BEAT08",
+                        "X0201K_FATHER_ATTACK_VO_X02KDAD_BEAT09",
+                        "X0201K_FATHER_ATTACK_VO_X02KDAD_BEAT10",
+                        "X0201K_FATHER_ATTACK_VO_X02KDAD_BEAT06BIS"
+                    ]
+                },
+                {
+                    "startOffset": 954258632,
+                    "endOffset": 954290856,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CUE01",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CUE02",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CUE03",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CUE04",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CUE05",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CUE06",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CRY01",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CRY02",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CRY03",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CRY04",
+                        "X0201K_FIGHT_ALICE_FA_X02KALICE_CRY05"
+                    ]
+                },
+                {
+                    "startOffset": 961573656,
+                    "endOffset": 961651320,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_DINNER_GOWILD_PC_X02KDAD_MAD",
+                        "X0201K_DINNER_GOWILD_FA_X02KALICE_DADDY",
+                        "X0201K_DINNER_GOWILD_PC_X02KDAD_RAGE02",
+                        "X0201K_DINNER_GOWILD_PC_X02KALICE_RAGE02",
+                        "X0201K_DINNER_GOWILD_PC_X02KDAD_RAGEEND",
+                        "X0201K_DINNER_GOWILD_PC_X02KKARA_RAGEEND",
+                        "X0201K_DINNER_GOWILD_PC_X02KDAD_RAGE01V2"
+                    ]
+                },
+                {
+                    "startOffset": 978151784,
+                    "endOffset": 978214504,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_DINNER_ANDROIDS_PC_X02KDAD_ANGRY",
+                        "X0201K_DINNER_ANDROIDS_PC_X02KDAD_ANGRYV2",
+                        "X0201K_DINNER_ANDROIDS_PC_X02KDAD_ANGRYV3"
+                    ]
+                },
+                {
+                    "startOffset": 1029538260,
+                    "endOffset": 1029570466,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_TIMEOUT_ALICEDEAD_PC_X02KDAD_GAMEOVER",
+                        "X0201K_TIMEOUT_ALICEDEAD_PC_X02KALICE_GAMEOVER",
+                        "X0201K_TIMEOUT_ALICEDEAD_PC_X02KKARA_GAMEOVER",
+                        "X0201K_TIMEOUT_ALICEDEAD_FA_X02KDAD_GAMEOVERSEC"
+                    ]
+                },
+                {
+                    "startOffset": 1178048764,
+                    "endOffset": 1178078196,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_TODD_WOUNDED_PC_X02KDAD_HELP",
+                        "X0201K_TODD_WOUNDED_FA_X02KDAD_HELPFA"
+                    ]
+                },
+                {
+                    "startOffset": 1178079916,
+                    "endOffset": 1178107840,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_LOCKEDIN_WINDOW_PC_X02KALICE_OPEN",
+                        "X0201K_LOCKEDIN_WINDOW_PC_X02KKARA_OPEN",
+                        "X0201K_LOCKEDIN_WINDOW_PC_X02KALICE_ALICEGOOUT",
+                        "X0201K_LOCKEDIN_WINDOW_PC_X02KKARA_ALICEGOOUT",
+                        "X0201K_LOCKEDIN_WINDOW_PC_X02KALICE_CLOSEV2",
+                        "X0201K_LOCKEDIN_WINDOW_PC_X02KKARA_CLOSEV2"
+                    ]
+                },
+                {
+                    "startOffset": 1178153212,
+                    "endOffset": 1178163850,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_LOCKEDIN_BADCHOICE_PC_X02KALICE_REASSURE",
+                        "X0201K_LOCKEDIN_BADCHOICE_PC_X02KKARA_REASSURE"
+                    ]
+                },
+                {
+                    "startOffset": 1185273248,
+                    "endOffset": 1185347643,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KALICE_START01",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KKARA_START01",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KALICE_RUN",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KKARA_RUN",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KDAD_BARRICADE",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KALICE_SPEAK01",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KKARA_SPEAK01",
+                        "X0201K_ALICEROOM_CHOICE_FA_X02KDAD_TODDCOMING",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KDAD_SPEAK02",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KKARA_SPEAK02",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KALICE_START02",
+                        "X0201K_ALICEROOM_CHOICE_PC_X02KKARA_START02",
+                        "X0201K_ALICEROOM_CHOICE_FA_X02KDAD_SPEAK02SECFA"
+                    ]
+                },
+                {
+                    "startOffset": 1185349776,
+                    "endOffset": 1185354290,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_LOCKEDIN_FINDSOMETHING_PC_X02KKARA_QUICK"
+                    ]
+                },
+                {
+                    "startOffset": 1243363688,
+                    "endOffset": 1243381794,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_RUNAWAY_MAINDOOR_PC_X02KDAD_TODD",
+                        "X0201K_RUNAWAY_MAINDOOR_PC_X02KALICE_NOKEY",
+                        "X0201K_RUNAWAY_MAINDOOR_PC_X02KKARA_NOKEY"
+                    ]
+                },
+                {
+                    "startOffset": 1253525220,
+                    "endOffset": 1253631728,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_ALICEROOM_ENTER_PC_X02KDAD_WITHGUN",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KKARA_WITHGUN",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KDAD_WITHOUTGUN",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KKARA_WITHOUTGUN",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KDAD_FAILURE",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KALICE_FAILURE",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KKARA_FAILURE",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KALICE_WITHGUNAL",
+                        "X0201K_ALICEROOM_ENTER_FA_X02KDAD_FAILURESEC",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KDAD_SHOOT",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KALICE_SHOOT",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KKARA_SHOOT",
+                        "X0201K_ALICEROOM_ENTER_FA_X02KALICE_WITHGUNALSEC",
+                        "X0201K_ALICEROOM_ENTER_FA_X02KALICE_BEATENCYCSEC",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KALICE_BEATENCYC",
+                        "X0201K_ALICEROOM_ENTER_PC_X02KALICE_STANDUP"
+                    ]
+                },
+                {
+                    "startOffset": 1316358504,
+                    "endOffset": 1316370144,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_TODD_FIGHT_FA_X01KINTDAD_CUE01",
+                        "X0201K_TODD_FIGHT_FA_X01KINTDAD_CUE02",
+                        "X0201K_TODD_FIGHT_FA_X01KINTDAD_CUE03"
+                    ]
+                },
+                {
+                    "startOffset": 1317368168,
+                    "endOffset": 1317383222,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_TODD_LESSON_FA_X02KDAD_BEATT",
+                        "X0201K_TODD_LESSON_FA_X02KALICE_BEATA",
+                        "X0201K_TODD_LESSON_FA_X02KDAD_BEATTB"
+                    ]
+                },
+                {
+                    "startOffset": 1317384336,
+                    "endOffset": 1317389666,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_LOCKEDIN_LOSTFIGHT_FA_X02KDAD_COMEHERE"
+                    ]
+                },
+                {
+                    "startOffset": 1338978556,
+                    "endOffset": 1338990688,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_RUNAWAY_SUCCESS_PC_X02KDAD_FRONTCOMEBACK",
+                        "X0201K_RUNAWAY_SUCCESS_PC_X02KDAD_BACKCOMEBACK"
+                    ]
+                },
+                {
+                    "startOffset": 1338995480,
+                    "endOffset": 1339029000,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_ESCAPE_TIMEOUTV2_PC_X02KDAD_ORDER",
+                        "X0201K_ESCAPE_TIMEOUTV2_PC_X02KALICE_ORDER",
+                        "X0201K_ESCAPE_TIMEOUTV2_PC_X02KKARA_ORDER",
+                        "X0201K_ESCAPE_TIMEOUTV2_FA_X02KDAD_YOURTURN",
+                        "X0201K_ESCAPE_TIMEOUTV2_FA_X02KALICE_LEAVEHER",
+                        "X0201K_ESCAPE_TIMEOUTV2_FA_X02KALICE_LETMEGO",
+                        "X0201K_ESCAPE_TIMEOUTV2_FA_X02KDAD_YOURTURNSEC"
+                    ]
+                },
+                {
+                    "startOffset": 1370380540,
+                    "endOffset": 1370388882,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_DINNER_LIGHT_PC_X02KDAD_TURNON01",
+                        "X0201K_DINNER_LIGHT_FA_X02KKARA_TURNON02"
+                    ]
+                },
+                {
+                    "startOffset": 1372258448,
+                    "endOffset": 1372263806,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_DINNER_PASTA_FA_X02KKARA_SHOP"
+                    ]
+                },
+                {
+                    "startOffset": 1373610236,
+                    "endOffset": 1373618772,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_DINNER_HURRY_PC_X02KDAD_HURRY01",
+                        "X0201K_DINNER_HURRY_FA_X02KKARA_HURRY02"
+                    ]
+                },
+                {
+                    "startOffset": 1376325884,
+                    "endOffset": 1376336336,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_LOCKEDIN_TODDMAD_FA_X02KDAD_OPEN01",
+                        "X0201K_LOCKEDIN_TODDMAD_FA_X02KDAD_OPEN02"
+                    ]
+                },
+                {
+                    "startOffset": 1378236560,
+                    "endOffset": 1378240424,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_FATHER_OUTTAHERE_FA_X02KDAD_PUSH"
+                    ]
+                },
+                {
+                    "startOffset": 1380246512,
+                    "endOffset": 1380288406,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KDAD_BEATIT",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KALICE_BEATIT",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KKARA_BEATIT",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KDAD_REFUSE",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KALICE_REFUSE",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KKARA_REFUSE",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KDAD_ACCEPT",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KALICE_ACCEPT",
+                        "X0201K_LOCKEDIN_TOUGHCHOICE_PC_X02KKARA_ACCEPT"
+                    ]
+                },
+                {
+                    "startOffset": 1405657772,
+                    "endOffset": 1405687614,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_FATHER_TRYTALK_PC_X02KKARA_DETERMINED",
+                        "X0201K_FATHER_TRYTALK_FA_X02KDAD_TODD",
+                        "X0201K_FATHER_TRYTALK_PC_X02KKARA_COMPREHENSIVE",
+                        "X0201K_FATHER_TRYTALK_PC_X02KKARA_CALM",
+                        "X0201K_FATHER_TRYTALK_FA_X02KKARA_THROAT",
+                        "X0201K_FATHER_TRYTALK_PC_X02KKARA_GETUP"
+                    ]
+                },
+                {
+                    "startOffset": 1410561548,
+                    "endOffset": 1410635102,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_INTRO_ARRIVAL_VO_X02MHOUSEALARMVOICE_WELCOMEKCH",
+                        "X0201M_INTRO_ARRIVAL_PC_X02MCARL_INTROM01",
+                        "X0201M_INTRO_ARRIVAL_FA_X02MMARKUSINT_INTROM01",
+                        "X0201M_INTRO_ARRIVAL_PC_X02MCARL_INTROM02",
+                        "X0201M_INTRO_ARRIVAL_FA_X02MMARKUSINT_INTROM02",
+                        "X0201M_INTRO_ARRIVAL_PC_X02MCARL_INTROM03",
+                        "X0201M_INTRO_ARRIVAL_FA_X02MMARKUSINT_INTROM03",
+                        "X0201M_INTRO_ARRIVAL_PC_X02MCARL_INTROM04",
+                        "X0201M_INTRO_ARRIVAL_FA_X02MMARKUSINT_INTROM04",
+                        "X0201M_INTRO_ARRIVAL_PC_X02MCARL_DRINKM",
+                        "X0201M_INTRO_ARRIVAL_FA_X02MMARKUSINT_DRINKM",
+                        "X0201M_INTRO_ARRIVAL_VO_X02MHOUSEALARMVOICE_WELCOMEKCHV2",
+                        "X0201M_INTRO_ARRIVAL_VO_MANLCL_RADIOPLAY",
+                        "X0201M_INTRO_ARRIVAL_VO_MANLCL_RADIOSTOP"
+                    ]
+                },
+                {
+                    "startOffset": 1426219260,
+                    "endOffset": 1426229398,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_LIVING_WORRY_PC_X02MCARL_WORKSHOP",
+                        "X0201M_LIVING_WORRY_PC_X02MMARKUSINT_WORKSHOP"
+                    ]
+                },
+                {
+                    "startOffset": 1426231656,
+                    "endOffset": 1426251918,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_LIVING_POLICE_PC_X02MCARL_LETSGO",
+                        "X0201M_LIVING_POLICE_FA_X02MMARKUSINT_CALL",
+                        "X0201M_LIVING_POLICE_VO_X02MPOLICEW_CALLW"
+                    ]
+                },
+                {
+                    "startOffset": 1438687700,
+                    "endOffset": 1438706886,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_LIVING_DRINK_PC_X02MCARL_SCOTCH01",
+                        "X0201M_LIVING_DRINK_FA_X02MMARKUSINT_SCOTCH01",
+                        "X0201M_LIVING_DRINK_FA_X02MCARL_SCOTCH02",
+                        "X0201M_LIVING_DRINK_FA_X02MMARKUSINT_SCOTCH02"
+                    ]
+                },
+                {
+                    "startOffset": 1448534484,
+                    "endOffset": 1448548594,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_INTRO_CALLBACK_PC_X02MCARL_CALL01",
+                        "X0201M_INTRO_CALLBACK_FA_X02MMARKUSINT_CALL01",
+                        "X0201M_INTRO_CALLBACK_PC_X02MCARL_CALL02",
+                        "X0201M_INTRO_CALLBACK_FA_X02MMARKUSINT_CALL02"
+                    ]
+                },
+                {
+                    "startOffset": 1450764008,
+                    "endOffset": 1450957466,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_FINDLEO",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_FINDLEO",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_FINDLEO",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_STOP",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_STOP",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_STOP",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_INSIST",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_REASON",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_REASON",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_REASON",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_THREATEN",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_THREATEN",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_THREATEN",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_ADVISE",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_ADVISE",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_ADVISE",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_FIGHT01",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_FIGHT01",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_FIGHT01",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_CARLDIE",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_CARLDIE",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_CARLDIE",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_WARNING",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_WARNING",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_WARNING",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_HEARTATTACK",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_HEARTATTACK",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_FIGHT02",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_FIGHT02",
+                        "X0201M_WORKSHOP_LEO_PC_X02MMARKUSINT_SHOT",
+                        "X0201M_WORKSHOP_LEO_PC_X02MLEO_SHOT",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_FIGHT02C",
+                        "X0201M_WORKSHOP_LEO_PC_X02MCARL_HEARTATTACKC",
+                        "X0201M_WORKSHOP_LEO_FA_X02MPOLICEM01_DONTMOVE",
+                        "X0201M_WORKSHOP_LEO_VO_X02MPOLICEM01_THISWAY"
+                    ]
+                },
+                {
+                    "startOffset": 1475401872,
+                    "endOffset": 1475406436,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_WORKSHOP_CALLBACK_PC_X02MCARL_CALL"
+                    ]
+                },
+                {
+                    "startOffset": 1488980868,
+                    "endOffset": 1489020320,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_STAIRS",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_CORRIDOR",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_ALICEROOM01",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_ALICEROOM02",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_ALICEROOM03",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_ALICEROOM04",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_ALICEROOM05",
+                        "X0201K_ESCAPE_TODD_FA_X02KDAD_ALICEROOM06"
+                    ]
+                },
+                {
+                    "startOffset": 1620902792,
+                    "endOffset": 1621025290,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONW01_NERVOUS",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONM01_RELAX",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONW01_HISFACE",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONM01_DETAIL",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONW02_SHOCK",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONW02_SURE",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONW02_THERE",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONW02_TOOLONG",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONM02_WATER",
+                        "X0302C_PBY_LINES_FA_X03CRECEPTIONM02_THANKS",
+                        "X0302C_PBY_LINES_FA_X03CPHONECOP_PHONE01",
+                        "X0302C_PBY_LINES_FA_X03CPHONECOP_PHONE02",
+                        "X0302C_PBY_LINES_FA_X03CPHONECOP_PHONE03",
+                        "X0302C_PBY_LINES_FA_X03CPHONECOP_PHONE04",
+                        "X0302C_PBY_LINES_FA_X03CPHONECOP_PHONE05",
+                        "X0302C_PBY_LINES_FA_X03CPHONECOP_PHONE06",
+                        "X0302C_PBY_LINES_FA_X03CSTANDCOP_SAMPLES",
+                        "X0302C_PBY_LINES_FA_X03CSTANDCOP_REDICE",
+                        "X0302C_PBY_LINES_FA_X03CSTANDCOP_YEAH",
+                        "X0302C_PBY_LINES_FA_X03CSITCOP_LAB",
+                        "X0302C_PBY_LINES_FA_X03CSITCOP_FORENSICS",
+                        "X0302C_PBY_LINES_FA_X03CWOMCOP01_YOUANDYOU",
+                        "X0302C_PBY_LINES_FA_X03CCOP02_CHECK",
+                        "X0302C_PBY_LINES_FA_X03CWOMCOP02_OK",
+                        "X0302C_PBY_LINES_FA_X03CCOP02_STATS",
+                        "X0302C_PBY_LINES_FA_X03CWOMCOP02_GOTIT",
+                        "X0302C_PBY_LINES_FA_X03CCOP02_GOTTA"
+                    ]
+                },
+                {
+                    "startOffset": 1634822936,
+                    "endOffset": 1634861524,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_HANK_CONNORBACK_PC_X03CCONNOR_CONNORDIED",
+                        "X0302C_HANK_CONNORBACK_PC_X03CHANK_CONNORDIED",
+                        "X0302C_HANK_CONNORBACK_PC_X03CCONNOR_CONNORALIVE",
+                        "X0302C_HANK_CONNORBACK_PC_X03CHANK_CONNORALIVE",
+                        "X0302C_HANK_CONNORBACK_PC_X03CCONNOR_FUCK",
+                        "X0302C_HANK_CONNORBACK_PC_X03CHANK_FUCK",
+                        "X0302C_HANK_CONNORBACK_PC_X03CFOWLER_INMYOFFICE"
+                    ]
+                },
+                {
+                    "startOffset": 1675788864,
+                    "endOffset": 1675803174,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_END_LEODEAD_PC_X02MCARL_LEO",
+                        "X0201M_END_LEODEAD_PC_X02MMARKUSINT_LEO",
+                        "X0201M_END_LEODEAD_PC_X02MLEO_LEO",
+                        "X0201M_END_LEODEAD_PC_X02MCARL_LEOCYC",
+                        "X0201M_END_LEODEAD_PC_X02MLEO_LEOCYC"
+                    ]
+                },
+                {
+                    "startOffset": 1675810316,
+                    "endOffset": 1675863134,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0201M_END_GO_PC_X02MCARL_EXPLAIN",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_EXPLAIN",
+                        "X0201M_END_GO_PC_X02MCARL_BEG",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_BEG",
+                        "X0201M_END_GO_PC_X02MCARL_CONJURE",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_CONJURE",
+                        "X0201M_END_GO_PC_X02MCARL_OUT",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_OUT",
+                        "X0201M_END_GO_PC_X02MCARL_SHOT",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_SHOT",
+                        "X0201M_END_GO_PC_X02MCARL_GO01",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_GO01",
+                        "X0201M_END_GO_PC_X02MCARL_GO02",
+                        "X0201M_END_GO_PC_X02MMARKUSINT_GO02"
+                    ]
+                },
+                {
+                    "startOffset": 1749390104,
+                    "endOffset": 1749433464,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_ASSAULT",
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_FIREFIGHT",
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_K9",
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_LOSTANDROID",
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_PATROLTRAFFIC",
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_TACTICAL",
+                        "X5072X_RADIOCOMS_DISPATCH_VO_WOMLKE_TRAFFIC"
+                    ]
+                },
+                {
+                    "startOffset": 1757218212,
+                    "endOffset": 1757429032,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_NOINTERROGATION",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_NOINTERROGATION",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_CONNORALIVE",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_CONNORALIVE",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_CONNORDIED",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_CONNORDIED",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_GREET",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_GREET",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_NEVERSEEN",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_NEVERSEEN",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_ANSWER",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_ANSWER",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_DECLINE",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_DECLINE",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_IGNORE",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_IGNORE",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_ANOTHERCOFFEE",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_ANOTHERCOFFEE",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_ACCEPT",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_ACCEPT",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_REFUSE",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_REFUSE",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_IGNOREAGAIN",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_IGNOREAGAIN",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_INTRODUCE",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_INTRODUCE",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_INTERVENED",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_INTERVENED",
+                        "X0302C_CAFET_BULLY_PC_X03CCONNOR_OBEY",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_OBEY",
+                        "X0302C_CAFET_BULLY_PC_X03CCURTIS_COFFEECYC",
+                        "X0302C_CAFET_BULLY_FA_X03CCURTIS_OBEYSECU"
+                    ]
+                },
+                {
+                    "startOffset": 1760360916,
+                    "endOffset": 1760384536,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_ARRIVAL_ENTRANCE_PC_X03CANDCOPWOM01_ATTHEDESK",
+                        "X0302C_ARRIVAL_ENTRANCE_PC_X03CCONNOR_ATTHEDESKCON",
+                        "X0302C_ARRIVAL_ENTRANCE_FA_X03CANDCOPMAN01_NOGOV2",
+                        "X0302C_ARRIVAL_ENTRANCE_FA_X03CANDCOPMAN01_NOGOV3"
+                    ]
+                },
+                {
+                    "startOffset": 1774834132,
+                    "endOffset": 1774861652,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_HANK_PHONE_PC_X03CCONNOR_CALL",
+                        "X0302C_HANK_PHONE_PC_X03CCONNOR_MESSAGE",
+                        "X0302C_HANK_PHONE_VO_X03CHANK_NOTHERE",
+                        "X0302C_HANK_PHONE_PC_X03CCONNOR_HANGUPV2"
+                    ]
+                },
+                {
+                    "startOffset": 1780687532,
+                    "endOffset": 1780717758,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_HANKDESK_LOOKINGFOR_PC_X03CCONNOR_HANK",
+                        "X0302C_HANKDESK_LOOKINGFOR_PC_X03CCONNOR_HANKAGAIN01",
+                        "X0302C_HANKDESK_LOOKINGFOR_PC_X03CCOP01_HANKAGAIN01",
+                        "X0302C_HANKDESK_LOOKINGFOR_PC_X03CANDCOPWOM01_HANKCOP",
+                        "X0302C_HANKDESK_LOOKINGFOR_PC_X03CCONNOR_HANKAGAIN02",
+                        "X0302C_HANKDESK_LOOKINGFOR_PC_X03CCOP01_HANKAGAIN02"
+                    ]
+                },
+                {
+                    "startOffset": 1923897068,
+                    "endOffset": 1924256622,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_INTRO",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_INTRO",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONNORDEAD",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONNORDEAD",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_ANDNOTFOUND",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_ANDNOTFOUND",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT03",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT03",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_ANDFOUNDDEAD",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_ANDFOUNDDEAD",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_ANDSAVED",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_ANDSAVED",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT01",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT01",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_01SIMULATION",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_01SIMULATION",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_01TRAUMATIZED",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_01TRAUMATIZED",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_01DEVIANCY",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_01DEVIANCY",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_01REGRETS",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_01REGRETS",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_01INTERVENTION",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_01INTERVENTION",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT02",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT02",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_02UNPLEASANT",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_02UNPLEASANT",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_02DYSFUNCTIONAL",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_02DYSFUNCTIONAL",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_02INTRIGUING",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_02INTRIGUING",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_02UNSURE",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_02UNSURE",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_03FRIENDLY",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_03FRIENDLY",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_03ADAPT",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_03ADAPT",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_03INDIFFERENT",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_03INDIFFERENT",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_03DONTKNOW",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_03DONTKNOW",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT04A",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT04A",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT05",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT05",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_NOANDSTOPTHIS",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_NOANDSTOPTHIS",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_STOPTHIS",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_STOPTHIS",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT04B",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT04B",
+                        "X0301C_AMANDA_INTRO_PC_X03CCONNOR_CONT04C",
+                        "X0301C_AMANDA_INTRO_PC_X03CAMANDA_CONT04C"
+                    ]
+                },
+                {
+                    "startOffset": 1943611536,
+                    "endOffset": 1943617754,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_OFFICE_ANDCHITCHAT_PC_X02CCHAD_TALK"
+                    ]
+                },
+                {
+                    "startOffset": 2049751184,
+                    "endOffset": 2049759754,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302M_LANDFILL_JERICHO_FA_X03MANDJERICHO_MUSTGO"
+                    ]
+                },
+                {
+                    "startOffset": 2057291920,
+                    "endOffset": 2057295784,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302M_LANDFILL_ARMS_FA_X03MARMAND_WHERE"
+                    ]
+                },
+                {
+                    "startOffset": 2061625172,
+                    "endOffset": 2061841462,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_START",
+                        "X0302C_DESK_FILES_PC_X03CHANK_START",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_TODDALIVE",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_TODDDEAD",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_UNDERSTANDING",
+                        "X0302C_DESK_FILES_PC_X03CHANK_UNDERSTANDING",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_DIRECT",
+                        "X0302C_DESK_FILES_PC_X03CHANK_DIRECT",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_AGRESSIVE",
+                        "X0302C_DESK_FILES_PC_X03CHANK_AGRESSIVE",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_PROFESSIONAL",
+                        "X0302C_DESK_FILES_PC_X03CHANK_PROFESSIONAL",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_THREATEN",
+                        "X0302C_DESK_FILES_PC_X03CHANK_THREATEN",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_DETERMINED",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_RESIGNMISSION",
+                        "X0302C_DESK_FILES_PC_X03CHANK_RESIGNMISSION",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_GRABCOLLAR",
+                        "X0302C_DESK_FILES_PC_X03CHANK_GRABCOLLAR",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_HARVEYTODDALIVE",
+                        "X0302C_DESK_FILES_PC_X03CHANK_HARVEYTODDALIVE",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_HARVEYTODDDEAD",
+                        "X0302C_DESK_FILES_PC_X03CHANK_HARVEYTODDDEAD",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_END",
+                        "X0302C_DESK_FILES_PC_X03CHANK_END",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_KARADEAD",
+                        "X0302C_DESK_FILES_FA_X03CCONNOR_LUNCH",
+                        "X0302C_DESK_FILES_FA_X03CHANK_LUNCH",
+                        "X0302C_DESK_FILES_PC_X03CHARVEY_HARVEYTODDALIVEH",
+                        "X0302C_DESK_FILES_PC_X03CHARVEY_HARVEYTODDDEADH",
+                        "X0302C_DESK_FILES_FA_X03CCONNOR_RESIGNMISSIONSEC",
+                        "X0302C_DESK_FILES_FA_X03CCONNOR_DETERMINEDSEC",
+                        "X0302C_DESK_FILES_FA_X03CCONNOR_THREATENSEC",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_TOCHOICE01CYC",
+                        "X0302C_DESK_FILES_PC_X03CHANK_TOCHOICE01CYC",
+                        "X0302C_DESK_FILES_PC_X03CCONNOR_LEAVE"
+                    ]
+                },
+                {
+                    "startOffset": 2141662084,
+                    "endOffset": 2141712816,
+                    "hasKeyListing": true,
+                    "keys": [
+                        "X0302C_FOWLER_ALONE_PC_X03CCONNOR_ANDERSON",
+                        "X0302C_FOWLER_ALONE_PC_X03CFOWLER_ANDERSON",
+                        "X0302C_FOWLER_ALONE_PC_X03CCONNOR_POSITIVE",
+                        "X0302C_FOWLER_ALONE_PC_X03CFOWLER_POSITIVE",
+                        "X0302C_FOWLER_ALONE_PC_X03CCONNOR_FILE",
+                        "X0302C_FOWLER_ALONE_PC_X03CFOWLER_FILE",
+                        "X0302C_FOWLER_ALONE_PC_X03CCONNOR_LEAVE",
+                        "X0302C_FOWLER_ALONE_PC_X03CCONNOR_GOODDAY"
                     ]
                 }
             ]

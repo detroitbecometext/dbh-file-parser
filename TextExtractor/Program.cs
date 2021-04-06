@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using System.Text.Unicode;
 using System.Threading.Tasks;
 using TextExtractor.Config;
@@ -34,13 +35,13 @@ namespace TextExtractor
 
             foreach (var fileConfig in config.Files)
             {
-                Console.WriteLine($"Exporting file '{fileConfig.Name}'...");
-
                 // TODO: temp
-                if(fileConfig.Name == "BigFile_PC.dat")
+                if(fileConfig.Name != "BigFile_PC.d12")
                 {
                     continue;
                 }
+
+                Console.WriteLine($"Exporting file '{fileConfig.Name}'...");
 
                 int maxBuffer = fileConfig.Sections.Select(s => s.Length).Max();
 
@@ -50,8 +51,10 @@ namespace TextExtractor
                     byte[] buffer = new byte[maxBuffer];
                     long bufferOffset = 0;
 
-                    foreach(var section in fileConfig.Sections)
+                    for(int sectionIndex = 0; sectionIndex < fileConfig.Sections.Count; sectionIndex++)
                     {
+                        Console.WriteLine($"Processing section {sectionIndex + 1} of {fileConfig.Sections.Count}...");
+                        var section = fileConfig.Sections[sectionIndex];
                         bufferOffset = section.StartOffset;
                         stream.Seek(bufferOffset, SeekOrigin.Begin);
                         int currentKeyOffset = -1;
@@ -64,9 +67,12 @@ namespace TextExtractor
                             currentKeyOffset = SearchStringInBuffer(buffer, currentKeyBytes);
                         }
 
-                        foreach (var language in Configuration.Languages)
+                        for(int languageIndex = 0; languageIndex < Configuration.Languages.Count(); languageIndex++)
                         {
-                            for(int i = 0; i < section.Keys.Count; i++)
+                            var language = Configuration.Languages.ElementAt(languageIndex);
+                            Console.WriteLine($"Getting values for {language}...");
+
+                            for (int i = 0; i < section.Keys.Count; i++)
                             {
                                 int nextIndex = i + 1;
                                 if(nextIndex == section.Keys.Count)
@@ -74,17 +80,29 @@ namespace TextExtractor
                                     nextIndex = 0;
                                 }
 
+                                bool getUntilEndOfBuffer = false;
+                                if(languageIndex == Configuration.Languages.Count() - 1 && !section.HasKeyListing)
+                                {
+                                    // We're at the last language and can't rely on the next first key to get the value,
+                                    // so we just get until the end of the buffer
+                                    getUntilEndOfBuffer = true;
+                                }
+
                                 byte[] nextKeyBytes = Encoding.UTF8.GetBytes(section.Keys[nextIndex]);
-                                (string value, int nextKeyOffset) = await FindValueAsync(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes);
+                                (string value, int nextKeyOffset) = await FindValueAsync(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes, getUntilEndOfBuffer);
                                 values[language][section.Keys[i]] = value;
 
                                 currentKeyOffset = nextKeyOffset;
                                 currentKeyBytes = nextKeyBytes;
                             }
 
-                            // Seek the start of the next first key
-                            Index start = new Index(currentKeyOffset + currentKeyBytes.Length);
-                            currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys.First()));
+                            if (section.HasKeyListing)
+                            {
+                                // Skip over the key listing by searching the start of the next language
+                                // i.e the next first key
+                                Index start = new Index(currentKeyOffset + currentKeyBytes.Length);
+                                currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys.First()));
+                            }
                         }
                     }
                 }
@@ -131,27 +149,62 @@ namespace TextExtractor
             return -1;
         }
 
-        public static async Task<(string value, int nextKeyOffset)> FindValueAsync(byte[] buffer, int currentKeyOffset, byte[] currentKeyBytes, byte[] nextKeyBytes)
+        public static async Task<(string value, int nextKeyOffset)> FindValueAsync(byte[] buffer, int currentKeyOffset, byte[] currentKeyBytes, byte[] nextKeyBytes, bool getUntilEndOfBuffer)
         {
             // Go to the end of the current key
             Index start = new Index(currentKeyOffset + currentKeyBytes.Length);
             buffer = buffer[start..];
 
-            // Search for the start of the next key
-            var nextKeyOffset = SearchStringInBuffer(buffer, nextKeyBytes);
-
-            if(nextKeyOffset == -1)
+            byte[] between = buffer;
+            var nextKeyOffset = 0;
+            if (!getUntilEndOfBuffer)
             {
-                throw new InvalidDataException("The next key is not in the buffer.");
+                // Search for the start of the next key
+                nextKeyOffset = SearchStringInBuffer(buffer, nextKeyBytes);
+
+                if (nextKeyOffset == -1)
+                {
+                    throw new InvalidDataException("The next key is not in the buffer.");
+                }
+
+                // Read the string between the two keys
+                between = buffer[0..nextKeyOffset];
             }
 
-            // Read the string between the two keys
-            byte[] between = buffer[0..nextKeyOffset];
-
             string result = Encoding.Unicode.GetString(between);
-            // TODO
+
             // Strip everythin before '{S}' and everything after '\u0001'
-            // Remove all '{*1}' and replace by strings
+            int startIndex = result.IndexOf("{S}");
+            if (startIndex != -1)
+            {
+                result = result[new Index(startIndex + 3)..];
+            }
+            int endIndex = result.IndexOf("\u0001");
+            if (endIndex != -1)
+            {
+                result = result[..new Index(endIndex)];
+            }
+
+            // Some strings also start with "\0" instead of "{S}"
+            startIndex = result.IndexOf((char)0);
+            if (startIndex != -1)
+            {
+                result = result[new Index(startIndex + 1)..];
+            }
+
+            // Remove QD formatting tags
+            result = result.Replace("<QD_BR>", " ");
+            result = result.Replace("<QD_THIN>", " ");
+            result = result.Replace("<QD_NORMAL>", " ");
+
+            // Swap problematic unicode characters
+            // No-Break Space (160) to space (32)
+            result = result.Replace((char)160, (char)32);
+
+            // Trim the result
+            result = result.Trim();
+
+            // Leave apostrophes (') as unicode in the exported file (\u0027)
 
             return (result, currentKeyOffset + currentKeyBytes.Length + nextKeyOffset);
         }
