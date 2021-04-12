@@ -87,12 +87,25 @@ namespace TextExtractor.Extraction
                             currentKeyBytes = nextKeyBytes;
                         }
 
-                        if (section.HasKeyListing)
+                        if (section.HasKeyListing && languageIndex != Configuration.Languages.Count() - 1)
                         {
                             // Skip over the key listing by searching the start of the next language
                             // i.e the next first key
-                            Index start = new Index(currentKeyOffset + currentKeyBytes.Length);
-                            currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys.First()));
+                            // we also have to check if we have keys that start with the same string as the first key,
+                            // to avoid stopping at a too early offset
+                            int duplicates = section.Keys.Where(k => k.StartsWith(section.Keys.First())).Count();
+                            for(int i = 0; i < duplicates; i++)
+                            {
+                                Index start = new Index(currentKeyOffset + currentKeyBytes.Length);
+                                int searchOffset = SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys.First()));
+
+                                if(searchOffset == -1)
+                                {
+                                    throw new InvalidDataException("The next key is not in the buffer.");
+                                }
+
+                                currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + searchOffset;
+                            }
                         }
 
                         OnProgressChanged(new ProgressReport()
@@ -157,7 +170,7 @@ namespace TextExtractor.Extraction
 
             string result = Encoding.Unicode.GetString(between);
 
-            // Strip everythin before '{S}' and everything after '\u0001'
+            // Dialogues strings start with {S}
             int startIndex = result.IndexOf("{S}");
             if (startIndex != -1)
             {
@@ -165,7 +178,7 @@ namespace TextExtractor.Extraction
             }
             else
             {
-                // Some strings also start with "\0" instead of "{S}"
+                // Some strings (like news articles) start with "\0" instead of "{S}"
                 startIndex = result.IndexOf((char)0);
                 if (startIndex != -1)
                 {
@@ -173,10 +186,20 @@ namespace TextExtractor.Extraction
                 }
             }
 
-            int endIndex = result.IndexOf("\\u0001");
+            // Most strings end with \u0001
+            int endIndex = result.IndexOf((char)1);
             if (endIndex != -1)
             {
                 result = result[..new Index(endIndex)];
+            }
+            else
+            {
+                // But player choices end with \u0002
+                endIndex = result.IndexOf((char)2);
+                if (endIndex != -1)
+                {
+                    result = result[..new Index(endIndex)];
+                }
             }
 
             // Remove QD formatting tags
@@ -184,17 +207,14 @@ namespace TextExtractor.Extraction
             result = result.Replace("<QD_THIN>", " ");
             result = result.Replace("<QD_NORMAL>", " ");
 
-            // Swap problematic unicode characters
-            // No-Break Space (160) to space (32)
-            result = result.Replace((char)160, (char)32);
-
             // Remove double spaces
-            result = result.Replace("  ", " ");
+            while(result.IndexOf("  ") != -1)
+            {
+                result = result.Replace("  ", " ");
+            }
 
             // Trim the result
             result = result.Trim();
-
-            // Leave apostrophes (') as unicode in the exported file (\u0027)
 
             return (result, currentKeyOffset + currentKeyBytes.Length + nextKeyOffset);
         }
