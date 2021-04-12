@@ -68,9 +68,9 @@ namespace TextExtractor.Extraction
                             }
 
                             bool getUntilEndOfBuffer = false;
-                            if (languageIndex == Configuration.Languages.Count() - 1 && !section.HasKeyListing)
+                            if (nextIndex == 0 && languageIndex == Configuration.Languages.Count() - 1 && !section.HasKeyListing)
                             {
-                                // We're at the last language and can't rely on the next first key to get the value,
+                                // We're at the last key of the last language and can't rely on the next first key to get the value,
                                 // so we just get until the end of the buffer
                                 getUntilEndOfBuffer = true;
                             }
@@ -170,22 +170,6 @@ namespace TextExtractor.Extraction
 
             string result = Encoding.Unicode.GetString(between);
 
-            // Dialogues strings start with {S}
-            int startIndex = result.IndexOf("{S}");
-            if (startIndex != -1)
-            {
-                result = result[new Index(startIndex + 3)..];
-            }
-            else
-            {
-                // Some strings (like news articles) start with "\0" instead of "{S}"
-                startIndex = result.IndexOf((char)0);
-                if (startIndex != -1)
-                {
-                    result = result[new Index(startIndex + 1)..];
-                }
-            }
-
             // Most strings end with \u0001
             int endIndex = result.IndexOf((char)1);
             if (endIndex != -1)
@@ -199,6 +183,23 @@ namespace TextExtractor.Extraction
                 if (endIndex != -1)
                 {
                     result = result[..new Index(endIndex)];
+                }
+            }
+
+            // Dialogues strings start with {S}
+            int startIndex = result.IndexOf("{S}");
+            if (startIndex != -1)
+            {
+                result = result[new Index(startIndex + 3)..];
+            }
+            else
+            {
+                // Some strings (like news articles) start with "\0" instead of "{S}"
+                // We can have a few "\0" so we take the last one
+                startIndex = result.LastIndexOf((char)0);
+                if (startIndex != -1)
+                {
+                    result = result[new Index(startIndex + 1)..];
                 }
             }
 
