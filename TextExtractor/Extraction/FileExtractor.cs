@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using TextExtractor.Config;
 
@@ -76,8 +77,17 @@ namespace TextExtractor.Extraction
                             }
 
                             byte[] nextKeyBytes = Encoding.UTF8.GetBytes(section.Keys[nextIndex]);
-                            (string value, int nextKeyOffset) = FindValue(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes, getUntilEndOfBuffer);
-                            
+                            string value = string.Empty;
+                            int nextKeyOffset = -1;
+                            try
+                            {
+                                (value, nextKeyOffset) = FindValue(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes, getUntilEndOfBuffer);
+                            }
+                            catch (InvalidDataException e)
+                            {
+                                throw new InvalidDataException($"The key \"{section.Keys[nextIndex]}\" couldn't be found in the buffer.");
+                            }
+
                             lock (lockObject)
                             {
                                 values[language][section.Keys[i]] = value;
@@ -101,7 +111,7 @@ namespace TextExtractor.Extraction
 
                                 if(searchOffset == -1)
                                 {
-                                    throw new InvalidDataException("The next key is not in the buffer.");
+                                    throw new InvalidDataException($"Couldn't find key \"{section.Keys.First()}\" with index {i} in the listing.");
                                 }
 
                                 currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + searchOffset;
@@ -209,10 +219,7 @@ namespace TextExtractor.Extraction
             result = result.Replace("<QD_NORMAL>", " ");
 
             // Remove double spaces
-            while(result.IndexOf("  ") != -1)
-            {
-                result = result.Replace("  ", " ");
-            }
+            result = Regex.Replace(result, @"\s{2,}", " ");
 
             // Trim the result
             result = result.Trim();
