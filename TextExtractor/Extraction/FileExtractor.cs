@@ -53,7 +53,7 @@ namespace TextExtractor.Extraction
                     while (currentKeyOffset == -1)
                     {
                         await stream.ReadAsync(buffer);
-                        currentKeyOffset = SearchStringInBuffer(buffer, currentKeyBytes);
+                        currentKeyOffset = Utils.SearchStringInBuffer(buffer, currentKeyBytes);
                     }
 
                     for (int languageIndex = 0; languageIndex < Configuration.Languages.Count(); languageIndex++)
@@ -107,7 +107,7 @@ namespace TextExtractor.Extraction
                             for(int i = 0; i < duplicates; i++)
                             {
                                 Index start = new Index(currentKeyOffset + currentKeyBytes.Length);
-                                int searchOffset = SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys.First()));
+                                int searchOffset = Utils.SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys.First()));
 
                                 if(searchOffset == -1)
                                 {
@@ -130,32 +130,6 @@ namespace TextExtractor.Extraction
             }
         }
 
-        /// <summary>
-        /// Returns the offset of the string in the buffer, or -1 if not found.
-        /// </summary>
-        /// <param name="buffer"></param>
-        /// <param name="stringToSearch"></param>
-        /// <returns></returns>
-        private int SearchStringInBuffer(byte[] buffer, byte[] stringToSearch)
-        {
-
-            for (var i = 0; i <= (buffer.Length - stringToSearch.Length); i++)
-            {
-                if (buffer[i] == stringToSearch[0])
-                {
-                    for (int j = 1; j < stringToSearch.Length && buffer[i + j] == stringToSearch[j]; j++)
-                    {
-                        if (j == stringToSearch.Length - 1)
-                        {
-                            return i;
-                        }
-                    }
-                }
-            }
-
-            return -1;
-        }
-
         private (string value, int nextKeyOffset) FindValue(byte[] buffer, int currentKeyOffset, byte[] currentKeyBytes, byte[] nextKeyBytes, bool getUntilEndOfBuffer)
         {
             // Go to the end of the current key
@@ -167,7 +141,7 @@ namespace TextExtractor.Extraction
             if (!getUntilEndOfBuffer)
             {
                 // Search for the start of the next key
-                nextKeyOffset = SearchStringInBuffer(buffer, nextKeyBytes);
+                nextKeyOffset = Utils.SearchStringInBuffer(buffer, nextKeyBytes);
 
                 if (nextKeyOffset == -1)
                 {

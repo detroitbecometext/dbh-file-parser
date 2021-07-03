@@ -18,7 +18,7 @@ namespace TextExtractor.Extraction
     {
         private readonly ConcurrentDictionary<string, ProgressReport> progress = new ConcurrentDictionary<string, ProgressReport>();
 
-        public async Task RunAsync()
+        public async Task RunAsync(string[] files)
         {
             Configuration config;
             using (var stream = File.OpenRead("config.json"))
@@ -29,12 +29,14 @@ namespace TextExtractor.Extraction
                 });
             }
 
+            List<FileConfig> filesToExtract = files.Length == 0 ? config.Files : config.Files.Where(x => files.Contains(x.Name)).ToList();
+
             // Mapping of languages to the key - value localization strings
             // We could use a ConcurrentDictionary here too, but since we want the keys to stay ordered, we'll use a lock instead
             Dictionary<string, Dictionary<string, string>> values = new Dictionary<string, Dictionary<string, string>>();
 
             var localizationKeys = new Dictionary<string, string>();
-            foreach (var key in config.Files.SelectMany(f => f.Sections).SelectMany(s => s.Keys))
+            foreach (var key in filesToExtract.SelectMany(f => f.Sections).SelectMany(s => s.Keys))
             {
                 localizationKeys[key] = string.Empty;
             }
@@ -58,7 +60,7 @@ namespace TextExtractor.Extraction
             // Run extraction for every file
             var tasks = new List<Task>();
             object lockObject = new object();
-            foreach(var fileConfig in config.Files)
+            foreach(var fileConfig in filesToExtract)
             {
                 progress.TryAdd(fileConfig.Name, new ProgressReport()
                 {
@@ -109,17 +111,10 @@ namespace TextExtractor.Extraction
 
             foreach (var progressReport in progress)
             {
-                ClearLine(top);
+                Utils.ClearLine(top);
                 Console.WriteLine(progressReport.Value.ToString());
                 top++;
             }
-        }
-
-        private void ClearLine(int line)
-        {
-            Console.SetCursorPosition(0, line);
-            Console.Write(new string(' ', Console.BufferWidth - Console.CursorLeft));
-            Console.SetCursorPosition(0, line);
         }
     }
 }
