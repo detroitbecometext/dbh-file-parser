@@ -20,7 +20,7 @@ namespace TextExtractor.Search
             results = new ConcurrentDictionary<string, List<int>>();
         }
 
-        public async Task SearchFilesAsync(string value)
+        public async Task SearchFilesAsync(string value, bool inKeys = false)
         {
             string folder = "Files";
 
@@ -29,7 +29,8 @@ namespace TextExtractor.Search
             fileCount = files.Count();
             fileReadCount = 0;
 
-            byte[] valueToSearch = Encoding.Unicode.GetBytes(value);
+            // Keys are in UTF-8, translation values are in UTF-16 (Unicode)
+            byte[] valueToSearch = inKeys ? Encoding.UTF8.GetBytes(value) : Encoding.Unicode.GetBytes(value);
             Console.WriteLine($"Searching '{value}'...");
             foreach (var file in files)
             {

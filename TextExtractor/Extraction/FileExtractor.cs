@@ -41,9 +41,8 @@ namespace TextExtractor.Extraction
                 byte[] buffer = new byte[maxBuffer];
                 long bufferOffset = 0;
 
-                for (int sectionIndex = 0; sectionIndex < fileConfig.Sections.Count; sectionIndex++)
+                foreach((SectionConfig section, int sectionIndex) in fileConfig.Sections.OrderBy(s => s.StartOffset).Select((s, i) => (section: s, sectionIndex: i)))
                 {
-                    var section = fileConfig.Sections[sectionIndex];
                     bufferOffset = section.StartOffset;
                     stream.Seek(bufferOffset, SeekOrigin.Begin);
                     int currentKeyOffset = -1;
@@ -154,37 +153,22 @@ namespace TextExtractor.Extraction
 
             string result = Encoding.Unicode.GetString(between);
 
-            // Most strings end with \u0001
-            int endIndex = result.IndexOf((char)1);
+            // Strings will always have a random character at index 0, and the (char)0 character at index 1,
+            // so we can remove those
+            result = result[new Index(2)..];
+
+            // Most strings end with \u0001, but player choices end with \u0002
+            int endIndex = result.IndexOfAny(new char[] { (char)1, (char)2 });
             if (endIndex != -1)
             {
                 result = result[..new Index(endIndex)];
             }
-            else
-            {
-                // But player choices end with \u0002
-                endIndex = result.IndexOf((char)2);
-                if (endIndex != -1)
-                {
-                    result = result[..new Index(endIndex)];
-                }
-            }
 
-            // Dialogues strings start with {S}
+            // Dialogues strings start with {S}, other strings start at index 0
             int startIndex = result.IndexOf("{S}");
             if (startIndex != -1)
             {
                 result = result[new Index(startIndex + 3)..];
-            }
-            else
-            {
-                // Some strings (like news articles) start with "\0" instead of "{S}"
-                // We can have a few "\0" so we take the last one
-                startIndex = result.LastIndexOf((char)0);
-                if (startIndex != -1)
-                {
-                    result = result[new Index(startIndex + 1)..];
-                }
             }
 
             // Remove QD formatting tags
