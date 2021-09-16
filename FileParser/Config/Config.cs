@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace TextExtractor.Config
+namespace FileParser.Config
 {
     public class Configuration
     {
-        public static readonly IEnumerable<string> Languages = new List<string>() {
+        public static readonly string[] Languages = new string[]
+        {
                 "FRE",
                 "ENG",
                 "GER",
@@ -33,6 +32,6 @@ namespace TextExtractor.Config
                 "ARA",
         };
 
-        public List<FileConfig> Files { get; set; }
+        public List<FileConfig> Files { get; set; } = new();
     }
 }

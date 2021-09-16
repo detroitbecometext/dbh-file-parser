@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
-namespace TextExtractor
+namespace FileParser
 {
     public static class Utils
     {
         /// <summary>
-        /// Returns the offset of the string in the buffer, or -1 if not found.
+        /// Search for a string in a buffer.
         /// </summary>
-        /// <param name="buffer"></param>
-        /// <param name="stringToSearch"></param>
-        /// <returns></returns>
+        /// <param name="buffer">The buffer.</param>
+        /// <param name="stringToSearch">The string as an array of bytes.</param>
+        /// <returns>The offset of the string in the buffer, or -1 if not found.</returns>
         public static int SearchStringInBuffer(byte[] buffer, byte[] stringToSearch)
         {
             for (var i = 0; i <= (buffer.Length - stringToSearch.Length); i++)
@@ -38,6 +35,20 @@ namespace TextExtractor
             Console.SetCursorPosition(0, line);
             Console.Write(new string(' ', Console.BufferWidth - Console.CursorLeft));
             Console.SetCursorPosition(0, line);
+        }
+
+        public static string GetAbsoluteFolderPath(string basePath, string? folder = null)
+        {
+            var fullyQualifiedPath = Path.IsPathFullyQualified(basePath) ?
+                 basePath
+                : Path.Combine(Environment.CurrentDirectory, basePath);
+
+            if (!string.IsNullOrWhiteSpace(folder))
+            {
+                fullyQualifiedPath = Path.Combine(fullyQualifiedPath, folder);
+            }
+
+            return fullyQualifiedPath;
         }
     }
 }

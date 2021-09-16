@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TextExtractor.Config
+namespace FileParser.Config
 {
     public class SectionConfig
     {
@@ -22,7 +22,7 @@ namespace TextExtractor.Config
         /// <summary>
         /// The list of translation keys for this section.
         /// </summary>
-        public List<string> Keys { get; set; }
+        public List<string> Keys { get; set; } = new();
 
         /// <summary>
         /// The length of this section.
