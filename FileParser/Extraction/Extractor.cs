@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
@@ -19,8 +20,15 @@ namespace FileParser.Extraction
 
         public async Task RunAsync(ExtractParameters parameters, CancellationToken token)
         {
+            string configFilePath = Utils.GetAbsoluteFolderPath(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty, "config.json");
             Configuration config;
-            using (var stream = File.OpenRead("config.json"))
+
+            if (!File.Exists(configFilePath))
+            {
+                throw new FileNotFoundException($"Cannot find the configuration file at '{configFilePath}'.");
+            }
+
+            using (var stream = File.OpenRead(configFilePath))
             {
                 config = await JsonSerializer.DeserializeAsync<Configuration>(stream, new JsonSerializerOptions()
                 {

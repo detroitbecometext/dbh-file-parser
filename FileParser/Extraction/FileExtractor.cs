@@ -39,7 +39,7 @@ namespace FileParser.Extraction
 
             if (!File.Exists(filePath))
             {
-                throw new ArgumentException($"Cannot find the file at path {filePath}.");
+                throw new FileNotFoundException($"Cannot find the file '{filePath}'.");
             }
 
             using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, maxBuffer, FileOptions.SequentialScan);

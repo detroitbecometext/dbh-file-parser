@@ -37,18 +37,31 @@ namespace FileParser
             Console.SetCursorPosition(0, line);
         }
 
-        public static string GetAbsoluteFolderPath(string basePath, string? folder = null)
+        public static string GetAbsoluteFolderPath(string basePath, string? fileName = null)
         {
-            var fullyQualifiedPath = Path.IsPathFullyQualified(basePath) ?
-                 basePath
-                : Path.Combine(Environment.CurrentDirectory, basePath);
-
-            if (!string.IsNullOrWhiteSpace(folder))
+            if (string.IsNullOrWhiteSpace(basePath))
             {
-                fullyQualifiedPath = Path.Combine(fullyQualifiedPath, folder);
+                basePath = Environment.CurrentDirectory;
+            }
+
+            var fullyQualifiedPath = Path.GetFullPath(Path.IsPathFullyQualified(basePath) ?
+                 basePath
+                : Path.Combine(Environment.CurrentDirectory, basePath));
+
+            if (!string.IsNullOrWhiteSpace(fileName))
+            {
+                fullyQualifiedPath = Path.Combine(fullyQualifiedPath, fileName);
             }
 
             return fullyQualifiedPath;
+        }
+
+        public static void WriteErrorLine(string text)
+        {
+            var defaultColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Error.WriteLine(text);
+            Console.ForegroundColor = defaultColor;
         }
     }
 }

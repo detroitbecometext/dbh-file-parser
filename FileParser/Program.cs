@@ -4,6 +4,7 @@ using System;
 using System.CommandLine;
 using System.CommandLine.Invocation;
 using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -90,6 +91,11 @@ namespace FileParser
                 Console.WriteLine("Stopping.");
                 return;
             }
+            catch (FileNotFoundException e)
+            {
+                Utils.WriteErrorLine(e.Message);
+                return;
+            }
 
             watch.Stop();
             Console.WriteLine($"Finished in {watch.ElapsedMilliseconds / 1000}s.");
@@ -115,6 +121,11 @@ namespace FileParser
             {
                 Console.Clear();
                 Console.WriteLine("Stopping.");
+                return;
+            }
+            catch (FileNotFoundException e)
+            {
+                Utils.WriteErrorLine(e.Message);
                 return;
             }
 
