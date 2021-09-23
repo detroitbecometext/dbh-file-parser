@@ -1,5 +1,7 @@
 # Detroit Become Human file parser
 
+![build & test workflow](https://github.com/detroitbecometext/dbh-file-parser/actions/workflows/dotnet.yml/badge.svg)
+
 Reads the game's files and extract the text contents to json files.
 
 ## Usage
