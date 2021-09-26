@@ -57,7 +57,7 @@ namespace FileParser.Extraction
 
         private async Task RunExtractionAsync(ExtractParameters parameters, CancellationToken token)
         {
-            string configFilePath = fileSystem.GetAbsolutePath(argumentsProvider.ExecutablePath, "config.json");
+            string configFilePath = fileSystem.GetAbsolutePath(argumentsProvider.ExecutableFolderPath, "config.json");
 
             if (!fileSystem.File.Exists(configFilePath))
             {

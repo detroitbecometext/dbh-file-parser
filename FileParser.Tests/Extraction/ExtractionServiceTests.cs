@@ -22,7 +22,7 @@ namespace FileParser.Tests
         {
             var reporter = Mock.Of<IExtractionProgressReporter>();
             var consoleWriter = Mock.Of<IConsoleWriter>();
-            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutablePath == @"c:\foo\bar");
+            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutableFolderPath == @"c:\foo\bar");
             var mockFileSystem = new MockFileSystem(new Dictionary<string, MockFileData>
             {
                 { @"c:\foo\input\file.dat", new MockFileData(string.Empty) },
@@ -43,7 +43,7 @@ namespace FileParser.Tests
         {
             var reporter = Mock.Of<IExtractionProgressReporter>();
             var consoleWriter = Mock.Of<IConsoleWriter>();
-            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutablePath == @"c:\foo\bar");
+            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutableFolderPath == @"c:\foo\bar");
             var mockFileSystem = new MockFileSystem(new Dictionary<string, MockFileData>
             {
                 { @"c:\foo\bar\config.json", new MockFileData(JsonSerializer.Serialize<Configuration>(TestHelpers.GetExtractionTestConfiguration(false).Configuration)) },
@@ -63,7 +63,7 @@ namespace FileParser.Tests
         {
             var reporter = Mock.Of<IExtractionProgressReporter>();
             var consoleWriter = Mock.Of<IConsoleWriter>();
-            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutablePath == @"c:\foo\bar");
+            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutableFolderPath == @"c:\foo\bar");
 
             ExtractionTestConfiguration testConfig = TestHelpers.GetExtractionTestConfiguration(true);
             IExtractionService service = new ExtractionService(reporter, testConfig.FileSystem, argumentsProvider, consoleWriter);
@@ -87,7 +87,7 @@ namespace FileParser.Tests
         {
             var reporter = Mock.Of<IExtractionProgressReporter>();
             var consoleWriter = Mock.Of<IConsoleWriter>();
-            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutablePath == @"c:\foo\bar");
+            var argumentsProvider = Mock.Of<ICommandLineArgumentsProvider>(c => c.ExecutableFolderPath == @"c:\foo\bar");
 
             ExtractionTestConfiguration testConfig = TestHelpers.GetExtractionTestConfiguration(false);
             IExtractionService service = new ExtractionService(reporter, testConfig.FileSystem, argumentsProvider, consoleWriter);
