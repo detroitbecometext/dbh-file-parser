@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 using System.Text;
 
 namespace FileParser.Tests
@@ -11,8 +12,10 @@ namespace FileParser.Tests
         {
             var buffer = Encoding.UTF8.GetBytes("This is a string.");
             var searchString = Encoding.UTF8.GetBytes("string");
-            var result = Utils.SearchStringInBuffer(buffer, searchString);
-            Assert.AreEqual(10, result);
+            var result = Utils.FindOffsets(buffer, searchString).ToList();
+
+            Assert.AreEqual(1, result.Count);
+            Assert.AreEqual(10, result.Single());
         }
 
         [TestMethod]
@@ -20,8 +23,9 @@ namespace FileParser.Tests
         {
             var buffer = Encoding.UTF8.GetBytes("This is a string.");
             var searchString = Encoding.UTF8.GetBytes("stringo");
-            var result = Utils.SearchStringInBuffer(buffer, searchString);
-            Assert.AreEqual(-1, result);
+            var result = Utils.FindOffsets(buffer, searchString).ToList();
+
+            Assert.IsFalse(result.Any());
         }
     }
 }

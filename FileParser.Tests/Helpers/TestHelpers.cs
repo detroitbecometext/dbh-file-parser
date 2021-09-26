@@ -40,14 +40,14 @@ namespace FileParser.Tests.Helpers
             {
                 new()
                 {
-                    Key = "X0001_FOO_FOO",
-                    Value = "Foo Foo.",
+                    Key = "X0001_FOO_BAR",
+                    Value = "Foo Bar.",
                     Type = MockTranslationValueType.Dialogue
                 },
                 new()
                 {
-                    Key = "X0001_FOO_BAR",
-                    Value = "Foo Bar.",
+                    Key = "X0001_FOO_BAR_BAZ",
+                    Value = "Foo Bar Baz.",
                     Type = MockTranslationValueType.Dialogue
                 },
                 new()

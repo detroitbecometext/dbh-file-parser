@@ -1,4 +1,5 @@
 ﻿using FileParser.Config;
+using FileParser.Core;
 using System;
 using System.Collections.Concurrent;
 using System.Linq;
@@ -11,6 +12,13 @@ namespace FileParser.Extraction
     {
         private readonly ConcurrentDictionary<string, ProgressReport> progressReports = new();
         private readonly CancellationTokenSource cancellationTokenSource = new();
+
+        private readonly IConsoleWriter consoleWriter;
+
+        public ExtractionProgressReporter(IConsoleWriter consoleWriter)
+        {
+            this.consoleWriter = consoleWriter;
+        }
 
         public void StartPrinting()
         {
@@ -48,8 +56,8 @@ namespace FileParser.Extraction
 
             foreach (var progressReport in progressReports.OrderBy(p => p.Key))
             {
-                Utils.ClearLine(currentLine);
-                Console.WriteLine(progressReport.Value.ToString());
+                consoleWriter.ClearLine(currentLine);
+                consoleWriter.WriteLine(progressReport.Value.ToString());
                 currentLine++;
             }
         }

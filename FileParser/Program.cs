@@ -19,6 +19,7 @@ namespace FileParser
                 {
                     services.AddSingleton<IFileSystem, FileSystem>();
                     services.AddSingleton<ICommandLineArgumentsProvider, CommandLineArgumentsProvider>();
+                    services.AddSingleton<IConsoleWriter, ConsoleWriter>();
 
                     services.AddSingleton<IExtractionService, ExtractionService>();
                     services.AddSingleton<IExtractionProgressReporter, ExtractionProgressReporter>();

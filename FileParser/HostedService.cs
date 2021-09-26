@@ -20,17 +20,20 @@ namespace FileParser
         private readonly ICommandLineArgumentsProvider commandLineArgumentsProvider;
         private readonly IExtractionService extractionService;
         private readonly ISearchService searchService;
+        private readonly IConsoleWriter consoleWriter;
 
         public HostedService(
             IHostApplicationLifetime applicationLifetime,
             ICommandLineArgumentsProvider commandLineArgumentsProvider,
             IExtractionService extractionService,
-            ISearchService searchService)
+            ISearchService searchService,
+            IConsoleWriter consoleWriter)
         {
             this.applicationLifetime = applicationLifetime;
             this.commandLineArgumentsProvider = commandLineArgumentsProvider;
             this.extractionService = extractionService;
             this.searchService = searchService;
+            this.consoleWriter = consoleWriter;
             this.rootCommand = CreateRootCommand();
         }
 
@@ -99,19 +102,19 @@ namespace FileParser
             catch (OperationCanceledException)
             {
                 exitCode = 1;
-                Console.WriteLine("Stopping.");
+                consoleWriter.WriteLine("Stopping.");
                 return;
             }
             catch (FileNotFoundException e)
             {
                 exitCode = 1;
-                Utils.WriteErrorLine($"Cannot find the file '{e.FileName}'.");
+                consoleWriter.WriteErrorLine($"Cannot find the file '{e.FileName}'.");
                 return;
             }
             catch(Exception e)
             {
                 exitCode = 1;
-                Utils.WriteErrorLine(e.Message);
+                consoleWriter.WriteErrorLine(e.Message);
             }
             finally
             {

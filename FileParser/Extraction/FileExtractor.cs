@@ -66,7 +66,7 @@ namespace FileParser.Extraction
                     while (currentKeyOffset == -1)
                     {
                         await stream.ReadAsync(buffer, token).ConfigureAwait(false);
-                        currentKeyOffset = Utils.SearchStringInBuffer(buffer, currentKeyBytes);
+                        currentKeyOffset = Utils.FindOffsets(buffer, currentKeyBytes).First();
                     }
 
                     for (int languageIndex = 0; languageIndex < Configuration.Languages.Length; languageIndex++)
@@ -117,18 +117,17 @@ namespace FileParser.Extraction
                             // i.e the next first key
                             // we also have to check if we have keys that start with the same string as the first key,
                             // to avoid stopping at a too early offset
-                            int duplicates = section.Keys.Count(k => k.StartsWith(section.Keys[0]));
-                            for (int i = 0; i < duplicates; i++)
+                            int duplicates = section.Keys.Count(k => k != section.Keys[0] && k.StartsWith(section.Keys[0]));
+                            var start = new Index(currentKeyOffset + currentKeyBytes.Length);
+
+                            try
                             {
-                                var start = new Index(currentKeyOffset + currentKeyBytes.Length);
-                                int searchOffset = Utils.SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys[0]));
-
-                                if (searchOffset == -1)
-                                {
-                                    throw new InvalidDataException($"Couldn't find key \"{section.Keys[0]}\" with index {i} in the listing.");
-                                }
-
-                                currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + searchOffset;
+                                int offset = Utils.FindOffsets(buffer[start..], Encoding.UTF8.GetBytes(section.Keys[0])).ElementAt(duplicates);
+                                currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + offset;
+                            }
+                            catch
+                            {
+                                throw new InvalidDataException($"Couldn't find key \"{section.Keys[0]}\" with index {duplicates} in the listing.");
                             }
                         }
 
@@ -164,7 +163,7 @@ namespace FileParser.Extraction
             if (!getUntilEndOfBuffer)
             {
                 // Search for the start of the next key
-                nextKeyOffset = Utils.SearchStringInBuffer(buffer, nextKeyBytes);
+                nextKeyOffset = Utils.FindOffsets(buffer, nextKeyBytes).First();
 
                 if (nextKeyOffset == -1)
                 {

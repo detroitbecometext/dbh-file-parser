@@ -24,12 +24,14 @@ namespace FileParser.Extraction
         private readonly IExtractionProgressReporter progressReporter;
         private readonly IFileSystem fileSystem;
         private readonly ICommandLineArgumentsProvider argumentsProvider;
+        private readonly IConsoleWriter consoleWriter;
 
-        public ExtractionService(IExtractionProgressReporter progressReporter, IFileSystem fileSystem, ICommandLineArgumentsProvider argumentsProvider)
+        public ExtractionService(IExtractionProgressReporter progressReporter, IFileSystem fileSystem, ICommandLineArgumentsProvider argumentsProvider, IConsoleWriter consoleWriter)
         {
             this.progressReporter = progressReporter;
             this.fileSystem = fileSystem;
             this.argumentsProvider = argumentsProvider;
+            this.consoleWriter = consoleWriter;
         }
 
         public async Task ExtractAsync(ExtractParameters parameters, CancellationToken token)
@@ -41,7 +43,7 @@ namespace FileParser.Extraction
                 watch = new Stopwatch();
                 watch.Start();
 
-                Console.WriteLine("Extracting...");
+                consoleWriter.WriteLine("Extracting...");
             }
 
             await RunExtractionAsync(parameters, token).ConfigureAwait(false);
@@ -49,7 +51,7 @@ namespace FileParser.Extraction
             if (parameters.Verbose && watch != null)
             {
                 watch.Stop();
-                Console.WriteLine($"Finished in {watch.ElapsedMilliseconds / 1000}s.");
+                consoleWriter.WriteLine($"Finished in {watch.ElapsedMilliseconds / 1000}s.");
             }
         }
 
@@ -109,7 +111,7 @@ namespace FileParser.Extraction
             // Write the values
             if (parameters.Verbose)
             {
-                Console.WriteLine("Writing export files...");
+                consoleWriter.WriteLine("Writing export files...");
             }
             tasks.Clear();
 
