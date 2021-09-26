@@ -9,7 +9,7 @@ namespace FileParser.Tests
     [TestClass]
     public class ExtensionsTests
     {
-        private IFileSystem GetFileSystem()
+        private static IFileSystem GetFileSystem()
         {
             var mockFileSystem = new MockFileSystem(new Dictionary<string, MockFileData>
             {

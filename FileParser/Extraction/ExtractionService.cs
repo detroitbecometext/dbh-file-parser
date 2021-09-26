@@ -11,6 +11,7 @@ using System.Text.Unicode;
 using System.Threading;
 using System.Threading.Tasks;
 using FileParser.Config;
+using FileParser.Core;
 
 namespace FileParser.Extraction
 {
@@ -22,11 +23,13 @@ namespace FileParser.Extraction
         private readonly SemaphoreSlim semaphore = new(1, 1);
         private readonly IExtractionProgressReporter progressReporter;
         private readonly IFileSystem fileSystem;
+        private readonly ICommandLineArgumentsProvider argumentsProvider;
 
-        public ExtractionService(IExtractionProgressReporter progressReporter, IFileSystem fileSystem)
+        public ExtractionService(IExtractionProgressReporter progressReporter, IFileSystem fileSystem, ICommandLineArgumentsProvider argumentsProvider)
         {
             this.progressReporter = progressReporter;
             this.fileSystem = fileSystem;
+            this.argumentsProvider = argumentsProvider;
         }
 
         public async Task ExtractAsync(ExtractParameters parameters, CancellationToken token)
@@ -52,7 +55,7 @@ namespace FileParser.Extraction
 
         private async Task RunExtractionAsync(ExtractParameters parameters, CancellationToken token)
         {
-            string configFilePath = fileSystem.GetAbsolutePath(fileSystem.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty, "config.json");
+            string configFilePath = fileSystem.GetAbsolutePath(argumentsProvider.ExecutablePath, "config.json");
 
             if (!fileSystem.File.Exists(configFilePath))
             {
