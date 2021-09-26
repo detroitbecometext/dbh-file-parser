@@ -7,6 +7,6 @@ namespace FileParser.Core
     public sealed class CommandLineArgumentsProvider : ICommandLineArgumentsProvider
     {
         public string[] Arguments => Environment.GetCommandLineArgs();
-        public string ExecutableFolderPath => Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty;
+        public string ExecutableFolderPath => AppContext.BaseDirectory;
     }
 }
