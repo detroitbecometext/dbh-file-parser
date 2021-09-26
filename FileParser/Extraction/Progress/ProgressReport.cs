@@ -1,7 +1,7 @@
 ﻿using System;
 using FileParser.Config;
 
-namespace FileParser
+namespace FileParser.Extraction
 {
     public class ProgressReport
     {

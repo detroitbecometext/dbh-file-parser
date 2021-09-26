@@ -1,4 +1,6 @@
-﻿namespace FileParser.Search
+﻿using FileParser.Core;
+
+namespace FileParser.Search
 {
     public class SearchParameters : CommandParameters
     {

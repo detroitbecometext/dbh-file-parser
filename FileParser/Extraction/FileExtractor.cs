@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Abstractions;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -10,17 +11,22 @@ using FileParser.Config;
 
 namespace FileParser.Extraction
 {
+    /// <summary>
+    /// Handle the extraction of a single file.
+    /// </summary>
     public class FileExtractor
     {
         private readonly FileConfig fileConfig;
         private readonly Dictionary<string, Dictionary<string, string>> values;
         private readonly SemaphoreSlim semaphore;
+        private readonly IFileSystem fileSystem;
 
-        public FileExtractor(FileConfig fileConfig, Dictionary<string, Dictionary<string, string>> values, SemaphoreSlim semaphore)
+        public FileExtractor(FileConfig fileConfig, Dictionary<string, Dictionary<string, string>> values, SemaphoreSlim semaphore, IFileSystem fileSystem)
         {
             this.fileConfig = fileConfig;
             this.values = values;
             this.semaphore = semaphore;
+            this.fileSystem = fileSystem;
         }
 
         private void OnProgressChanged(ProgressReport e)
@@ -35,103 +41,105 @@ namespace FileParser.Extraction
         {
             int maxBuffer = fileConfig.Sections.Max(s => s.Length);
 
-            string filePath = Utils.GetAbsoluteFolderPath(parameters.Input, fileConfig.Name);
+            string filePath = fileSystem.GetAbsolutePath(parameters.Input, fileConfig.Name);
 
-            if (!File.Exists(filePath))
+            if (!fileSystem.File.Exists(filePath))
             {
-                throw new FileNotFoundException($"Cannot find the file '{filePath}'.");
+                throw new FileNotFoundException($"Cannot find the file '{filePath}'.", filePath);
             }
 
-            using var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, maxBuffer, FileOptions.SequentialScan);
-            byte[] buffer = new byte[maxBuffer];
-            long bufferOffset = 0;
-
-            foreach ((SectionConfig section, int sectionIndex) in fileConfig.Sections
-                .OrderBy(s => s.StartOffset)
-                .Select((s, i) => (section: s, sectionIndex: i)))
+            using (var stream = fileSystem.FileStream.Create(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, maxBuffer, FileOptions.SequentialScan))
             {
-                bufferOffset = section.StartOffset;
-                stream.Seek(bufferOffset, SeekOrigin.Begin);
-                int currentKeyOffset = -1;
+                byte[] buffer = new byte[maxBuffer];
+                long bufferOffset = 0;
 
-                // Search the first key in the section
-                byte[] currentKeyBytes = Encoding.UTF8.GetBytes(section.Keys[0]);
-                while (currentKeyOffset == -1)
+                foreach ((SectionConfig section, int sectionIndex) in fileConfig.Sections
+                    .OrderBy(s => s.StartOffset)
+                    .Select((s, i) => (section: s, sectionIndex: i)))
                 {
-                    await stream.ReadAsync(buffer, token).ConfigureAwait(false);
-                    currentKeyOffset = Utils.SearchStringInBuffer(buffer, currentKeyBytes);
-                }
+                    bufferOffset = section.StartOffset;
+                    stream.Seek(bufferOffset, SeekOrigin.Begin);
+                    int currentKeyOffset = -1;
 
-                for (int languageIndex = 0; languageIndex < Configuration.Languages.Length; languageIndex++)
-                {
-                    var language = Configuration.Languages[languageIndex];
-
-                    for (int i = 0; i < section.Keys.Count; i++)
+                    // Search the first key in the section
+                    byte[] currentKeyBytes = Encoding.UTF8.GetBytes(section.Keys[0]);
+                    while (currentKeyOffset == -1)
                     {
-                        token.ThrowIfCancellationRequested();
-
-                        int nextIndex = i + 1;
-                        if (nextIndex == section.Keys.Count)
-                        {
-                            nextIndex = 0;
-                        }
-
-                        bool getUntilEndOfBuffer = false;
-                        if (nextIndex == 0 && languageIndex == Configuration.Languages.Length - 1 && !section.HasKeyListing)
-                        {
-                            // We're at the last key of the last language and can't rely on the next first key to get the value,
-                            // so we just get until the end of the buffer
-                            getUntilEndOfBuffer = true;
-                        }
-
-                        byte[] nextKeyBytes = Encoding.UTF8.GetBytes(section.Keys[nextIndex]);
-                        string value = string.Empty;
-                        int nextKeyOffset = -1;
-                        try
-                        {
-                            (value, nextKeyOffset) = FindValue(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes, getUntilEndOfBuffer);
-                        }
-                        catch (InvalidDataException)
-                        {
-                            throw new InvalidDataException($"The key \"{section.Keys[nextIndex]}\" couldn't be found in the buffer.");
-                        }
-
-                        await semaphore.WaitAsync(token).ConfigureAwait(false);
-                        values[language][section.Keys[i]] = value;
-                        semaphore.Release();
-
-                        currentKeyOffset = nextKeyOffset;
-                        currentKeyBytes = nextKeyBytes;
+                        await stream.ReadAsync(buffer, token).ConfigureAwait(false);
+                        currentKeyOffset = Utils.SearchStringInBuffer(buffer, currentKeyBytes);
                     }
 
-                    if (section.HasKeyListing && languageIndex != Configuration.Languages.Length - 1)
+                    for (int languageIndex = 0; languageIndex < Configuration.Languages.Length; languageIndex++)
                     {
-                        // Skip over the key listing by searching the start of the next language
-                        // i.e the next first key
-                        // we also have to check if we have keys that start with the same string as the first key,
-                        // to avoid stopping at a too early offset
-                        int duplicates = section.Keys.Count(k => k.StartsWith(section.Keys[0]));
-                        for (int i = 0; i < duplicates; i++)
-                        {
-                            var start = new Index(currentKeyOffset + currentKeyBytes.Length);
-                            int searchOffset = Utils.SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys[0]));
+                        var language = Configuration.Languages[languageIndex];
 
-                            if (searchOffset == -1)
+                        for (int i = 0; i < section.Keys.Count; i++)
+                        {
+                            token.ThrowIfCancellationRequested();
+
+                            int nextIndex = i + 1;
+                            if (nextIndex == section.Keys.Count)
                             {
-                                throw new InvalidDataException($"Couldn't find key \"{section.Keys[0]}\" with index {i} in the listing.");
+                                nextIndex = 0;
                             }
 
-                            currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + searchOffset;
-                        }
-                    }
+                            bool getUntilEndOfBuffer = false;
+                            if (nextIndex == 0 && languageIndex == Configuration.Languages.Length - 1 && !section.HasKeyListing)
+                            {
+                                // We're at the last key of the last language and can't rely on the next first key to get the value,
+                                // so we just get until the end of the buffer
+                                getUntilEndOfBuffer = true;
+                            }
 
-                    OnProgressChanged(new ProgressReport()
-                    {
-                        FileName = fileConfig.Name,
-                        LanguageIndex = languageIndex,
-                        SectionCount = fileConfig.Sections.Count,
-                        SectionIndex = sectionIndex
-                    });
+                            byte[] nextKeyBytes = Encoding.UTF8.GetBytes(section.Keys[nextIndex]);
+                            string value = string.Empty;
+                            int nextKeyOffset = -1;
+                            try
+                            {
+                                (value, nextKeyOffset) = FindValue(buffer, currentKeyOffset, currentKeyBytes, nextKeyBytes, getUntilEndOfBuffer);
+                            }
+                            catch (InvalidDataException)
+                            {
+                                throw new InvalidDataException($"The key \"{section.Keys[nextIndex]}\" couldn't be found in the buffer.");
+                            }
+
+                            await semaphore.WaitAsync(token).ConfigureAwait(false);
+                            values[language][section.Keys[i]] = value;
+                            semaphore.Release();
+
+                            currentKeyOffset = nextKeyOffset;
+                            currentKeyBytes = nextKeyBytes;
+                        }
+
+                        if (section.HasKeyListing && languageIndex != Configuration.Languages.Length - 1)
+                        {
+                            // Skip over the key listing by searching the start of the next language
+                            // i.e the next first key
+                            // we also have to check if we have keys that start with the same string as the first key,
+                            // to avoid stopping at a too early offset
+                            int duplicates = section.Keys.Count(k => k.StartsWith(section.Keys[0]));
+                            for (int i = 0; i < duplicates; i++)
+                            {
+                                var start = new Index(currentKeyOffset + currentKeyBytes.Length);
+                                int searchOffset = Utils.SearchStringInBuffer(buffer[start..], Encoding.UTF8.GetBytes(section.Keys[0]));
+
+                                if (searchOffset == -1)
+                                {
+                                    throw new InvalidDataException($"Couldn't find key \"{section.Keys[0]}\" with index {i} in the listing.");
+                                }
+
+                                currentKeyOffset = currentKeyOffset + currentKeyBytes.Length + searchOffset;
+                            }
+                        }
+
+                        OnProgressChanged(new ProgressReport()
+                        {
+                            FileName = fileConfig.Name,
+                            LanguageIndex = languageIndex,
+                            SectionCount = fileConfig.Sections.Count,
+                            SectionIndex = sectionIndex
+                        });
+                    }
                 }
             }
         }

@@ -1,4 +1,6 @@
-﻿namespace FileParser.Extraction
+﻿using FileParser.Core;
+
+namespace FileParser.Extraction
 {
     public class ExtractParameters : CommandParameters
     {

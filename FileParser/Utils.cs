@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 namespace FileParser
 {
@@ -35,25 +34,6 @@ namespace FileParser
             Console.SetCursorPosition(0, line);
             Console.Write(new string(' ', Console.BufferWidth - Console.CursorLeft));
             Console.SetCursorPosition(0, line);
-        }
-
-        public static string GetAbsoluteFolderPath(string basePath, string? fileName = null)
-        {
-            if (string.IsNullOrWhiteSpace(basePath))
-            {
-                basePath = Environment.CurrentDirectory;
-            }
-
-            var fullyQualifiedPath = Path.GetFullPath(Path.IsPathFullyQualified(basePath) ?
-                 basePath
-                : Path.Combine(Environment.CurrentDirectory, basePath));
-
-            if (!string.IsNullOrWhiteSpace(fileName))
-            {
-                fullyQualifiedPath = Path.Combine(fullyQualifiedPath, fileName);
-            }
-
-            return fullyQualifiedPath;
         }
 
         public static void WriteErrorLine(string text)

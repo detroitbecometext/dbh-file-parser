@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.IO.Abstractions;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -9,31 +11,56 @@ using System.Threading.Tasks;
 
 namespace FileParser.Search
 {
-    public class Searcher
+    public class SearchService : ISearchService
     {
         private readonly ConcurrentDictionary<string, List<int>> results;
         private int fileCount;
         private int fileReadCount;
+        private readonly IFileSystem fileSystem;
+        private readonly ISearchProgressReporter progressReporter;
 
-        public Searcher()
+        public SearchService(IFileSystem fileSystem, ISearchProgressReporter progressReporter)
         {
-            results = new ConcurrentDictionary<string, List<int>>();
+            this.results = new ConcurrentDictionary<string, List<int>>();
+            this.fileSystem = fileSystem;
+            this.progressReporter = progressReporter;
         }
 
-        public async Task SearchFilesAsync(SearchParameters parameters, CancellationToken token)
+        public async Task SearchAsync(SearchParameters parameters, CancellationToken token)
+        {
+            Stopwatch? watch = null;
+
+            if (parameters.Verbose)
+            {
+                watch = new Stopwatch();
+                watch.Start();
+
+                Console.WriteLine($"Searching '{parameters.Value}' in translation {(parameters.InKeys ? "keys" : "values")}...");
+            }
+
+            await RunSearchAsync(parameters, token).ConfigureAwait(false);
+
+            if (parameters.Verbose && watch != null)
+            {
+                watch.Stop();
+                Console.WriteLine($"Finished in {watch.ElapsedMilliseconds / 1000}s.");
+            }
+        }
+
+        public async Task RunSearchAsync(SearchParameters parameters, CancellationToken token)
         {
             if (string.IsNullOrWhiteSpace(parameters.Value))
             {
                 throw new ArgumentException("The search value shouldn't be empty.");
             }
 
-            var folderPath = Utils.GetAbsoluteFolderPath(parameters.Input);
-            if (!Directory.Exists(folderPath))
+            var folderPath = fileSystem.GetAbsolutePath(parameters.Input);
+            if (!fileSystem.Directory.Exists(folderPath))
             {
-                throw new ArgumentException($"Cannot find the folder at path {folderPath}.");
+                throw new DirectoryNotFoundException($"Cannot find the folder at path {folderPath}.");
             }
 
-            IEnumerable<string> files = Directory.EnumerateFiles(folderPath);
+            IEnumerable<string> files = fileSystem.Directory.EnumerateFiles(folderPath);
             fileCount = files.Count();
             fileReadCount = 0;
 
@@ -49,7 +76,7 @@ namespace FileParser.Search
                 if(parameters.Verbose && !Console.IsOutputRedirected)
                 {
                     fileReadCount++;
-                    PrintProgress();
+                    progressReporter.ReportProgress(fileReadCount, fileCount);
                 }
             }
 
@@ -70,7 +97,7 @@ namespace FileParser.Search
         {
             this.results[path] = new List<int>();
 
-            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, bufferSize, FileOptions.SequentialScan))
+            using(var stream = fileSystem.FileStream.Create(path, FileMode.Open, FileAccess.Read, FileShare.Read, bufferSize, FileOptions.SequentialScan))
             {
                 byte[] buffer = new byte[bufferSize];
                 int currentFileOffset = 0;
@@ -92,12 +119,6 @@ namespace FileParser.Search
                     bytesRead = await stream.ReadAsync(buffer, token).ConfigureAwait(false);
                 }
             }
-        }
-
-        private void PrintProgress()
-        {
-            Utils.ClearLine(1);
-            Console.WriteLine($"Read {fileReadCount} out of {fileCount} files...");
         }
     }
 }

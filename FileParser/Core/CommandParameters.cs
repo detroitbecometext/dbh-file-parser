@@ -1,4 +1,4 @@
-﻿namespace FileParser
+﻿namespace FileParser.Core
 {
     public abstract class CommandParameters
     {
