@@ -15,11 +15,11 @@
     <PackageReference Include="NUnit" Version="3.14.0" />
     <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
-    <PackageReference Include="Spectre.Console.Testing" Version="0.49.1" />
+    <PackageReference Include="System.IO.Abstractions.TestingHelpers" Version="21.0.29" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FileParser.Console\FileParser.Console.csproj" />
+    <ProjectReference Include="..\..\src\FileParser.Core\FileParser.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Console", "FileParser.Console\FileParser.Console.csproj", "{95B8D3CC-B3CB-495B-9A64-3F86690B5084}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Console", "src\FileParser.Console\FileParser.Console.csproj", "{95B8D3CC-B3CB-495B-9A64-3F86690B5084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Core", "FileParser.Core\FileParser.Core.csproj", "{AF6FA6AB-0410-4BBA-B3F0-1168A0CE5EE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Core", "src\FileParser.Core\FileParser.Core.csproj", "{AF6FA6AB-0410-4BBA-B3F0-1168A0CE5EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Core.Tests", "FileParser.Core.Tests\FileParser.Core.Tests.csproj", "{906DE288-4EAD-4746-9EC0-BA9238698A0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Core.Tests", "test\FileParser.Core.Tests\FileParser.Core.Tests.csproj", "{906DE288-4EAD-4746-9EC0-BA9238698A0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Console.Tests", "FileParser.Console.Tests\FileParser.Console.Tests.csproj", "{13A848A1-4EBC-4F1E-8EBB-EBCB9B5D6AB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser.Console.Tests", "test\FileParser.Console.Tests\FileParser.Console.Tests.csproj", "{13A848A1-4EBC-4F1E-8EBB-EBCB9B5D6AB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93D87BC7-6E77-42E6-AE1A-D4616BEFA7E3}"
 EndProject
