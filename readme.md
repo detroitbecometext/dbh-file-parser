@@ -35,5 +35,8 @@ Examples:
 `FileParser -v -i ./input`  
 `FileParser --input C:/Foo/Bar --output ./Baz/output`
 
+Here's an example on Windows to use the files from the installed Steam version:  
+`FileParser -i "C:\Program Files (x86)\Steam\steamapps\common\Detroit Become Human" -o "./output"`
+
 > [!NOTE]
 > The "Process buffers" step may seem to stay stuck at 0% for a few seconds. This is normal.

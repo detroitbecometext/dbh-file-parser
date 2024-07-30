@@ -36,8 +36,8 @@ public class BinaryUtilsTests
         var result = BinaryUtils.FindOffsets(buffer, searchString).ToList();
 
         Assert.That(result, Has.Count.EqualTo(2));
-        Assert.That(result.First(), Is.EqualTo(10));
-        Assert.That(result.Last(), Is.EqualTo(30));
+        Assert.That(result[0], Is.EqualTo(10));
+        Assert.That(result[^1], Is.EqualTo(30));
     }
 
     [Test]
