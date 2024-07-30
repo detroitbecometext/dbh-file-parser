@@ -36,6 +36,7 @@ internal class ExtractionServiceTests
     }
 
     [Test]
+    [Ignore("Unignore when TestHelpers.GetExtractionTestConfiguration is updated")]
     public void Extract_With_Key_Listing_Should_Work_Async()
     {
         ExtractionTestConfiguration testConfig = TestHelpers.GetExtractionTestConfiguration(true);
@@ -52,6 +53,7 @@ internal class ExtractionServiceTests
     }
 
     [Test]
+    [Ignore("Unignore when TestHelpers.GetExtractionTestConfiguration is updated")]
     public void Extract_Without_Key_Listing_Should_Work_Async()
     {
         ExtractionTestConfiguration testConfig = TestHelpers.GetExtractionTestConfiguration(false);
